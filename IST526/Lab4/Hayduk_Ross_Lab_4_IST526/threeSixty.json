@@ -1,0 +1,116 @@
+{
+  "version": "3.93.33359.0",
+  "course_id": "6L7Hp0KCYaW",
+  "title": "Hayduk_Ross_Lab_4_IST526",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "LAB 4 IST 526"
+    },
+    {
+      "title": "Demo"
+    },
+    {
+      "title": "Ethics in A.I."
+    },
+    {
+      "title": "Conclusion"
+    }
+  ],
+  "slides": [
+    {
+      "id": "61stppqFVo1",
+      "title": "Welcome",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "679WwCn7G4V",
+      "title": "A.I. Avatars",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6XIkMugyPO6",
+      "title": "Drag and Drop to Match  -  HeyGen Features",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5iIfjrT3rqz",
+      "title": "Introduction to AI Voice Cloning in ElevenLabs",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6PyZx3Qi9ug",
+      "title": "Text-to-Speech",
+      "scene_index": "2.1"
+    },
+    {
+      "id": "6OYHuTHbm1Z",
+      "title": "Browse Voices",
+      "scene_index": "2.2"
+    },
+    {
+      "id": "6YzUqW3xCQC",
+      "title": "Explore Menu",
+      "scene_index": "2.3"
+    },
+    {
+      "id": "5mdCRE8pAhB",
+      "title": "Select Voice",
+      "scene_index": "2.4"
+    },
+    {
+      "id": "5kvbtqlB7Je",
+      "title": "Enter Text",
+      "scene_index": "2.5"
+    },
+    {
+      "id": "5kreBKEHg2K",
+      "title": "Generate Speech",
+      "scene_index": "2.6"
+    },
+    {
+      "id": "6ChtZXgUt28",
+      "title": "Click Play",
+      "scene_index": "2.7"
+    },
+    {
+      "id": "6n0JjO2JAFP",
+      "title": "Download Audio",
+      "scene_index": "2.8"
+    },
+    {
+      "id": "63nGVNuqn84",
+      "title": "Ethical Considerations Introduction",
+      "scene_index": "3.1"
+    },
+    {
+      "id": "6fmYFhakQtL",
+      "title": "Ethical Considerations",
+      "scene_index": "3.2"
+    },
+    {
+      "id": "5cUQ1nck3uX",
+      "title": "Ethical Considerations of AI Avatars",
+      "scene_index": "3.3"
+    },
+    {
+      "id": "6Cuvp1EPBkf",
+      "title": "Conclusion",
+      "scene_index": "4.1"
+    },
+    {
+      "id": "5rRuuRKPwzC",
+      "title": "Explore More!",
+      "scene_index": "4.2"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 1220,
+    "height": 658
+  },
+  "stage": {
+    "width": 960,
+    "height": 540
+  }
+}
