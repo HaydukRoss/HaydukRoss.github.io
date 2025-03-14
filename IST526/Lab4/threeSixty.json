@@ -118,17 +118,17 @@
     },
     {
       "id": "5tHJsmSnLpl",
-      "title": "Embedded Simulation Game",
+      "title": "Simulation Game Intro",
       "scene_index": "5.1"
     },
     {
       "id": "6RIeFaq3XLw",
-      "title": "Keiki's Impulse Game",
+      "title": "PHET Center and Variability Game",
       "scene_index": "5.2"
     },
     {
       "id": "5rw9U1fi6Aw",
-      "title": "Embedded Simulation Thank You",
+      "title": "Simulation Thank You",
       "scene_index": "5.3"
     }
   ],
