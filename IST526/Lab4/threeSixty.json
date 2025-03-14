@@ -15,6 +15,9 @@
     },
     {
       "title": "Conclusion"
+    },
+    {
+      "title": "Embedded Simulation Game"
     }
   ],
   "slides": [
@@ -24,19 +27,24 @@
       "scene_index": "1.1"
     },
     {
+      "id": "6n2XPxJfI7m",
+      "title": "Objectives",
+      "scene_index": "1.2"
+    },
+    {
       "id": "679WwCn7G4V",
       "title": "A.I. Avatars",
-      "scene_index": "1.2"
+      "scene_index": "1.3"
     },
     {
       "id": "6XIkMugyPO6",
       "title": "Drag and Drop to Match  -  HeyGen Features",
-      "scene_index": "1.3"
+      "scene_index": "1.4"
     },
     {
       "id": "5iIfjrT3rqz",
       "title": "Introduction to AI Voice Cloning in ElevenLabs",
-      "scene_index": "1.4"
+      "scene_index": "1.5"
     },
     {
       "id": "6PyZx3Qi9ug",
@@ -102,6 +110,21 @@
       "id": "5rRuuRKPwzC",
       "title": "Explore More!",
       "scene_index": "4.2"
+    },
+    {
+      "id": "5tHJsmSnLpl",
+      "title": "Embedded Simulation Game",
+      "scene_index": "5.1"
+    },
+    {
+      "id": "6RIeFaq3XLw",
+      "title": "Keiki's Impulse Game",
+      "scene_index": "5.2"
+    },
+    {
+      "id": "5rw9U1fi6Aw",
+      "title": "Embedded Simulation Game",
+      "scene_index": "5.3"
     }
   ],
   "player": {
