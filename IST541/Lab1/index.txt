@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How to Create an Avatar in HeyGen</title>
+<style>
+:root{
+--navy:#183256; /* header */
+--ink:#0b0b0b; /* divider */
+--step-bg:#8aa4cf; /* step title band */
+--panel-bg:#c9d8f0; /* description panel */
+--text:#10223b;
+--white:#fff;
+--maxw:1024px;
+--radius:14px;
+--shadow:0 6px 22px rgba(0,0,0,.08);
+}
+
+
+*{box-sizing:border-box}
+body{
+margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+color:var(--text); background:#f5f7fb;
+}
+/* Top banner styled like the sample image */
+header.banner{background:var(--navy); color:var(--white);}
+.banner__inner{max-width:var(--maxw); margin:0 auto; text-align:center; padding:70px 16px;}
+.banner__title{font-weight:700; letter-spacing:.3px; font-size:clamp(24px,3.5vw,42px); margin:0}
+
+
+/* Thin black divider */
+.divider{height:28px; background:var(--ink);}
+
+
+/* Page wrapper */
+.wrap{max-width:var(--maxw); margin:0 auto; padding:24px 14px 64px;}
+
+
+/* Step block matches the dark-blue title stripe followed by a light panel */
+.step{margin:28px 0 36px; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);}
+.step__title{
+background:var(--step-bg);
+color:var(--white);
+padding:28px 22px;
+font-size:clamp(20px,2.5vw,28px);
+font-weight:700;
+text-align:center;
+}
+.step__panel{background:var(--panel-bg); padding:24px;}
+
+
+/* Panel content layout */
+.flex{display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap}
+.step__text{flex:1 1 320px; font-size:18px; line-height:1.6}
+.step__img{flex:1 1 320px}
+.step__img figure{margin:0}
+.step__img img{width:100%; height:auto; border-radius:10px; display:block;}
+.caption{font-size:14px; color:#2b3e5e; margin-top:6px}
+
+
+/* Minor niceties */
+a{color:#0b5ed7; text-decoration:none}
+a:hover{text-decoration:underline}
+ol.inline{padding-left:20px; margin:0}
+li + li{margin-top:.5rem}
+
+
+/* Footer */
+footer{max-width:var(--maxw); margin:28px auto 60px; padding:0 14px; color:#4a5d7a; font-size:14px}
+
+
+/* Responsive tweak to make bands full-bleed on small screens */
+@media (max-width:540px){
+.step{border-radius:10px}
+}
+</style>
+</head>
+<body>
+<!-- Banner -->
+<header class="banner" role="banner">
+<div class="banner__inner">
+<h1 class="banner__title">How to Create an Avatar in HeyGen</h1>
+</div>
