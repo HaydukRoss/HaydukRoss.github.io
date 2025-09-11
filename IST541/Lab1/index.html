@@ -1,58 +1,157 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title>Lab 1: Job Aid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link href="css/jobaid.css" rel="stylesheet">
+<style>
+  body {
+    font-family: "Lexend", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+  }
+
+  #wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+  }
+
+  /* Header Banner */
+  #header {
+    background-color: #1e3d6b; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  #header h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #d9e2f3;
+  }
+
+  /* Step Title Banner */
+  .stepTitle {
+    background-color: #5a7dbf; /* Medium Blue */
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  /* Step Description Banner */
+  .stepDescription {
+    background-color: #9db7df; /* Light Blue */
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1em;
+  }
+
+  /* Step Content Layout */
+  .stepContent {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+  }
+
+  .stepImage {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .stepImage img {
+    max-width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+</style>
 </head>
 
 <body>
-	<div id="wrapper">
-  
+  <div id="wrapper">
+
     <div id="header">
-		<h1> How to Buy from a Vending Machine </h1>    
-       <h2> By Ross Hayduk</h2>  <br>
+      <h1>How to Create an Avatar in HeyGen</h1>
+      <h2>By Ross Hayduk</h2>
     </div>
 
     <div id="step1">
+      <div class="stepTitle">Step 1: Open HeyGen</div>
+      <div class="stepContent">
+        <div class="stepDescription">
+          Go to <a href="https://www.heygen.com" target="_blank" style="color:#fff; text-decoration: underline;">HeyGen.com</a> 
+          and log in with your account. If you don’t have one, sign up for free to get started.
+        </div>
+        <div class="stepImage">
+          <img src="img/step1.png" alt="Opening HeyGen homepage." />
+        </div>
+      </div>
+    </div>
 
-		<div class="stepTitle">
-   Step 1: Select Visually the Item of Choice
-		</div>
+    <div id="step2">
+      <div class="stepTitle">Step 2: Navigate to Avatar Creation</div>
+      <div class="stepContent">
+        <div class="stepDescription">
+          Once logged in, click on the “Avatars” tab in the main menu. This will take you to the avatar creation dashboard.
+        </div>
+        <div class="stepImage">
+          <img src="img/step2.png" alt="Avatar creation menu." />
+        </div>
+      </div>
+    </div>
 
-		<div class="stepContent">
+    <div id="step3">
+      <div class="stepTitle">Step 3: Choose Your Avatar Type</div>
+      <div class="stepContent">
+        <div class="stepDescription">
+          You can select from stock avatars or create a custom avatar. Select an avatar from “Public Avatars.”
+        </div>
+        <div class="stepImage">
+          <img src="img/step3.png" alt="Selecting avatar type." />
+        </div>
+      </div>
+    </div>
 
-		<div class="stepDescription">
-<p>Scan through the different snacks and check whether there is something that might satisfy your cravings. The types of products that you can buy vary from machine to machine; however, most of them include some kind of chips, chocolates, cookies, and gums. Some machines offer healthy snacks such as baked chips, granola bars, and peanuts.</p>          
-<p>Even though most vending machines contain fresh products, it might be convenient to try to visually double check the expiration date of the snack you want to buy.</p>          
-   		       </div>
+    <div id="step4">
+      <div class="stepTitle">Step 4: Customize Your Avatar</div>
+      <div class="stepContent">
+        <div class="stepDescription">
+          Adjust voice, language, and gestures. HeyGen also lets you add lip-syncing to your scripts. 
+          Preview your avatar to make sure it matches your needs.
+        </div>
+        <div class="stepImage">
+          <img src="img/step4.png" alt="Customizing avatar settings." />
+        </div>
+      </div>
+    </div>
 
-		<div class="stepImage">
-<img src="img/step1.png" alt="Person looking at the content of a vending machine" />  
-		</div>
+    <div id="step5">
+      <div class="stepTitle">Step 5: Generate</div>
+      <div class="stepContent">
+        <div class="stepDescription">
+          Click “Generate” to produce your avatar. You can now use it in HeyGen video projects or export it for use in other platforms.
+        </div>
+        <div class="stepImage">
+          <img src="img/step5.png" alt="Generating the final avatar." />
+        </div>
+      </div>
+    </div>
 
-		</div><!--stepContent-->
-
-    </div><!--step1-->
-
-
- 	 <div id="step2">
-
-		<div class="stepTitle">
-		</div>
-
-		<div class="stepContent">
-
-		<div class="stepDescription">
-		</div>
-
-		<div class="stepImage">
-		</div>
-
-		</div><!--stepContent-->
-
-    </div><!--step2-->
-
-</div><!--wrapper-->
-
+  </div><!--wrapper-->
 </body>
 </html>
