@@ -1,144 +1,173 @@
 @charset "utf-8";
-/* CSS Document */
 
 /* -----------------------------
    Job Aid Stylesheet
    Author: Ross Hayduk
    ----------------------------- */
 
-/* 1. Global colors */
-:root {
-  --blue-dark: #1e3d6b;   /* header */
-  --blue-med:  #5a7dbf;   /* step titles */
-  --blue-light:#9db7df;   /* descriptions */
-  --ink:       #222;      /* body text */
-  --border:    #c9c9c9;   /* divider */
+/* 1) Global colors */
+:root{
+  --blue-dark:  #1e3d6b; /* header */
+  --blue-med:   #5a7dbf; /* step titles */
+  --blue-light: #9db7df; /* descriptions */
+  --ink:        #222;    /* body text */
+  --border:     #c9c9c9; /* divider */
 }
 
-/* 2. Reset & defaults */
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Lexend", system-ui, sans-serif;
-  background: #f5f5f5;
-  color: var(--ink);
-  line-height: 1.5;
+/* 2) Reset & defaults */
+html, body{
+  margin:0;
+  padding:0;
+  font-family:"Lexend", system-ui, sans-serif;
+  background:#f5f5f5;
+  color:var(--ink);
+  line-height:1.5;
 }
 
-/* 3. Wrapper */
-#wrapper {
-  max-width: 1000px;
-  margin: auto;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* 3) Wrapper */
+#wrapper{
+  max-width:1000px;
+  margin:auto;
+  background:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,.1);
 }
 
-/* 4. Header banner */
-#header {
-  background: var(--blue-dark);
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
+/* 4) Header */
+#header{
+  background:var(--blue-dark);
+  color:#fff;
+  text-align:center;
+  padding:40px 20px;
+}
+#header h1{
+  margin:0 0 8px;
+  font-size:2rem;
+}
+#header h2{
+  margin:0;
+  font-weight:400;
+  font-size:1.125rem;
+  color:#d9e2f3;
 }
 
-#header h1 {
-  margin: 0 0 8px;
-  font-size: 2rem;
+/* 5) Step title (summary) */
+summary.stepTitle{
+  background:var(--blue-med);
+  color:#fff;
+  padding:15px 20px;
+  font-size:1.25rem;
+  font-weight:700;
+  cursor:pointer;
+  list-style:none;
+  position:relative;
+  user-select:none;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+}
+summary.stepTitle::-webkit-details-marker{ display:none; }
+/* optional caret */
+summary.stepTitle::after{
+  content:"▸";
+  position:absolute;
+  right:14px; top:50%;
+  transform:translateY(-50%);
+  font-size:1rem; opacity:.9;
+}
+details[open] > summary.stepTitle::after{ content:"▾"; }
+
+/* 6) Step content */
+.stepContent{
+  display:flex;
+  flex-wrap:wrap;
+  border:1px solid var(--border);
+  border-top:none;
+  margin-bottom:28px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
 }
 
-#header h2 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 1.125rem;
-  color: #d9e2f3;
+/* 7) Step description */
+.stepDescription{
+  background:var(--blue-light);
+  color:#fff;
+  padding:16px 20px;
+  flex:1 1 360px;
+  font-size:1.05rem;
 }
 
-/* 5. Step title banner */
-.stepTitle {
-  background: var(--blue-med);
-  color: #fff;
-  padding: 15px 20px;
-  font-size: 1.25rem;
-  font-weight: 700;
+/* 8) Step image */
+.stepImage{
+  background:#fff;
+  padding:14px;
+  flex:1 1 280px;
+  text-align:center;
+}
+.stepImage img{
+  max-width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:4px;
+  display:block;
+  margin:auto;
 }
 
-/* 6. Step content block */
-.stepContent {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid var(--border);
-  border-top: none;
-  margin-bottom: 28px;
+/* 9) Lists & links */
+ol, ul{ margin:0 0 0 1.25rem; padding:0; }
+a{ color:#fff; text-decoration:underline; }
+a:hover{ text-decoration:none; }
+
+/* 10) Material icon base size (callouts override color) */
+.material-icons{ font-size:1.35rem; line-height:1; }
+
+/* 11) Callouts (boxed with left accent stripe, like the screenshot) */
+.warning,
+.success,
+.callout{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:10px;
+  align-items:start;
+  padding:12px 16px;
+  margin:14px 0;
+  border:1px solid;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 1px 0 rgba(0,0,0,.04) inset;
+  position:relative;
+}
+.warning::before,
+.success::before,
+.callout::before{
+  content:"";
+  position:absolute;
+  left:0; top:0; bottom:0;
+  width:6px;
+  border-radius:12px 0 0 12px;
 }
 
-/* 7. Step description banner */
-.stepDescription {
-  background: var(--blue-light);
-  color: #fff;
-  padding: 16px 20px;
-  flex: 1 1 360px;
-  font-size: 1.05rem;
+/* Red warning (light background, dark text) */
+.warning{
+  background:#FDECEF;
+  border-color:#F5C2C7;
+  color:#222;
 }
+.warning::before{ background:#C62828; }
+.warning .material-icons{ color:#C62828; }
 
-/* 8. Step images */
-.stepImage {
-  background: #fff;
-  padding: 14px;
-  flex: 1 1 280px;
-  text-align: center;
+/* Green success (light background, dark text) */
+.success{
+  background:#E7F5ED;
+  border-color:#B7E1C9;
+  color:#1f3a2e;
 }
+.success::before{ background:#2E7D32; }
+.success .material-icons{ color:#2E7D32; }
 
-.stepImage img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  display: block;
-  margin: auto;
+/* Optional solid success with white text (AA contrast) */
+.callout--green-solid{
+  background:#2E7D32;
+  border-color:#1B5E20;
+  color:#fff;
 }
-
-/* 9. Image captions */
-.stepImage figcaption {
-  font-size: 0.9rem;
-  color: #444;
-  margin-top: 8px;
-}
-
-/* 10. Links */
-a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-/* 11. Callout / List section */
-.callout {
-  background: #fff;
-  border: 1px solid var(--border);
-  padding: 16px 20px;
-  margin: 20px 0 32px;
-}
-
-.callout h3 {
-  margin: 0 0 8px;
-  font-size: 1.125rem;
-}
-
-ol, ul {
-  margin: 0 0 0 1.25rem;
-  padding: 0;
-}
-
-.warning {
-		background-color: #FBB8C4;
-		padding:10px;
-		border-radius:20px;
-	}
-
-.material-icons {
-	color:red; 
-	font-size:3em;
-}
+.callout--green-solid::before{ background:#1B5E20; }
+.callout--green-solid .material-icons{ color:#fff; }
