@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adding External Content using iFrames – Page 4</title>
 
-  <!-- Match site typography -->
+  <!-- Font to match the site -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- External CSS (ensure the filename/casing matches your repo) -->
+  <!-- Styles -->
   <link href="css/Lab3.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -25,33 +25,33 @@
       <a class="btn" href="index.html"><strong>AI Avatars</strong> in Online Learning</a>
       <a class="btn" href="page2.html">Using <strong>HeyGen</strong> at CSUMB's MIST Program</a>
       <a class="btn" href="page3.html">Creating a <strong>HeyGen</strong> “Digital Twin”</a>
-      <a class="btn" href="page4.html"><strong>CSUMB MIST</strong> Capstone Deliverables</a>
+      <a class="btn" href="page4.html">Exploring <strong>AI Avatars</strong> in Education</a>
     </nav>
 
     <main class="card">
-      <h3><strong>CSUMB MIST</strong> Capstone Deliverables</h3>
+      <h3>Exploring <strong>AI Avatars</strong> in Education</h3>
 
       <!-- Assignment requires a brief description ABOVE the iframe -->
-      <h2>Content from Captivate / Storyline / H5P</h2>
+      <h2>Content from Articulate Storyline</h2>
       <p>
-        This page embeds a placeholder module published as a local web app. It fulfills the Lab 3
-        requirement to load authoring-tool output via a relative path. Replace the files in
-        <code>tool-content/</code> with your actual Storyline (or Captivate/H5P/Lumi) publish when ready.
+        This page embeds a local placeholder module published as a web app. It satisfies the Lab 3 requirement
+        to load authoring-tool output from a relative path. Replace the files inside
+        <code>tool-content/</code> with your actual Storyline publish when ready.
       </p>
 
-      <!-- Responsive iframe wrapper (styled by Lab3.css) -->
+      <!-- Responsive iframe wrapper (styled in Lab3.css; supports .frame or .iframeWrap) -->
       <div class="frame">
         <iframe
           src="tool-content/index.html"
-          title="Authoring Tool Module"
-          allow="autoplay"
+          title="Authoring Tool Module (Storyline placeholder)"
+          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
       </div>
 
       <p>
-        Having trouble viewing the embed? 
-        <a href="tool-content/index.html" target="_blank" rel="noopener">Open the module in a new tab</a>.
+        If the embed doesn’t load, <a href="tool-content/index.html" target="_blank" rel="noopener">open the module in a new tab</a>.
       </p>
     </main>
   </div>
