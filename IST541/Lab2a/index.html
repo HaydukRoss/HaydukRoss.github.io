@@ -2,162 +2,279 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>External iFrames Tutorial</title>
+  <title>How to Create an Avatar in HeyGen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <style>
-    /* Reset margins so the iframe can truly fill the screen */
+    :root{
+      --bg: #0b1220;             /* deep navy page background */
+      --panel: #0f172a;          /* slightly lighter panel */
+      --ink: #e5e7eb;            /* primary text */
+      --muted: #cbd5e1;          /* secondary text */
+      --accent: #38bdf8;         /* cyan accent */
+      --accent-2: #22c55e;       /* green accent */
+      --warn: #f59e0b;           /* amber (notes) */
+      --ok: #10b981;             /* teal (success) */
+      --link: #60a5fa;           /* link blue */
+      --ring: rgba(56,189,248,.35);
+      --radius: 16px;
+      --shadow: 0 10px 24px rgba(0,0,0,.35);
+      --maxw: 980px;
+    }
+
+    /* Global reset & base */
+    * { box-sizing: border-box; }
     html, body {
       height: 100%;
       margin: 0;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(56,189,248,.15), transparent 60%),
+                  radial-gradient(1200px 600px at 110% 10%, rgba(34,197,94,.12), transparent 60%),
+                  var(--bg);
+      color: var(--ink);
+      font-family: "Lexend", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.5;
     }
-    /* Make the iframe fill the full viewport */
-    .fullscreen-iframe {
+
+    a { color: var(--link); text-decoration: underline; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+
+    /* Header */
+    header {
+      max-width: var(--maxw);
+      margin: 40px auto 24px;
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(56,189,248,.10), rgba(56,189,248,.04)) , var(--panel);
+      border: 1px solid rgba(148,163,184,.25);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    header h1 {
+      margin: 0 0 6px 0;
+      font-weight: 800;
+      letter-spacing: .2px;
+      font-size: clamp(28px, 4vw, 40px);
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    /* Content wrapper */
+    main {
+      max-width: var(--maxw);
+      margin: 0 auto 80px;
+      padding: 0 24px 0;
+    }
+
+    /* Step list */
+    ol.steps {
+      list-style: none; padding: 0; margin: 0;
+      counter-reset: step;
+      display: grid; gap: 18px;
+    }
+    .step {
+      background: var(--panel);
+      border: 1px solid rgba(148,163,184,.25);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      position: relative;
+      overflow: clip;
+    }
+    .step::before{
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: 14px; left: 14px;
+      width: 36px; height: 36px;
+      display: grid; place-items: center;
+      border-radius: 10px;
+      font-weight: 800;
+      color: #08121f;
+      background: linear-gradient(180deg, var(--accent), #1ea4df);
+      box-shadow: 0 6px 14px rgba(56,189,248,.35);
+    }
+    .step h2{
+      margin: 0 0 10px 54px;
+      font-size: clamp(18px, 2.4vw, 22px);
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .step p, .step ul { margin: 0 0 10px 54px; color: var(--ink); }
+    .meta { color: var(--muted); font-size: .95rem; margin-left: 54px; }
+
+    /* Media blocks */
+    figure{
+      margin: 14px 0 0 54px;
+      background: #0b1324;
+      border: 1px solid rgba(148,163,184,.22);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    figure img{
       display: block;
       width: 100%;
-      height: 100vh;   /* 100% of the viewport height */
-      border: 0;
-      margin: 0;
-      padding: 0;
+      height: auto;
+    }
+    figcaption{
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: .95rem;
+      background: rgba(2,6,23,.45);
+      border-top: 1px solid rgba(148,163,184,.18);
+    }
+
+    /* Callouts */
+    .callout{
+      margin: 12px 0 0 54px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(245,158,11,.10);
+      border: 1px solid rgba(245,158,11,.35);
+      display: flex; gap: 8px; align-items: flex-start;
+    }
+    .callout.ok{
+      background: rgba(16,185,129,.10);
+      border-color: rgba(16,185,129,.35);
+    }
+    .callout .material-icons{
+      font-size: 20px;
+      margin-top: 2px;
+      opacity: .9;
+    }
+    .callout strong{ color: var(--ink); }
+
+    /* Review list */
+    .review{
+      background: var(--panel);
+      border: 1px solid rgba(148,163,184,.25);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .review h3{ margin: 0 0 8px 0; font-size: 18px; }
+    .checklist{ margin: 8px 0 0 0; padding-left: 20px; }
+    .checklist li{ margin: 4px 0; }
+
+    /* Footer */
+    footer{
+      max-width: var(--maxw);
+      margin: 28px auto 60px;
+      padding: 0 24px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    /* Responsive spacing */
+    @media (min-width: 900px){
+      .step { padding: 26px; }
+      figure{ margin-left: 54px; }
     }
   </style>
 </head>
-
 <body>
-  <div id="wrapper">
-    <div id="header">
-      <h1>How to Create an Avatar in <strong>HeyGen</strong></h1>
-      <h2>By Ross Hayduk</h2>
-    </div>
 
-	<div id="header">
-		
-		<iframe width="560" height="315" src=https://haydukross.github.io/IST541/Lab3/page4.html title="External iFrames Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-    </div>
-	  
-	  
-    <details class="step" open>
-      <summary class="stepTitle">Step 1: Open <strong>HeyGen</strong></summary>
-      <div class="stepContent">
-        <div class="stepDescription">
-          Go to
-          <a href="https://www.heygen.com" target="_blank" rel="noopener noreferrer"
-             style="color:#fff; text-decoration: underline;">HeyGen.com</a>
-          and log in with your account. If you <strong>don't</strong> have one, sign up for <strong>FREE</strong> to get started.
+  <header role="banner">
+    <h1>How to Create an Avatar in <strong>HeyGen</strong></h1>
+    <p>By Ross Hayduk • A quick, visual job aid with best-practice tips</p>
+  </header>
 
-          <p class="warning" role="note">
-            <span class="material-icons" aria-hidden="true">flag</span>
-            <span><strong>Note:</strong> Free accounts have limited capabilities.</span>
-          </p>
+  <main id="content" role="main" aria-labelledby="title">
+    <ol class="steps">
+      <!-- Step 1 -->
+      <li class="step">
+        <h2>Open HeyGen</h2>
+        <p>Go to <a href="https://www.heygen.com" target="_blank" rel="noopener">HeyGen.com</a> and log in. If you’re new, sign up for free to get started.</p>
+        <div class="callout">
+          <span class="material-icons" aria-hidden="true">info</span>
+          <div><strong>Note:</strong> free accounts have limited capabilities.</div>
         </div>
-        <div class="stepImage">
-          <img src="img/step1.png" alt="Opening HeyGen homepage." />
-        </div>
-      </div>
-    </details>
+        <figure>
+          <img src="images/step1.jpg" alt="HeyGen homepage open in a browser window">
+          <figcaption>Opening the HeyGen homepage.</figcaption>
+        </figure>
+      </li>
 
-    <details class="step">
-      <summary class="stepTitle">Step 2: Navigate to Avatar Creation</summary>
-      <div class="stepContent">
-        <div class="stepDescription">
-          Once logged in, click the <strong>Avatars</strong> tab in the main menu. This opens the avatar creation dashboard.
-
-          <p class="warning" role="note">
-            <span class="material-icons" aria-hidden="true">flag</span>
-            <span>Explore the different avatar categories, from UGC to studio-style characters.</span>
-          </p>
+      <!-- Step 2 -->
+      <li class="step">
+        <h2>Navigate to Avatar Creation</h2>
+        <p>Click the <strong>Avatars</strong> tab in the main menu to open the creation dashboard.</p>
+        <div class="callout">
+          <span class="material-icons" aria-hidden="true">flag</span>
+          <div>Explore categories from UGC to studio-style characters.</div>
         </div>
-        <div class="stepImage">
-          <img src="img/step2.png" alt="Avatar creation menu." />
-        </div>
-      </div>
-    </details>
+        <figure>
+          <img src="images/step2.jpg" alt="The Avatars tab selected inside HeyGen">
+          <figcaption>Avatar creation menu.</figcaption>
+        </figure>
+      </li>
 
-    <details class="step">
-      <summary class="stepTitle">Step 3: Choose Your Avatar Type</summary>
-      <div class="stepContent">
-        <div class="stepDescription">
-          You can select a stock avatar or create a custom avatar. Start with <strong>Public Avatars</strong>.
-
-          <p class="warning" role="note">
-            <span class="material-icons" aria-hidden="true">flag</span>
-            <span>Custom avatars may require an additional subscription.</span>
-          </p>
+      <!-- Step 3 -->
+      <li class="step">
+        <h2>Choose Your Avatar Type</h2>
+        <p>Select a stock avatar or create a custom avatar. Start with <strong>Public Avatars</strong> if you’re experimenting.</p>
+        <div class="callout">
+          <span class="material-icons" aria-hidden="true">info</span>
+          <div><strong>Heads up:</strong> custom avatars may require an additional subscription.</div>
         </div>
-        <div class="stepImage">
-          <img src="img/step3.png" alt="Selecting avatar type." />
-        </div>
-      </div>
-    </details>
+        <figure>
+          <img src="images/step3.jpg" alt="Choosing between stock and custom avatar options">
+          <figcaption>Selecting avatar type.</figcaption>
+        </figure>
+      </li>
 
-    <details class="step">
-      <summary class="stepTitle">Step 4: Customize Your Avatar</summary>
-      <div class="stepContent">
-        <div class="stepDescription">
-          Adjust voice, language, and gestures. <strong>HeyGen</strong> supports lip-sync for scripts. Preview before saving.
-
-          <p class="warning" role="note">
-            <span class="material-icons" aria-hidden="true">flag</span>
-            <span>Match the voice to the character to avoid the “uncanny valley” effect.</span>
-          </p>
+      <!-- Step 4 -->
+      <li class="step">
+        <h2>Customize Your Avatar</h2>
+        <p>Adjust voice, language, and gestures. Use lip-sync for scripts, then preview before saving.</p>
+        <div class="callout">
+          <span class="material-icons" aria-hidden="true">psychology</span>
+          <div>Match the voice to the character to reduce the “uncanny valley” effect.</div>
         </div>
-        <div class="stepImage">
-          <img src="img/step4.png" alt="Customizing avatar settings." />
-        </div>
-      </div>
-    </details>
+        <figure>
+          <img src="images/step4.jpg" alt="Avatar settings panel showing voice and gesture controls">
+          <figcaption>Customizing avatar settings.</figcaption>
+        </figure>
+      </li>
 
-    <details class="step">
-      <summary class="stepTitle">Step 5: Generate</summary>
-      <div class="stepContent">
-        <div class="stepDescription">
-          Click <strong>Generate</strong> to produce your avatar. Use it in <strong>HeyGen</strong> projects or export it.
-
-          <p class="success" role="note">
-            <span class="material-icons" aria-hidden="true">check_circle</span>
-            <span><strong>Saved:</strong> Your avatar is ready for use.</span>
-          </p>
+      <!-- Step 5 -->
+      <li class="step">
+        <h2>Generate</h2>
+        <p>Click <strong>Generate</strong> to produce your avatar. Use it in HeyGen projects or export it.</p>
+        <div class="callout ok">
+          <span class="material-icons" aria-hidden="true">check_circle</span>
+          <div><strong>Saved:</strong> your avatar is ready for use.</div>
         </div>
-        <div class="stepImage">
-          <img src="img/step5.png" alt="Generating the final avatar." />
-        </div>
-      </div>
-    </details>
+        <figure>
+          <img src="images/step5.jpg" alt="Final generated avatar preview">
+          <figcaption>Generating the final avatar.</figcaption>
+        </figure>
+      </li>
+    </ol>
 
-    <details class="step">
-      <summary class="stepTitle">Now, Review the Five Steps</summary>
-      <div class="stepContent">
-        <div class="stepDescription">
-          <ol>
-            <li>Open <strong>HeyGen</strong>.</li>
-            <li>Go to <strong>Avatars</strong>.</li>
-            <li>Choose an avatar.</li>
-            <li>Customize voice and gestures.</li>
-            <li>Click <strong>Generate</strong>.</li>
-          </ol>
+    <!-- Review / Summary -->
+    <section class="review" aria-labelledby="review-title" style="margin-top:22px">
+      <h3 id="review-title">Now, review the five steps</h3>
+      <ol class="checklist">
+        <li>Open HeyGen.</li>
+        <li>Go to Avatars.</li>
+        <li>Choose an avatar.</li>
+        <li>Customize voice and gestures.</li>
+        <li>Click Generate.</li>
+      </ol>
+    </section>
+  </main>
 
-          <p class="success" role="note">
-            <span class="material-icons" aria-hidden="true">check_circle</span>
-            <span><strong>Great work!</strong> You’re on your way to mastering <strong>HeyGen</strong>.</span>
-          </p>
-        </div>
-        <div class="stepImage">
-          <img src="img/HeyGen_Logo_Prism_Black.svg" alt="HeyGen Logo" />
-        </div>
-      </div>
-    </details>
-  </div><!-- /wrapper -->
+  <footer role="contentinfo">
+    <p>Tip: keep images in an <code>images/</code> folder and name them <code>step1.jpg</code>, <code>step2.jpg</code>, etc. All images scale responsively.</p>
+  </footer>
 
-  <!-- Accordion behavior: opening one <details> closes the others -->
-  <script>
-    document.querySelectorAll("details.step").forEach(detail => {
-      detail.addEventListener("toggle", () => {
-        if (!detail.open) return;
-        document.querySelectorAll("details.step[open]").forEach(other => {
-          if (other !== detail) other.open = false;
-        });
-      });
-    });
-  </script>
 </body>
 </html>
