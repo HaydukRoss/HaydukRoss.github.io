@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adding External Content using iFrames</title>
+  <title>Adding External Content using iFrames – Page 3</title>
 
-  <!-- Font to match the site -->
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+  <!-- External CSS -->
   <link href="css/Lab3.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -31,16 +31,30 @@
     <main class="card">
       <h3>Creating a <strong>HeyGen</strong> “Digital Twin”</h3>
 
+      <!-- Assignment requires a brief description ABOVE the iframe -->
+      <h2>Brief description of content to be embedded</h2>
+      <p>
+        This page embeds a second YouTube video using the standard <code>/embed/</code> endpoint.
+        The title and permissions ensure the video plays across modern browsers.
+      </p>
+
       <!-- Responsive iframe wrapper -->
       <div class="frame">
         <iframe
-    		src="https://www.youtube.com/embed/m0fdgkJGxHs"
-    		title="Creating a HeyGen Digital Twin (YouTube)"
-    		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    		allowfullscreen
-    		referrerpolicy="strict-origin-when-cross-origin"
-    		loading="lazy">
-		</iframe>
+          src="https://www.youtube.com/embed/m0fdgkJGxHs"
+          title="Creating a HeyGen Digital Twin (YouTube)"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          loading="lazy"
+          allowfullscreen></iframe>
       </div>
 
-      <p>Watch directly on <a href="https://youtu.be/m0fdgkJGxH
+      <p>
+        Watch directly on 
+        <a href="https://youtu.be/m0fdgkJGxHs" target="_blank" rel="noopener">YouTube</a>
+        if needed.
+      </p>
+    </main>
+  </div>
+</body>
+</html>
