@@ -1,59 +1,68 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
   <title>Adding External Content using iFrames – Page 4</title>
 
-  <!-- Font to match the site -->
+  <!-- Fonts (match Lab pages) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link href="css/Lab3.css" rel="stylesheet" type="text/css" />
+  <!-- Site styles -->
+  <link href="css/Lab3.css" rel="stylesheet" type="text/css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <div id="wrapper">
     <header id="header">
-      <h1>How to Add External Content with <strong>iFrames</strong></h1>
+      <h1>How to Add External Content with iFrames</h1>
       <h2>An Assignment for IST 541's Lab 3</h2>
+
+      <nav aria-label="Primary">
+         <a class="btn" href="index.html"><strong>AI Avatars</strong> in Online Learning</a>
+         <a class="btn" href="page2.html">Using <strong>HeyGen</strong> at CSUMB's MIST Program</a>
+         <a class="btn" href="page3.html">Creating a <strong>HeyGen</strong> “Digital Twin”</a>
+         <a class="btn" href="page4.html">Exploring <strong>AI Avatars</strong> in Education</a>
+      </nav>
     </header>
 
-    <nav class="nav">
-      <a class="btn" href="index.html"><strong>AI Avatars</strong> in Online Learning</a>
-      <a class="btn" href="page2.html">Using <strong>HeyGen</strong> at CSUMB's MIST Program</a>
-      <a class="btn" href="page3.html">Creating a <strong>HeyGen</strong> “Digital Twin”</a>
-      <a class="btn" href="page4.html">Exploring <strong>AI Avatars</strong> in Education</a>
-    </nav>
+    <main id="content">
+      <section>
+        <h2>Exploring AI Avatars in Education</h2>
+        <p>
+          This page embeds the tutorial <strong>Using AI Avatars in Education</strong> that was placed in the
+          <code>tool-content</code> folder. The example demonstrates how to load a complete, published module
+          inside this site using an iFrame.
+        </p>
 
-    <main class="card">
-      <h3>Exploring <strong>AI Avatars</strong> in Education</h3>
+        <!-- Responsive embed -->
+        <div style="position: relative; width: 100%; height: 80vh; max-height: 90vh; border: 0;">
+          <iframe
+            src="tool-content/index.html"
+            title="Using AI Avatars in Education"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-      <!-- Assignment requires a brief description ABOVE the iframe -->
-      <h2>Content from Articulate Storyline</h2>
-      <p>
-        This page embeds a local placeholder module published as a web app. It satisfies the Lab 3 requirement
-        to load authoring-tool output from a relative path. Replace the files inside
-        <code>tool-content/</code> with your actual Storyline publish when ready.
-      </p>
-
-      <!-- Responsive iframe wrapper (styled in Lab3.css; supports .frame or .iframeWrap) -->
-      <div class="frame">
-        <iframe
-          src="tool-content/index.html"
-          title="Authoring Tool Module (Storyline placeholder)"
-          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen></iframe>
-      </div>
-
-      <p>
-        If the embed doesn’t load, <a href="tool-content/index.html" target="_blank" rel="noopener">open the module in a new tab</a>.
-      </p>
+        <p style="margin-top: 0.75rem;">
+          If the embed doesn’t load, <a href="tool-content/index.html" target="_blank" rel="noopener">open the module in a new tab</a>.
+        </p>
+      </section>
     </main>
+
+    <footer id="footer">
+      <p>&copy; <span id="year"></span> Ross Hayduk</p>
+    </footer>
   </div>
+
+  <script>
+    // tiny helper to keep the footer year current
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
