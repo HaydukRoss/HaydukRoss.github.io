@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adding External Content using iFrames</title>
+  <title>Adding External Content using iFrames – Page 4</title>
 
-  <!-- Font to match the site -->
+  <!-- Match site typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+  <!-- External CSS (ensure the filename/casing matches your repo) -->
   <link href="css/Lab3.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -31,13 +31,29 @@
     <main class="card">
       <h3><strong>CSUMB MIST</strong> Capstone Deliverables</h3>
 
-      <!-- Responsive iframe wrapper -->
+      <!-- Assignment requires a brief description ABOVE the iframe -->
+      <h2>Content from Captivate / Storyline / H5P</h2>
+      <p>
+        This page embeds a placeholder module published as a local web app. It fulfills the Lab 3
+        requirement to load authoring-tool output via a relative path. Replace the files in
+        <code>tool-content/</code> with your actual Storyline (or Captivate/H5P/Lumi) publish when ready.
+      </p>
+
+      <!-- Responsive iframe wrapper (styled by Lab3.css) -->
       <div class="frame">
-  <iframe
-    src="https://docs.google.com/document/d/YOUR_DOC_ID/preview"
-    title="CSUMB MIST Capstone – Google Doc (Preview)"
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen></iframe>
-</div>
-<p>If the embed doesn’t load, <a href="https://docs.google.com/document/d/YOUR_DOC_ID/edit?usp=sharing" target="_blank" rel="noopener">open the Doc in a new tab</a>.</p>
+        <iframe
+          src="tool-content/index.html"
+          title="Authoring Tool Module"
+          allow="autoplay"
+          loading="lazy"
+          allowfullscreen></iframe>
+      </div>
+
+      <p>
+        Having trouble viewing the embed? 
+        <a href="tool-content/index.html" target="_blank" rel="noopener">Open the module in a new tab</a>.
+      </p>
+    </main>
+  </div>
+</body>
+</html>

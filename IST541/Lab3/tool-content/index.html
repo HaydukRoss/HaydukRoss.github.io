@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blank Storyline Shell (Placeholder)</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="player.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="player">
+    <header class="player-header" role="banner">
+      <div class="title">Blank Module</div>
+      <div class="progress" aria-live="polite">
+        <span id="progressText">Slide 1 of 3</span>
+      </div>
+    </header>
+
+    <main class="stage-wrapper" role="main">
+      <div class="stage">
+        <!-- Slides are injected here -->
+        <section class="slide" data-title="Welcome">
+          <h1>Slide 1</h1>
+          <p>This is a blank placeholder slide. Replace this shell with your published Storyline output when ready.</p>
+        </section>
+
+        <section class="slide" data-title="Objectives" hidden>
+          <h1>Slide 2</h1>
+          <p>Use this shell to satisfy the Lab 3 requirement for “tool-content/index.html”.</p>
+        </section>
+
+        <section class="slide" data-title="Wrap-up" hidden>
+          <h1>Slide 3</h1>
+          <p>Embed this page with: <code>&lt;iframe src="tool-content/index.html"&gt;&lt;/iframe&gt;</code></p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="player-footer" role="contentinfo">
+      <div class="controls">
+        <button id="prevBtn" class="btn" aria-label="Previous slide">◀ Prev</button>
+        <button id="nextBtn" class="btn" aria-label="Next slide">Next ▶</button>
+      </div>
+      <div class="status">
+        <span id="slideTitle" aria-live="polite">Welcome</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>
