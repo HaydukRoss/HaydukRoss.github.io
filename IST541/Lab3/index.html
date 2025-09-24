@@ -1,61 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adding External Content using iFrames – Page 1</title>
+  <meta charset="UTF-8">
+  <title>Lab 3: Adding External Content with iFrames</title>
 
-  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- External CSS (match the exact filename/casing in your repo) -->
-  <link href="css/Lab3.css" rel="stylesheet" type="text/css" />
+  <link href="css/Lab3.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-  <div id="wrapper">
-    <header id="header">
-      <h1>How to Add External Content with <strong>iFrames</strong></h1>
+
+  <header class="header">
+    <div class="container">
+      <h1>How to Add External Content with iFrames</h1>
       <h2>An Assignment for IST 541's Lab 3</h2>
-    </header>
 
-    <nav class="pill-row">
-    <a class="pill" href="index.html">AI Avatars in Online Learning</a>
-    <a class="pill" href="page2.html">Using HeyGen at CSUMB's MIST Program</a>
-    <a class="pill" href="page3.html">Creating a HeyGen “Digital Twin”</a>
-    <a class="pill" href="page4.html">Exploring AI Avatars in Education</a>
-  </nav>
+      <nav class="pill-row" aria-label="Primary navigation">
+        <a class="pill active" href="index.html">AI Avatars in Online Learning</a>
+        <a class="pill" href="page2.html">Using HeyGen at CSUMB's MIST Program</a>
+        <a class="pill" href="page3.html">Creating a HeyGen “Digital Twin”</a>
+        <a class="pill" href="page4.html">Exploring AI Avatars in Education</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="card">
-      <h3><strong>AI Avatars</strong> in Online Learning</h3>
+  <main class="main">
+    <div class="container">
+      <section class="section">
+        <h2 class="mt-0">AI Avatars in Online Learning</h2>
+        <p class="lede">This page matches the Lab 2 style and demonstrates a clean YouTube embed.</p>
 
-      <!-- Assignment requires a brief description ABOVE the iframe -->
-      <h2>Brief description of content to be embedded</h2>
-      <p>
-        This page embeds a public course as an example of external web content. It demonstrates how to
-        frame a complete learning object inside of a page and still keep the site layout intact.
-      </p>
+        <div class="iframe-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/CxCFtSjtSKc"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
 
-      <!-- Responsive iframe wrapper (styled by Lab3.css) -->
-      <div class="frame">
-        <iframe
-          src="https://haydukross.github.io/IST526/Final/index.html"
-          title="Articulate Storyline Course: Online Learning Example"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          loading="lazy"
-          allowfullscreen></iframe>
-      </div>
+        <p class="mt-16">Use the pill links above to view more examples.</p>
+      </section>
+    </div>
+  </main>
 
-      <p>
-        If the embed doesn’t load, 
-        <a href="https://haydukross.github.io/IST526/Final/index.html" target="_blank" rel="noopener">
-          open the course in a new tab
-        </a>.
-      </p>
-    </main>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      © 2025 IST 541 • Lab 3
+    </div>
+  </footer>
 </body>
 </html>

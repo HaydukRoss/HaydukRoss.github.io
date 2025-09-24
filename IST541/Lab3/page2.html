@@ -1,60 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adding External Content using iFrames – Page 2</title>
+  <meta charset="UTF-8">
+  <title>Using HeyGen at CSUMB's MIST Program</title>
 
-  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link href="css/Lab3.css" rel="stylesheet" type="text/css" />
+  <link href="css/Lab3.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-  <div id="wrapper">
-    <header id="header">
-      <h1>How to Add External Content with <strong>iFrames</strong></h1>
+
+  <header class="header">
+    <div class="container">
+      <h1>How to Add External Content with iFrames</h1>
       <h2>An Assignment for IST 541's Lab 3</h2>
-    </header>
 
-    <nav class="pill-row">
-    <a class="pill" href="index.html">AI Avatars in Online Learning</a>
-    <a class="pill" href="page2.html">Using HeyGen at CSUMB's MIST Program</a>
-    <a class="pill" href="page3.html">Creating a HeyGen “Digital Twin”</a>
-    <a class="pill" href="page4.html">Exploring AI Avatars in Education</a>
-  </nav>
+      <nav class="pill-row" aria-label="Primary navigation">
+        <a class="pill" href="index.html">AI Avatars in Online Learning</a>
+        <a class="pill active" href="page2.html">Using HeyGen at CSUMB's MIST Program</a>
+        <a class="pill" href="page3.html">Creating a HeyGen “Digital Twin”</a>
+        <a class="pill" href="page4.html">Exploring AI Avatars in Education</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="card">
-      <h3>Using <strong>HeyGen</strong> at CSUMB's MIST Program</h3>
+  <main class="main">
+    <div class="container">
+      <section class="section">
+        <h2 class="mt-0">Using HeyGen at CSUMB's MIST Program</h2>
+        <p class="lede">Embed a public Google Drive file, Docs preview, or another hosted module here.</p>
 
-      <!-- Assignment requires a brief description ABOVE the iframe -->
-      <h2>Brief description of content to be embedded</h2>
-      <p>
-        This page embeds a YouTube video using the correct <code>/embed/</code> URL. The wrapper keeps
-        the video responsive at 16:9, so it scales on phones and laptops.
-      </p>
+        <div class="iframe-wrap">
+          <!-- Example: Google Docs preview. Replace the src with your Doc's /preview link. -->
+          <iframe
+            src="https://docs.google.com/document/d/1G2d_example_preview/pub?embedded=true"
+            title="Google Doc Preview"></iframe>
+        </div>
 
-      <!-- Responsive iframe wrapper -->
-      <div class="frame">
-        <iframe
-          src="https://www.youtube.com/embed/CXJm-zxOmY8"
-          title="Using HeyGen at CSUMB's MIST Program (YouTube)"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          loading="lazy"
-          allowfullscreen></iframe>
-      </div>
+        <p class="mt-16">If your Google Doc doesn’t load, ensure link sharing is Public and use the preview/embed URL.</p>
+      </section>
+    </div>
+  </main>
 
-      <p>
-        Watch directly on 
-        <a href="https://youtu.be/CXJm-zxOmY8" target="_blank" rel="noopener">YouTube</a>
-        if needed.
-      </p>
-    </main>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      © 2025 IST 541 • Lab 3
+    </div>
+  </footer>
 </body>
 </html>

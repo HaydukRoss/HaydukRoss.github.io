@@ -1,5 +1,5 @@
 /* ===============================
-   Lab 3 — Global Styles
+   Lab 3 — Shared Styles with Chunking Assignment
    =============================== */
 
 :root {
@@ -17,13 +17,9 @@
 
 *,
 *::before,
-*::after {
-  box-sizing: border-box;
-}
+*::after { box-sizing: border-box; }
 
-html, body {
-  height: 100%;
-}
+html, body { height: 100%; }
 
 body {
   margin: 0;
@@ -35,18 +31,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img,
-svg,
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+img, svg, video { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
 
 .container {
   width: 100%;
@@ -55,23 +41,16 @@ a {
   padding: 0 16px;
 }
 
-/* ===============================
-   Header Band
-   =============================== */
-
+/* Header band (matches Lab 2 spacing/feel) */
 .header {
   background: var(--navy);
   color: var(--white);
-  padding: 48px 16px 28px;   /* vertical breathing room */
+  padding: 48px 16px 28px;
   text-align: center;
 }
 
-.header .container {
-  /* keep content centered within the band */
-}
-
 .header h1 {
-  margin: 0 0 12px;          /* no top margin to avoid margin collapse */
+  margin: 0 0 12px;
   line-height: 1.15;
   font-size: clamp(28px, 4vw, 44px);
   font-weight: 800;
@@ -85,15 +64,12 @@ a {
   opacity: 0.95;
 }
 
-/* ===============================
-   Pill Navigation
-   =============================== */
-
+/* Pill navigation */
 .pill-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;    /* center the row */
-  gap: 12px;                  /* even spacing between pills */
+  justify-content: center;
+  gap: 12px;
   margin-top: 6px;
 }
 
@@ -123,13 +99,8 @@ a {
   color: var(--navy);
 }
 
-/* ===============================
-   Main Content
-   =============================== */
-
-.main {
-  padding: 36px 0 56px;
-}
+/* Main layout */
+.main { padding: 36px 0 56px; }
 
 .section {
   background: var(--white);
@@ -138,8 +109,8 @@ a {
   padding: 28px;
 }
 
-.section h3,
-.section h2 {
+.section h2,
+.section h3 {
   margin: 0 0 10px;
   line-height: 1.25;
   font-size: clamp(22px, 3vw, 32px);
@@ -152,46 +123,28 @@ a {
   margin: 0 0 18px;
 }
 
-/* ===============================
-   Responsive iFrame
-   =============================== */
-
-/* Wrapper uses aspect-ratio when a fixed ratio is acceptable.
-   For long tutorials, prefer min-height to let it breathe. */
-
+/* Responsive iframe wrapper */
 .iframe-wrap {
   background: var(--white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
-
-/* Full width, tall enough for embedded module */
 .iframe-wrap iframe {
   display: block;
   width: 100%;
-  min-height: 75vh;      /* adjust as needed */
+  min-height: 75vh;
   border: 0;
 }
 
-/* ===============================
-   Utilities
-   =============================== */
-
+/* Utilities */
 .mt-0 { margin-top: 0 !important; }
 .mt-8 { margin-top: 8px !important; }
 .mt-16 { margin-top: 16px !important; }
 .mt-24 { margin-top: 24px !important; }
-
 .mb-0 { margin-bottom: 0 !important; }
-.mb-8 { margin-bottom: 8px !important; }
-.mb-16 { margin-bottom: 16px !important; }
-.mb-24 { margin-bottom: 24px !important; }
 
-/* ===============================
-   Page Footer (optional)
-   =============================== */
-
+/* Footer */
 .footer {
   color: var(--muted);
   text-align: center;
@@ -199,10 +152,7 @@ a {
   font-size: 14px;
 }
 
-/* ===============================
-   Media Queries
-   =============================== */
-
+/* Mobile tweaks */
 @media (max-width: 640px) {
   .header { padding: 36px 14px 22px; }
   .pill { font-size: 14px; padding: 9px 14px; }
