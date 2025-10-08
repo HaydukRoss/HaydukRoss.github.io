@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Question2</title>
+<link href="css/koala.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+<h1>What is a Koala's Favorite Food?</h1>
+<h3>Click on one of the following choices</h3>
+
+<h2 onclick="wrongAnswer1()" class="choices"> Bamboo </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> Ham </h2>
+<h2 onclick="rightAnswer()" class="choices"> Eucalyptus </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> Salami </h2>
+
+<div id="feedback"></div>
+<img id="koala_eating" src="img/koala_eating.jpg" />
+</div>
+	
+	
+   <script>
+ 	   function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! They are herbivores and love eucalyptus leaves.</h2>");
+         $("#koala_eating").show();
+        }
+        function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> Pandas eat bamboo, not koalas! </h2>");
+          $("#koala_eating").hide();
+        }
+function wrongAnswer2(){
+         $("#feedback").html("<h2 style='color:red'> Koalas don't eat meat. They are herbivores. </h2>");
+         $("#koala_eating").hide();
+      }
+    </script>
+</body>
+</html>

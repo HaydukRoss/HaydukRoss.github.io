@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>What Do Fighting Robots Like To Do?</title>
+<link href="css/robots.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+<h1>What Do Fighting Robots Like To Do?</h1>
+<h3>Click on one of the following choices</h3>
+
+<h2 onclick="wrongAnswer1()" class="choices"> Fight </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> Disco Dance </h2>
+<h2 onclick="rightAnswer()" class="choices"> Hug It Out </h2>
+<h2 onclick="wrongAnswer3()" class="choices"> Do Aerobics </h2>
+
+<div id="feedback"></div>
+<img id="robothug" src="img/robothug.png" />
+</div>
+	
+	
+   <script>
+ 	   function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! They are lovers, not fighters!</h2>");
+         $("#robotright").show();
+        }
+        function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> They hate to fight! </h2>");
+          $("#robothug").hide();
+        }
+	    function wrongAnswer2(){
+         $("#feedback").html("<h2 style='color:red'> They don't know how to dance! </h2>");
+         $("#robotfight").hide();
+      }
+	   	function wrongAnswer3(){
+         $("#feedback").html("<h2 style='color:red'> They aren't that coordinated! </h2>");
+         $("#robotfight").hide();
+      }
+	
+	</script>
+</body>
+</html>
