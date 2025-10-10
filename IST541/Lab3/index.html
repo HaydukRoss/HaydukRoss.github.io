@@ -1,73 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Lab 4 - Embedding Audio and Video</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adding External Content using iFrames</title>
+
+  <!-- Font to match the site -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link href="css/Lab3.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="css/Lab3.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>How to Embed Audio and Video</h1>
-      <h2>An Assignment for IST 541, Lab 4</h2>
-      <nav class="pill-row" aria-label="Primary navigation">
-        <a class="pill active" href="index.html">Embedding Audio</a>
-        <a class="pill" href="page2.html">Embedding Video</a>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-	  
-	  
-    <div class="container">
-      <section class="section">
-        <h2 class="mt-0">Embedded Audio: ElevenLabs Voices</h2>
-        <p class="lede">This page embeds audio samples.</p>
-        <h1> Learning 1, 2, and 3 in Chinese</h1>
-<table border="1">
-<tr>
-	<td>
-   <img src="img/one.png" /><br /> Yee (One) <br />
-       <audio controls src="audio/one.mp3"> 
-          This browser does not support HTML5 audio
-          </audio>
-	</td>
+  <div id="wrapper">
+    <header id="header">
+      <h1>How to Add External Content with <strong>iFrames</strong></h1>
+      <h2>An Assignment for IST 541's Lab 3</h2>
+    </header>
 
-	<td>
-       <img src="img/two.png" /><br />  Uhr (Two) <br />
-       <audio controls src= "audio/two.mp3"> 
-           This browser does not support HTML audio
-        </audio>
-    </td>
-	
-    <td>
-        <img src="img/three.png" /><br />San (Three) <br />
-        <audio controls src= "audio/three.mp3"> 
-           This browser does not support HTML5 audio
-         </audio>
-    </td> 
+    <nav class="nav">
+      <a class="btn" href="index.html">The <strong>Modality Principle</strong> in Online Learning</a>
+      <a class="btn" href="page2.html">Using <strong>HeyGen</strong> at CSUMB's MIST Program</a>
+      <a class="btn" href="page3.html">Creating A <strong>HeyGen</strong> "Digital Twin"</a>
+      <a class="btn" href="page4.html">Using the <strong>HeyGen</strong> Translation Technology</a>
+    </nav>
 
-	
-</tr>
-   </table>     
-</div>
-        <p class="mt-16"></p>
-      </section>
-    </div>
-	
+    <main class="card">
+      <h3>The <strong>Modality Principle</strong> in Online Learning</h3>
 
-	  
-	  
-	  
-	  
-	  
-  </main>
-  <footer class="footer">
-    <div class="container">© 2025 Ross M. Hayduk</div>
-  </footer>
+      <!-- Responsive iframe wrapper -->
+      <div class="iframeWrap">
+        <iframe
+          src="https://youtu.be/jMZAN5S_Gdk"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
