@@ -46,27 +46,26 @@ html, body{
   font-size:1.05rem;
 }
 
-/* ---------- Navigation buttons ---------- */
-.nav{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
-  padding:18px 12px 6px;
+/* Pill navigation */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 6px;
 }
-.btn{
-  display:inline-block;
-  padding:10px 16px;
-  border-radius:999px;
-  background:var(--blue-med);
-  color:#fff;
-  text-decoration:none;
-  font-weight:700;
-  font-size:1rem;
-  transition:transform .06s ease, filter .15s ease;
+.pill {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
-.btn:hover{ filter:brightness(1.05); transform:translateY(-1px); }
-.btn:active{ transform:translateY(0); }
+.pill:hover { background: rgba(255,255,255,0.2); transform: translateY(-1px); }
+.pill.active { background: #fff; color: var(--navy); }
 
 /* ---------- Card container ---------- */
 .card{
