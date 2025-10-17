@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>What Is The Best Tool For The Job?</title>
+<link href="css/logos.css" rel="stylesheet">	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />	
+</head>
+
+<body>
+	<div id="wrapper">
+ 
+<h1>What Is The Best Tool For Video Avatars?</h1>
+ 
+<h3 id="hint">Hint: Hover over the image below to find out!</h3>
+ 
+<img onmouseenter="showAnswer()" id="avatarfaces"  src="img/avatarfaces.png"   />
+<img onmouseleave="hideAnswer()" id="heygen" src="img/heygen.svg" />
+ 
+<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
+ 
+</div> <!-- closing  “wrapper” -->
+	
+<script>
+ function showAnswer() {
+	   $("#avatarfaces").hide();
+	   $("#heygen").show();
+	   $("#answer").html("<h2 style='color:red'>HeyGen is Perfect!</h2>");
+	}
+
+function hideAnswer() {
+	   $("#avatarfaces").show();
+	   $("#heygen").hide();
+	   $("#answer").html("");  
+	}
+</script>
+
+<h1>What Is The Best Tool For Audio Clones?</h1>
+ 
+<h3 id="hint">Hint: Hover over the image below to find out!</h3>
+ 
+<img onmouseenter="showAnswer()" id="microphone"  src="img/microphone.png"   />
+<img onmouseleave="hideAnswer()" id="elevenlabs" src="img/elevenlabs.png" />
+ 
+<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
+ 
+</div> <!-- closing  “wrapper” -->
+	
+<script>
+ function showAnswer() {
+	   $("#microphone").hide();
+	   $("#elevenlabs").show();
+	   $("#answer").html("<h2 style='color:red'>ElevenLabs Sounds Great!</h2>");
+	}
+
+function hideAnswer() {
+	   $("#microphone").show();
+	   $("#elevenlabs").hide();
+	   $("#answer").html("");  
+	}
+</script>	
+	
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+#wrapper {
+width: 450px;
+margin: 0 auto;
+text-align: center;
+}
+
+ #avatarfaces {
+border: black 5px solid;
+}
+ 
+.frame img { object-fit: cover; }
+
+ #heygen {
+display: none; /* hides content */
+border: black 5px solid;
+}
+
+#microphone {
+border: black 5px solid;
+}
+ 
+.frame img { object-fit: cover; }
+
+ #elevenlabs {
+display: none; /* hides content */
+border: black 5px solid;
+}
+
+.choices {
+cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;      /* removes tiny gaps */
+}
+body, html { margin: 0; }
+
+body {
+  font-family: Stencil, Haettenschweiler, "Arial Narrow Bold", Arial, sans-serif;
+}
+
+#wrapper {
+  text-align: center;        /* centers inline elements like text */
+}
+img {
+  display: inline-block;      /* plays nicely with text-align */
+  max-width: 100%;
+  height: auto;
+}
+
+#answer h2 { 
+  color: red !important;
