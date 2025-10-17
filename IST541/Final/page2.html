@@ -34,8 +34,16 @@
     <main class="card">
       <h3>Using <strong>HeyGen</strong> at CSUMB's MIST Program</h3>
 
-      <!-- Responsive iframe wrapper -->
-      <div class="iframeWrap">
+  <div class="quiz" style="margin-top:1rem">
+  <p><strong>Quick check:</strong> Which tool generates “digital twin” videos?</p>
+  <button id="revealBtn">Reveal Answer</button>
+  <span id="answer" hidden>HeyGen.</span>
+</div>    <!-- Responsive iframe wrapper -->
+    <br>
+<br>
+<br>
+<br>
+  <div class="iframeWrap">
         <iframe
           src="https://youtu.be/CXJm-zxOmY8"
           title="YouTube video player"
@@ -45,4 +53,10 @@
     </main>
   </div>
 </body>
-</html>
+</html><script>
+  document.getElementById('revealBtn').addEventListener('click', function(){
+    const a = document.getElementById('answer');
+    a.hidden = !a.hidden;
+    this.textContent = a.hidden ? 'Reveal Answer' : 'Hide Answer';
+  });
+</script>
