@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* ---------- Theme (matches Lab 2 style) ---------- */
+:root{
+  --blue-dark:#1e3d6b;   /* header */
+  --blue-med:#5a7dbf;    /* buttons / accents */
+  --blue-light:#9db7df;  /* subtle tints */
+  --ink:#222;
+  --bg:#f5f5f5;
+  --card:#ffffff;
+  --border:#c9c9c9;
+}
+
+*{ box-sizing:border-box; }
+
+html, body{
+  margin:0;
+  padding:0;
+  font-family:"Lexend", system-ui, sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.5;
+  text-align:center;
+}
+
+#wrapper{
+  max-width:1000px;
+  margin:auto;
+}
+
+/* ---------- Header ---------- */
+#header{
+  background:var(--blue-dark);
+  color:#fff;
+  padding:42px 18px 34px;
+}
+#header h1{
+  margin:0 0 8px;
+  font-size:2rem;
+  font-weight:800;
+}
+#header h2{
+  margin:0;
+  font-weight:400;
+  color:#d9e2f3;
+  font-size:1.05rem;
+}
+
+/* ---------- Navigation buttons ---------- */
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  padding:18px 12px 6px;
+}
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:999px;
+  background:var(--blue-med);
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+  transition:transform .06s ease, filter .15s ease;
+}
+.btn:hover{ filter:brightness(1.05); transform:translateY(-1px); }
+.btn:active{ transform:translateY(0); }
+
+/* ---------- Card container ---------- */
+.card{
+  background:var(--card);
+  margin:18px auto 36px;
+  padding:22px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,.06);
+}
+.card h3{
+  margin:6px 0 18px;
+  color:var(--blue-dark);
+  font-size:1.25rem;
+}
+
+/* Solid style for the current page button */
+.btn[aria-current="page"],
+.btn.active{
+  background: var(--blue-dark);       /* darker, solid */
+  color: #fff;
+  filter: none;
+  transform: none;
+  pointer-events: none;               /* optional: make it not clickable */
+  cursor: default;                    /* optional */
+}
+
+/* ---------- Responsive iframe ---------- */
+.iframeWrap{
+  position:relative;
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  /* 16:9 aspect ratio */
+  padding-top:56.25%;
+  background:linear-gradient(0deg, #fff, #fff) padding-box,
+             linear-gradient(135deg, var(--blue-light), var(--blue-med)) border-box;
+  border:1px solid transparent;
+  border-radius:6px;
+}
+.iframeWrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  border-radius:6px;
+}
+
+/* ---------- Utilities ---------- */
+strong{ font-weight:800; }
