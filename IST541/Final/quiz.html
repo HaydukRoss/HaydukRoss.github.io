@@ -1,191 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Test Your Avatar & Clone Knowledge</title>
-  <style>
-    /* keep it light to match the site's simple look */
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 24px auto; max-width: 900px; padding: 0 16px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    fieldset { border: 1px solid #ccc; padding: 12px 16px; margin-bottom: 16px; }
-    legend { font-weight: 600; }
-    .actions { margin-top: 20px; }
-    button { padding: 10px 16px; cursor: pointer; }
-    .result { margin-top: 16px; font-weight: 700; }
-    footer { margin-top: 32px; font-size: 0.95rem; color: #555; }
-
-    /* interactive bits */
-    .hint { display: none; margin-top: 8px; padding: 8px 10px; border-left: 4px solid #999; background: #f7f7f7; }
-    .hint.on { border-left-color: #2b7a0b; background: #eef9ee; }
-    .term { padding: 2px 4px; border-radius: 4px; transition: background 160ms, color 160ms; }
-    .term.active { background: #fff2cc; }
-    .explain { display: none; margin: 8px 0 0; font-size: 0.95rem; color: #333; }
-    .meterWrap { margin-top: 8px; border: 1px solid #ddd; padding: 12px; border-radius: 8px; }
-    .meterMsg { font-weight: 600; margin-top: 8px; }
-  </style>
+<meta charset="utf-8">
+<title>Final | Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+  <div class="wrap">
+    <h1>Quick Quiz</h1>
+    <p class="byline">By Ross Hayduk</p>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="lesson.html">Lesson</a>
+      <a href="audio.html">Audio/Video</a>
+      <a class="active" href="quiz.html">Quiz</a>
+      <a href="iframes.html">iFrame</a>
+      <a href="references.html">References</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Match index.html header order: H1, H2, then nav -->
-  <h1>Test Your Avatar &amp; Clone Knowledge</h1>
-  <h2>Final Project for IST 541 - MM II: Interactive Media</h2>
+<main>
+  <h2>2 Questions</h2>
+  <div class="quiz-block" role="group" aria-labelledby="quiz-title">
+    <h3 id="quiz-title">Test Your Knowledge</h3>
 
-  <nav aria-label="Main">
-    <a href="index.html">Home</a>
-    <a href="page1.html">Using iFrames in Online Learning</a>
-    <a href="lesson.html">Using Avatars in EdTech</a>
-    <a href="quiz.html" aria-current="page">Test Your Avatar &amp; Clone Knowledge</a>
-  </nav>
+    <p><strong>1) Which HTML element embeds an external webpage?</strong></p>
+    <label><input type="radio" name="q1" value="video"> &lt;video&gt;</label><br>
+    <label><input type="radio" name="q1" value="iframe"> &lt;iframe&gt;</label><br>
+    <label><input type="radio" name="q1" value="audio"> &lt;audio&gt;</label><br>
+    <p><button class="btn hint-btn">Show hint</button></p>
+    <p class="hint">It creates an inline frame.</p>
+    <div class="hr"></div>
 
-  <p>Answer the five questions, try the interactive activities, then click <strong>Check Answers</strong>.</p>
+    <p><strong>2) What attribute shows the built-in media controls (play/pause)?</strong></p>
+    <label><input type="radio" name="q2" value="autoplay"> autoplay</label><br>
+    <label><input type="radio" name="q2" value="controls"> controls</label><br>
+    <label><input type="radio" name="q2" value="loop"> loop</label><br>
 
-  <!-- Interactive Activity 1 -->
-  <section aria-labelledby="ia1">
-    <h3 id="ia1">Activity 1, Click for Hints</h3>
-    <p>Click a button to toggle a short hint. The panel opens and its style changes.</p>
-    <div>
-      <button type="button" class="hintBtn" data-target="#hint1">Show hint for Q1</button>
-      <div id="hint1" class="hint">Think about which tool your lesson positioned as the top choice for <span class="term">video avatars</span>.</div>
-    </div>
-    <div>
-      <button type="button" class="hintBtn" data-target="#hint2">Show hint for Q2</button>
-      <div id="hint2" class="hint">This company is known for high quality <span class="term">voice cloning</span> with natural prosody.</div>
-    </div>
-  </section>
+    <p>
+      <button id="check" class="btn">Check Answers</button>
+      <button id="reset" class="btn" type="button">Reset</button>
+    </p>
+    <p id="score"></p>
+  </div>
+</main>
 
-  <form id="quiz" novalidate>
-    <fieldset>
-      <legend>1) Which tool is highlighted as the best for <em>video avatars</em> in your lesson?</legend>
-      <label><input type="radio" name="q1" value="A"> Synthesia</label><br>
-      <label><input type="radio" name="q1" value="B"> HeyGen</label><br>
-      <label><input type="radio" name="q1" value="C"> D-ID</label><br>
-      <label><input type="radio" name="q1" value="D"> Midjourney</label>
-      <div class="explain" id="exp-q1"><strong>Why:</strong> Your lesson emphasized HeyGen for fast, high quality video avatars suitable for training.</div>
-    </fieldset>
+<footer>
+  <div class="wrap">
+    <small>© 2025 Ross M. Hayduk</small>
+  </div>
+</footer>
 
-    <fieldset>
-      <legend>2) Which tool is featured for creating high quality <em>audio voice clones</em>?</legend>
-      <label><input type="radio" name="q2" value="A"> Descript</label><br>
-      <label><input type="radio" name="q2" value="B"> ElevenLabs</label><br>
-      <label><input type="radio" name="q2" value="C"> Audacity</label><br>
-      <label><input type="radio" name="q2" value="D"> GarageBand</label>
-      <div class="explain" id="exp-q2"><strong>Why:</strong> ElevenLabs was highlighted for realistic cloning and flexible voices.</div>
-    </fieldset>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-2pmE0n0x+H4C2zY2k8Jrj1mXG7VQ5Q0SYJr3qPn4N0w=" crossorigin="anonymous"></script>
+<script>
+window.QUIZ_ANSWERS = { q1:'iframe', q2:'controls' };
 
-    <fieldset>
-      <legend>3) What’s a lightweight way to embed external content on a web page?</legend>
-      <label><input type="radio" name="q3" value="A"> Upload a .exe</label><br>
-      <label><input type="radio" name="q3" value="B"> Only use FTP</label><br>
-      <label><input type="radio" name="q3" value="C"> Use an <code>&lt;iframe&gt;</code></label><br>
-      <label><input type="radio" name="q3" value="D"> Email attachments</label>
-      <div class="explain" id="exp-q3"><strong>Why:</strong> iFrames let you embed videos, docs, and web apps quickly.</div>
-    </fieldset>
+$('.hint-btn').on('click', function(){ $(this).next('.hint').slideToggle(150); });
 
-    <fieldset>
-      <legend>4) Why are AI avatar and audio clone tools useful in ID workflows?</legend>
-      <label><input type="radio" name="q4" value="A"> They eliminate instructional designers</label><br>
-      <label><input type="radio" name="q4" value="B"> Faster to iterate and update training content</label><br>
-      <label><input type="radio" name="q4" value="C"> Only for entertainment</label><br>
-      <label><input type="radio" name="q4" value="D"> They replace all SMEs</label>
-      <div class="explain" id="exp-q4"><strong>Why:</strong> They speed up revisions so you can focus on analysis and strategy.</div>
-    </fieldset>
+$('#check').on('click', function(){
+  const correct = window.QUIZ_ANSWERS || {};
+  let total = 0, score = 0;
+  Object.keys(correct).forEach(function(q){
+    total++;
+    if ($('input[name="'+q+'"]:checked').val() === correct[q]) score++;
+  });
+  $('#score').text('You scored ' + score + '/' + total + '.');
+  $('.quiz-block').removeClass('correct incorrect')
+                  .addClass(score === total ? 'correct' : 'incorrect');
+});
 
-    <fieldset>
-      <legend>5) Best practice for using logos or media assets?</legend>
-      <label><input type="radio" name="q5" value="A"> Hotlink from random sites</label><br>
-      <label><input type="radio" name="q5" value="B"> Ignore licensing</label><br>
-      <label><input type="radio" name="q5" value="C"> Host in your <code>img/</code> folder and credit sources when required</label><br>
-      <label><input type="radio" name="q5" value="D"> Only use iframes</label>
-      <div class="explain" id="exp-q5"><strong>Why:</strong> Hosting assets locally and crediting sources is the clean and ethical approach.</div>
-    </fieldset>
-
-    <div class="actions">
-      <button type="button" id="gradeBtn">Check Answers</button>
-      <button type="reset" id="clearBtn">Clear</button>
-      <div id="result" class="result" aria-live="polite"></div>
-    </div>
-  </form>
-
-  <!-- Interactive Activity 2 -->
-  <section aria-labelledby="ia2" class="meterWrap" id="meterWrap">
-    <h3 id="ia2">Activity 2, Confidence Meter</h3>
-    <p>How confident are you about avatars and voice clones?</p>
-    <input type="range" id="confidence" min="0" max="100" value="40" />
-    <div id="meterMsg" class="meterMsg">Confidence: 40%. Keep exploring the tools.</div>
-  </section>
-
-  <footer>© 2025 Ross M. Hayduk</footer>
-
-  <!-- jQuery for the interactive activities -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>
-    // answer key
-    const key = { q1: "B", q2: "B", q3: "C", q4: "B", q5: "C" };
-
-    // Grade
-    $("#gradeBtn").on("click", function () {
-      let score = 0;
-      let total = Object.keys(key).length;
-      let unanswered = [];
-
-      for (const q in key) {
-        const $selected = $(`input[name="${q}"]:checked`);
-        if ($selected.length === 0) {
-          unanswered.push(q.toUpperCase());
-        } else if ($selected.val() === key[q]) {
-          score++;
-        }
-      }
-
-      $(".explain").hide();
-      for (const q in key) {
-        const $selected = $(`input[name="${q}"]:checked`);
-        if ($selected.length && $selected.val() === key[q]) {
-          $(`#exp-${q}`).fadeIn(150);
-        }
-      }
-
-      if (unanswered.length) {
-        $("#result").text(`You scored ${score}/${total}. You still need to answer: ${unanswered.join(", ")}.`);
-      } else {
-        $("#result").text(`You scored ${score}/${total}.`);
-      }
-    });
-
-    // Clear
-    $("#clearBtn").on("click", function () {
-      $("#result").text("");
-      $(".explain").hide();
-      $(".hint").hide().removeClass("on");
-      $(".term").removeClass("active");
-      $("#confidence").val(40).trigger("input");
-    });
-
-    // Activity 1: hints
-    $(".hintBtn").on("click", function () {
-      const target = $(this).data("target");
-      $(target).slideToggle(160).toggleClass("on");
-      $(target).find(".term").toggleClass("active", $(target).hasClass("on"));
-    });
-
-    // Activity 2: confidence meter
-    const updateMeter = function (val) {
-      const n = Number(val);
-      let msg = "Confidence: " + n + "%. Keep exploring the tools.";
-      let border = "#ddd";
-      let bg = "#fff";
-
-      if (n < 34)      { msg = "Confidence: " + n + "%. Start with small practice tasks."; border = "#c0392b"; bg = "#fdecea"; }
-      else if (n < 67) { msg = "Confidence: " + n + "%. Solid progress. Try building a short demo."; border = "#f39c12"; bg = "#fff6e6"; }
-      else             { msg = "Confidence: " + n + "%. Looking strong. Prototype a full micro-lesson."; border = "#2b7a0b"; bg = "#eef9ee"; }
-
-      $("#meterMsg").text(msg);
-      $("#meterWrap").css({ borderColor: border, background: bg });
-    };
-
-    $("#confidence").on("input change", function () { updateMeter(this.value); });
-    updateMeter($("#confidence").val());
-  </script>
+$('#reset').on('click', function(){
+  $('input[type="radio"]').prop('checked', false);
+  $('.hint').hide();
+  $('#score').text('');
+  $('.quiz-block').removeClass('correct incorrect');
+});
+</script>
 </body>
 </html>
