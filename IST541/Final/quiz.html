@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Test Your Avatar & Clone Knowledge</title>
   <style>
+    /* keep it light to match the site's simple look */
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 24px auto; max-width: 900px; padding: 0 16px; }
     nav a { margin-right: 12px; text-decoration: none; }
-    h1 { margin-top: 0.5rem; }
     fieldset { border: 1px solid #ccc; padding: 12px 16px; margin-bottom: 16px; }
     legend { font-weight: 600; }
     .actions { margin-top: 20px; }
@@ -15,7 +15,7 @@
     .result { margin-top: 16px; font-weight: 700; }
     footer { margin-top: 32px; font-size: 0.95rem; color: #555; }
 
-    /* Interactive Activity styles */
+    /* interactive bits */
     .hint { display: none; margin-top: 8px; padding: 8px 10px; border-left: 4px solid #999; background: #f7f7f7; }
     .hint.on { border-left-color: #2b7a0b; background: #eef9ee; }
     .term { padding: 2px 4px; border-radius: 4px; transition: background 160ms, color 160ms; }
@@ -27,20 +27,20 @@
 </head>
 <body>
 
-  <!-- Top nav to match your other pages -->
-  <nav>
+  <!-- Match index.html header order: H1, H2, then nav -->
+  <h1>Test Your Avatar &amp; Clone Knowledge</h1>
+  <h2>Final Project for IST 541 - MM II: Interactive Media</h2>
+
+  <nav aria-label="Main">
     <a href="index.html">Home</a>
     <a href="page1.html">Using iFrames in Online Learning</a>
     <a href="lesson.html">Using Avatars in EdTech</a>
-    <a href="quiz.html" aria-current="page">Test Your Avatar & Clone Knowledge</a>
+    <a href="quiz.html" aria-current="page">Test Your Avatar &amp; Clone Knowledge</a>
   </nav>
-
-  <h1>Test Your Avatar & Clone Knowledge</h1>
-  <h2>Final Project for IST 541 - MM II: Interactive Media</h2>
 
   <p>Answer the five questions, try the interactive activities, then click <strong>Check Answers</strong>.</p>
 
-  <!-- Interactive Activity 1: Hints that change content and style with jQuery -->
+  <!-- Interactive Activity 1 -->
   <section aria-labelledby="ia1">
     <h3 id="ia1">Activity 1, Click for Hints</h3>
     <p>Click a button to toggle a short hint. The panel opens and its style changes.</p>
@@ -55,7 +55,6 @@
   </section>
 
   <form id="quiz" novalidate>
-    <!-- Q1 -->
     <fieldset>
       <legend>1) Which tool is highlighted as the best for <em>video avatars</em> in your lesson?</legend>
       <label><input type="radio" name="q1" value="A"> Synthesia</label><br>
@@ -65,7 +64,6 @@
       <div class="explain" id="exp-q1"><strong>Why:</strong> Your lesson emphasized HeyGen for fast, high quality video avatars suitable for training.</div>
     </fieldset>
 
-    <!-- Q2 -->
     <fieldset>
       <legend>2) Which tool is featured for creating high quality <em>audio voice clones</em>?</legend>
       <label><input type="radio" name="q2" value="A"> Descript</label><br>
@@ -75,7 +73,6 @@
       <div class="explain" id="exp-q2"><strong>Why:</strong> ElevenLabs was highlighted for realistic cloning and flexible voices.</div>
     </fieldset>
 
-    <!-- Q3 -->
     <fieldset>
       <legend>3) What’s a lightweight way to embed external content on a web page?</legend>
       <label><input type="radio" name="q3" value="A"> Upload a .exe</label><br>
@@ -85,7 +82,6 @@
       <div class="explain" id="exp-q3"><strong>Why:</strong> iFrames let you embed videos, docs, and web apps quickly.</div>
     </fieldset>
 
-    <!-- Q4 -->
     <fieldset>
       <legend>4) Why are AI avatar and audio clone tools useful in ID workflows?</legend>
       <label><input type="radio" name="q4" value="A"> They eliminate instructional designers</label><br>
@@ -95,7 +91,6 @@
       <div class="explain" id="exp-q4"><strong>Why:</strong> They speed up revisions so you can focus on analysis and strategy.</div>
     </fieldset>
 
-    <!-- Q5 -->
     <fieldset>
       <legend>5) Best practice for using logos or media assets?</legend>
       <label><input type="radio" name="q5" value="A"> Hotlink from random sites</label><br>
@@ -112,7 +107,7 @@
     </div>
   </form>
 
-  <!-- Interactive Activity 2: Confidence Meter with live content + style changes -->
+  <!-- Interactive Activity 2 -->
   <section aria-labelledby="ia2" class="meterWrap" id="meterWrap">
     <h3 id="ia2">Activity 2, Confidence Meter</h3>
     <p>How confident are you about avatars and voice clones?</p>
@@ -122,13 +117,13 @@
 
   <footer>© 2025 Ross M. Hayduk</footer>
 
-  <!-- jQuery (for the required interactive activities) -->
+  <!-- jQuery for the interactive activities -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
   <script>
-    // Quiz grading
+    // answer key
     const key = { q1: "B", q2: "B", q3: "C", q4: "B", q5: "C" };
 
+    // Grade
     $("#gradeBtn").on("click", function () {
       let score = 0;
       let total = Object.keys(key).length;
@@ -143,7 +138,6 @@
         }
       }
 
-      // Show explanations for chosen answers, hide others
       $(".explain").hide();
       for (const q in key) {
         const $selected = $(`input[name="${q}"]:checked`);
@@ -159,53 +153,38 @@
       }
     });
 
+    // Clear
     $("#clearBtn").on("click", function () {
       $("#result").text("");
       $(".explain").hide();
       $(".hint").hide().removeClass("on");
       $(".term").removeClass("active");
-      // Reset confidence meter visuals
       $("#confidence").val(40).trigger("input");
     });
 
-    // Interactive Activity 1: Hints toggle with style change
+    // Activity 1: hints
     $(".hintBtn").on("click", function () {
       const target = $(this).data("target");
       $(target).slideToggle(160).toggleClass("on");
-      // Highlight terms inside the hint while open
       $(target).find(".term").toggleClass("active", $(target).hasClass("on"));
     });
 
-    // Interactive Activity 2: Confidence meter that updates text and colors
+    // Activity 2: confidence meter
     const updateMeter = function (val) {
       const n = Number(val);
       let msg = "Confidence: " + n + "%. Keep exploring the tools.";
       let border = "#ddd";
       let bg = "#fff";
 
-      if (n < 34) {
-        msg = "Confidence: " + n + "%. Start with small practice tasks.";
-        border = "#c0392b";
-        bg = "#fdecea";
-      } else if (n < 67) {
-        msg = "Confidence: " + n + "%. Solid progress. Try building a short demo.";
-        border = "#f39c12";
-        bg = "#fff6e6";
-      } else {
-        msg = "Confidence: " + n + "%. Looking strong. Prototype a full micro-lesson.";
-        border = "#2b7a0b";
-        bg = "#eef9ee";
-      }
+      if (n < 34)      { msg = "Confidence: " + n + "%. Start with small practice tasks."; border = "#c0392b"; bg = "#fdecea"; }
+      else if (n < 67) { msg = "Confidence: " + n + "%. Solid progress. Try building a short demo."; border = "#f39c12"; bg = "#fff6e6"; }
+      else             { msg = "Confidence: " + n + "%. Looking strong. Prototype a full micro-lesson."; border = "#2b7a0b"; bg = "#eef9ee"; }
 
       $("#meterMsg").text(msg);
       $("#meterWrap").css({ borderColor: border, background: bg });
     };
 
-    $("#confidence").on("input change", function () {
-      updateMeter(this.value);
-    });
-
-    // Initialize meter visuals
+    $("#confidence").on("input change", function () { updateMeter(this.value); });
     updateMeter($("#confidence").val());
   </script>
 </body>
