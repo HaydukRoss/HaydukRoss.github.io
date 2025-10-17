@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>What Do Fighting Robots Like To Do?</title>
-<link href="css/robots.css" rel="stylesheet" type="text/css">
+<title>What Is The Best Tool To Use?</title>
+<link href="css/logos.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
@@ -14,13 +14,51 @@
 <a class="btn" href="index.html"><strong>HOME</strong></a>
 
 	  
-<h1>What Do Fighting Robots Like To Do?</h1>
+<h1>What is the best tool to use for audio clones?</h1>
 <h3>Click on one of the following choices</h3>
 
-<h2 onclick="wrongAnswer1()" class="choices"> Fight </h2>
-<h2 onclick="wrongAnswer2()" class="choices"> Disco Dance </h2>
-<h2 onclick="rightAnswer()" class="choices"> Hug It Out </h2>
+<h2 onclick="wrongAnswer1()" class="choices"> iTunes </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> Spotify </h2>
+<h2 onclick="rightAnswer()" class="choices"> ElevenLabs </h2>
 <h2 onclick="wrongAnswer3()" class="choices"> Do Aerobics </h2>
+
+<div id="feedback"></div>
+<img id="robothug" src="img/robothug.png" />
+</div>
+	
+	
+   <script>
+ 	   function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> ElevenLabs is the best choice!</h2>");
+         $("#robotright").show();
+        }
+        function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> Good for iPhones! </h2>");
+          $("#robothug").hide();
+        }
+	    function wrongAnswer2(){
+         $("#feedback").html("<h2 style='color:red'> Best for streaming music! </h2>");
+         $("#robotfight").hide();
+      }
+	   	function wrongAnswer3(){
+         $("#feedback").html("<h2 style='color:red'> Good for downloading movies! </h2>");
+         $("#robotfight").hide();
+      }
+	
+	</script>
+	
+  <div id="wrapper">
+		
+<a class="btn" href="index.html"><strong>HOME</strong></a>
+
+	  
+<h1>What is the best tool for creating video clones?</h1>
+<h3>Click on one of the following choices</h3>
+
+<h2 onclick="wrongAnswer1()" class="choices"> ElevenLabs </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> eBay </h2>
+<h2 onclick="rightAnswer()" class="choices"> HeyGen </h2>
+<h2 onclick="wrongAnswer3()" class="choices"> Xerox </h2>
 
 <div id="feedback"></div>
 <img id="robothug" src="img/robothug.png" />
@@ -45,6 +83,7 @@
          $("#robotfight").hide();
       }
 	
-	</script>
+	</script>	
+
 </body>
 </html>

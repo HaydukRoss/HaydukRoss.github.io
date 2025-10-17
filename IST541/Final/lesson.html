@@ -1,69 +1,169 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>What Is The Best Tool For The Job?</title>
-<link href="css/logos.css" rel="stylesheet">	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What Is The Best Tool For The Job?</title>
+  <link rel="icon" href="img/favicon.png" />
+  <style>
+    :root {
+      --bg: #0f172a;          /* slate-900 */
+      --fg: #e5e7eb;          /* gray-200 */
+      --muted: #94a3b8;       /* slate-400 */
+      --accent: #38bdf8;      /* sky-400 */
+      --card: #111827cc;      /* near-black with alpha */
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: linear-gradient(180deg, #0b1020, #0f172a 30%, #0b1020);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      line-height: 1.5;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />	
+    header, main, footer { width: min(1100px, 92vw); margin: 0 auto; }
+    header { padding: 20px 0 6px; }
+    .home {
+      display: inline-flex; gap: 8px; align-items: center; font-weight: 600;
+      padding: 8px 12px; background: #0b1220; border: 1px solid #1f2937; border-radius: 10px;
+    }
+
+    h1 { font-size: clamp(1.6rem, 1.1rem + 2vw, 2.4rem); margin: 24px 0 6px; }
+    h2 { font-size: clamp(1.2rem, 0.9rem + 1.2vw, 1.6rem); margin: 8px 0 18px; color: var(--muted); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 26px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #253047;
+      border-radius: 16px;
+      padding: 14px 14px 18px;
+      box-shadow: 0 10px 30px #0007, inset 0 0 0 1px #ffffff08;
+    }
+    .card h3 { margin: 6px 6px 0; font-size: 1.1rem; }
+    .card p  { margin: 2px 6px 12px; color: var(--muted); font-size: 0.95rem; }
+
+    /* Hover/tap swap */
+    .swap {
+      position: relative;
+      isolation: isolate;
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      border: 1px solid #243045;
+      background: #0a1020;
+      cursor: pointer;
+    }
+    .swap img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    .swap .base { filter: saturate(0.9) contrast(1.05); }
+    .swap .overlay {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(60% 60% at 50% 50%, #00000088, #000000cc 70%, #000000f0);
+      opacity: 0;
+      transform: scale(1.02);
+      transition: opacity .25s ease, transform .25s ease;
+      padding: 14px;
+    }
+    .swap .overlay img {
+      width: min(80%, 460px);
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 22px #000c);
+    }
+    .swap:hover .overlay,
+    .swap:focus-visible .overlay,
+    .swap.active .overlay { opacity: 1; transform: scale(1); }
+
+    .hint {
+      text-align: center;
+      font-size: .95rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    footer { color: var(--muted); font-size: .9rem; padding: 28px 0 40px; }
+  </style>
 </head>
-
 <body>
-	<div id="wrapper">
-		
-<a class="btn" href="index.html"><strong>HOME</strong></a>
+  <header>
+    <a class="home" href="index.html" aria-label="Go to Home">⟵ HOME</a>
+  </header>
 
- 
-<h1>What Is The Best Tool For Video Avatars?</h1>
- 
-<h3 id="hint">Hint: Hover over the image below to find out!</h3>
- 
-<img onmouseenter="showAnswer()" id="avatarfaces"  src="img/avatarfaces.png"   />
-<img onmouseleave="hideAnswer()" id="heygen" src="img/heygen.svg" />
- 
-<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
- 
-</div> <!-- closing  “wrapper” -->
-	
-<script>
- function showAnswer() {
-	   $("#avatarfaces").hide();
-	   $("#heygen").show();
-	   $("#answer").html("<h2 style='color:red'>HeyGen is Perfect!</h2>");
-	}
+  <main>
+    <h1>What Is The Best Tool For The Job?</h1>
 
-function hideAnswer() {
-	   $("#avatarfaces").show();
-	   $("#heygen").hide();
-	   $("#answer").html("");  
-	}
-</script>
+    <!-- Section 1: Video Avatars -->
+    <section class="card" aria-labelledby="video-title">
+      <h3 id="video-title">What Is The Best Tool For <strong>Video Avatars</strong>?</h3>
+      <p class="hint">Hint, hover or tap the image to reveal the answer.</p>
 
-<h1>What Is The Best Tool For Audio Clones?</h1>
- 
-<h3 id="hint">Hint: Hover over the image below to find out!</h3>
- 
-<img onmouseenter="showAnswer()" id="microphone"  src="img/microphone.png"   />
-<img onmouseleave="hideAnswer()" id="elevenlabs" src="img/elevenlabs.png" />
- 
-<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
- 
-</div> <!-- closing  “wrapper” -->
-	
-<script>
- function showAnswer() {
-	   $("#microphone").hide();
-	   $("#elevenlabs").show();
-	   $("#answer").html("<h2 style='color:red'>ElevenLabs Sounds Great!</h2>");
-	}
+      <button class="swap" aria-label="Reveal the best tool for video avatars" data-toggle>
+        <!-- Base photo -->
+        <img class="base" src="img/avatarfaces.png" alt="Two reflective avatar faces" />
+        <!-- Overlay with the answer -->
+        <div class="overlay" aria-hidden="true">
+          <!-- If SVG gives you trouble on GitHub Pages, replace with img/heygen.png and update the src below -->
+          <img src="img/heygen.svg" alt="HeyGen logo" />
+        </div>
+      </button>
+    </section>
 
-function hideAnswer() {
-	   $("#microphone").show();
-	   $("#elevenlabs").hide();
-	   $("#answer").html("");  
-	}
-</script>	
-	
+    <!-- Section 2: Audio Clones -->
+    <section class="card" aria-labelledby="audio-title">
+      <h3 id="audio-title">What Is The Best Tool For <strong>Audio Clones</strong>?</h3>
+      <p class="hint">Hint, hover or tap the image to reveal the answer.</p>
+
+      <button class="swap" aria-label="Reveal the best tool for audio clones" data-toggle>
+        <img class="base" src="img/microphone.png" alt="Vintage microphone" />
+        <div class="overlay" aria-hidden="true">
+          <img src="img/elevenlabs.png" alt="ElevenLabs logo" />
+        </div>
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tip: On touch devices, tap once to reveal, tap again to hide. Keyboard users can focus each panel with Tab, and press Space/Enter to toggle.</p>
+  </footer>
+
+  <script>
+    // Enable tap/click toggle for mobile + keyboard activation
+    const toggles = document.querySelectorAll('[data-toggle]');
+    toggles.forEach(el => {
+      el.addEventListener('click', () => el.classList.toggle('active'));
+      el.addEventListener('keydown', (e) => {
+        if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault();
+          el.classList.toggle('active');
+        }
+      });
+    });
+
+    // Optional: if heygen.svg fails to load on your build, swap to PNG automatically
+    const heygenLogo = document.querySelector('img[src$="heygen.svg"]');
+    if (heygenLogo) {
+      heygenLogo.addEventListener('error', () => {
+        heygenLogo.src = 'img/heygen.png'; // add this PNG to the same folder if needed
+        heygenLogo.alt = 'HeyGen logo (PNG fallback)';
+      }, { once: true });
+    }
+  </script>
 </body>
 </html>
