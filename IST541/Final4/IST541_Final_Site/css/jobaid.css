@@ -1,9 +1,0 @@
-.step{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:0;margin:14px 0;overflow:hidden}
-.step > summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:700}
-.step > summary::-webkit-details-marker{display:none}
-.step[open] > summary{background:rgba(255,255,255,.04)}
-.stepContent{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;padding:16px}
-.stepDescription{color:#eaf2fb}
-.stepImage img{width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:#0a0a0a}
-.warning{background:#382400;border-left:4px solid #ffb86b;padding:10px;border-radius:8px;margin-top:10px}
-@media (max-width:800px){.stepContent{grid-template-columns:1fr}}
