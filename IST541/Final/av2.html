@@ -32,35 +32,127 @@
       <section class="section">
         <h2 class="mt-0">Using HeyGen to create a video clone.</h2>
 		</section>
-	  <section class="section">
-        <p class="lede">This is an example of my original video.</p>
-        <div class="iframe-wrap">
-          <div class="iframe-wrap">
-  				<video controls playsinline preload="metadata" width="560" height="315" style="width:100%;height:auto;display:block;">
-   				<source src="video/HeyGen_Original2.mp4" type="video/mp4" />
-    			Sorry—your browser can’t play this video.
-    <a href="video/HeyGen_Original2.mp4">Download the MP4</a>.
-  </video>
-</div>
-        </div>
-        <p class="mt-16"></p>
-      </section>
-    </div>
-	  <div class="container">
-      <section class="section">
-        <p class="lede">This is an example of my video clone.</p>
-        <div class="iframe-wrap">
-          <div class="iframe-wrap">
-  			<video controls playsinline preload="metadata" width="560" height="315" style="width:100%;height:auto;display:block;">
-  		    <source src="video/HeyGen_Avatar.mp4" type="video/mp4" />
-  		    Sorry—your browser can’t play this video.
-    <a href="video/HeyGen_Avatar.mp4">Download the MP4</a>.
-  </video>
+
+
+<section id="video-compare" class="card">
+  <div class="video-grid">
+    <figure>
+          <br>
+		  <br>
+		<figcaption>This is an example of my original video. I chose to use my AI clone (below) instead of my original video because it looks and sounds more professional. In my original clip, I hadn’t prepared for camera... my outfit, lighting, and audio weren’t ideal. 
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		
+		</figcaption>
+      <video id="origVideo" preload="metadata" src="video/HeyGen_Original2.mp4" controls width="560"></video>
+    </figure>
+    <figure>
+          <br>
+		  <br>
+		<figcaption>This is an example of my video clone created with HeyGen. The clone, in comparison to the original, appears in a neutral, well-lit environment with crisp sound and consistent presentation. This choice lets me deliver the same message with a more polished and confident appearance.
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		</figcaption>
+      <video id="cloneVideo" preload="metadata" src="video/HeyGen_Avatar.mp4" controls width="560"></video>
+    </figure>
+  </div>
+
+  <div class="controls">
+<br>
+	  <br>
+Now, experiment with video playback by viewing the <strong>HeyGen</strong> video clips!
+		  <br>
+		  <br>
+		  <br>
+			  
+    <button id="play-both" class="pill">▶ Play Both</button>
+<br>
+<br>
+    <button id="pause-both" class="pill">⏸ Pause Both</button>
+<br>
+<br>
+	<button id="sync-zero" class="pill">⟲ Sync to 0:00</button>
+<br>
+<br>
+	<button id="ab-toggle" class="pill" data-mode="A">A/B: Play Original</button>
+<br>
+<br>
+	<button id="v-speed" class="pill" data-rate="1">Speed: 1×</button>
+  </div>
+</section>			  
+			  
+			  
 </div>
 
   <footer class="footer">
     <div class="container">© 2025 Ross M. Hayduk</div>
   </footer>
 </div>
+		  
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script>
+$(function () {
+  const o = $("#origVideo").get(0);
+  const c = $("#cloneVideo").get(0);
+
+  function ready(v) {
+    return new Promise(res => {
+      if (v.readyState >= 1) return res();
+      v.addEventListener("loadedmetadata", () => res(), { once: true });
+    });
+  }
+
+  async function syncCurrentTime(to = 0) {
+    await Promise.all([ready(o), ready(c)]);
+    o.currentTime = to;
+    c.currentTime = to;
+  }
+
+  $("#play-both").on("click", async function () {
+    await syncCurrentTime(Math.min(o.currentTime, c.currentTime));
+    await Promise.all([o.play(), c.play()]);
+  });
+
+  $("#pause-both").on("click", function () {
+    o.pause(); c.pause();
+  });
+
+  $("#sync-zero").on("click", function () {
+    o.pause(); c.pause();
+    syncCurrentTime(0);
+  });
+
+  // A/B toggle: play one, pause the other, flip on each click
+  $("#ab-toggle").on("click", function () {
+    const mode = $(this).data("mode"); // "A" = Original, "B" = Clone
+    if (mode === "A") {
+      c.pause(); o.play();
+      $(this).data("mode", "B").text("A/B: Play Clone");
+    } else {
+      o.pause(); c.play();
+      $(this).data("mode", "A").text("A/B: Play Original");
+    }
+  });
+
+  // Speed toggle for both videos
+  const speeds = [1, 1.25, 1.5];
+  $("#v-speed").on("click", function () {
+    let idx = Number($(this).data("idx") || 0);
+    idx = (idx + 1) % speeds.length;
+    const rate = speeds[idx];
+    o.playbackRate = rate;
+    c.playbackRate = rate;
+    $(this).data("idx", idx).data("rate", rate).text("Speed: " + rate + "×");
+  });
+});
+</script>
+		  
+		  
+		  
 </body>
 </html>

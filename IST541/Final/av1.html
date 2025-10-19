@@ -29,32 +29,119 @@
 </center>
   <main class="card">
     <h3 class="mt-0">Embedded Audio: ElevenLabs Voices</h3>
-    <p class="lede">Three short samples rendered with ElevenLabs.</p>
-    <div class="grid3">
-      <figure>
-        <figcaption style="margin-bottom:.5rem"><strong>HeyGen Ross</strong></figcaption>
-        <audio controls preload="metadata">
-          <source src="https://haydukross.github.io/IST541/Lab4/audio/ElevenLabs_Ross.mp3" type="audio/mpeg" />
-        </audio>
-      </figure>
-      <figure>
-        <figcaption style="margin-bottom:.5rem"><strong>HeyGen Male (James)</strong></figcaption>
-        <audio controls preload="metadata">
-          <source src="https://haydukross.github.io/IST541/Lab4/audio/ElevenLabs_James.mp3" type="audio/mpeg" />
-        </audio>
-      </figure>
-      <figure>
-        <figcaption style="margin-bottom:.5rem"><strong>HeyGen Female (Jane)</strong></figcaption>
-        <audio controls preload="metadata">
-          <source src="https://haydukross.github.io/IST541/Lab4/audio/ElevenLabs_Jane.mp3" type="audio/mpeg" />
-        </audio>
-      </figure>
+    <p class="lede">Three short synthesized voice samples rendered with <strong>ElevenLabs</strong>.</p>
+<section id="voice-gallery" class="card">
+  <h3 class="subtitle">ElevenLabs Samples</h3>
+<br>
+
+Here, you experiment with audio playback to compare the synthesized voices!
+		  <br>
+		  <br>
+		  <br>
+  <div class="audio-row">
+    <button class="pill play-btn" data-target="#a-ross">▶ Play</button>
+    <span class="label">HeyGen Ross</span>
+    <audio id="a-ross" preload="metadata" src="audio/ElevenLabs_Ross.mp3"></audio>
+  </div>
+<br>
+<br>	
+  <div class="audio-row">
+    <button class="pill play-btn" data-target="#a-james">▶ Play</button>
+    <span class="label">HeyGen Male (James)</span>
+    <audio id="a-james" preload="metadata" src="audio/ElevenLabs_James.mp3"></audio>
+  </div>
+<br>
+<br>	
+  <div class="audio-row">
+    <button class="pill play-btn" data-target="#a-jane">▶ Play</button>
+    <span class="label">HeyGen Female (Jane)</span>
+    <audio id="a-jane" preload="metadata" src="audio/ElevenLabs_Jane.mp3"></audio>
+  </div>
+<br>
+<br>
+  <div class="controls">
+    <button id="stop-all" class="pill">⏹ Stop All</button>
+    <button id="speed" class="pill" data-rate="1">Speed: 1×</button>
+    <button id="compare" class="pill">Compare: Ross → James → Jane</button>
+  </div>
+<br>
+<br>
+  <details class="mt">
+    <summary>Show transcripts</summary>
+    <div class="transcripts">
+      <p><strong>Ross:</strong> This is a synthesized ElevenLabs male voice based upon my own speaking voice, recorded in a classroom.</p>
+      <p><strong>James:</strong> This is an ElevenLabs male voice called "James." His voice is husky and engaging.</p>
+      <p><strong>Jane:</strong> This is an ElevenLabs female voice called "Jane." She is a professional audiobook reader.</p>
     </div>
+  </details>
+</section>
   </main>
 
-  <footer class="footer">
+<footer class="footer">
     <div class="container">© 2025 Ross M. Hayduk</div>
   </footer>
 </div>
+
+<!-- jQuery must load first -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+<!-- Then your custom script -->
+<script>
+$(function () {
+  const $audios = $("#voice-gallery audio");
+
+  function stopAll() {
+    $audios.each(function () { this.pause(); this.currentTime = 0; });
+    $(".play-btn").text("▶ Play").removeClass("active");
+  }
+
+  $(".play-btn").on("click", function () {
+    const target = $(this).data("target");
+    const audio = $(target).get(0);
+
+    if (audio.paused) {
+      $audios.not(audio).each(function () { this.pause(); });
+      $(".play-btn").not(this).text("▶ Play").removeClass("active");
+      audio.play();
+      $(this).text("⏸ Pause").addClass("active");
+    } else {
+      audio.pause();
+      $(this).text("▶ Play").removeClass("active");
+    }
+  });
+
+  $audios.on("ended pause", function () {
+    const id = "#" + this.id;
+    const btn = $('.play-btn[data-target="' + id + '"]');
+    if (this.paused) btn.text("▶ Play").removeClass("active");
+  });
+
+  $("#stop-all").on("click", stopAll);
+
+  const speeds = [1, 1.25, 1.5];
+  $("#speed").on("click", function () {
+    let idx = Number($(this).data("rate-idx") || 0);
+    idx = (idx + 1) % speeds.length;
+    const rate = speeds[idx];
+    $(this).data("rate-idx", idx).data("rate", rate).text("Speed: " + rate + "×");
+    $audios.each(function () { this.playbackRate = rate; });
+  });
+
+  $("#compare").on("click", async function () {
+    stopAll();
+    const order = ["#a-ross", "#a-james", "#a-jane"].map(s => $(s).get(0));
+
+    for (const a of order) {
+      await a.play();
+      await new Promise(res => {
+        const end = () => { a.removeEventListener("ended", end); res(); };
+        a.addEventListener("ended", end);
+      });
+    }
+  });
+});
+</script>
 </body>
 </html>
