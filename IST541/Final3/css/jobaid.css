@@ -1,0 +1,84 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  background-color: #f8f9fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: linear-gradient(180deg, #e8eef5 0%, #f7f9fb 100%);
+  text-align: center;
+  padding: 40px 15px 25px 15px;
+  border-bottom: 2px solid #cfd8e3;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.site-header h2 {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+/* ===== Navigation Bar ===== */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 50px;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+  border: 2px solid #003366;
+  border-radius: 999px;
+  padding: 10px 22px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  background-color: #003366;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+  .nav-bar {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .nav-bar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

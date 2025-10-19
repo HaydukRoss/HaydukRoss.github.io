@@ -1,0 +1,171 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ===== Header Section ===== */
+header {
+  background-color: #f0f4f8;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #d6e0eb;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+header h2 {
+  font-size: 1.1em;
+  color: #555;
+  font-weight: 400;
+}
+
+/* ===== Navigation Bar ===== */
+.nav-bar {
+  background-color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 2px solid #d6e0eb;
+}
+
+/* Pill-shaped navigation buttons */
+.nav-bar a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 25px;
+  border: 2px solid #003366;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #003366;
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover and active states */
+.nav-bar a:hover {
+  background-color: #003366;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.nav-bar a.active {
+  background-color: #003366;
+  color: white;
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main h3 {
+  color: #003366;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+main p {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+/* ===== Collapsible Sections ===== */
+details {
+  margin-top: 20px;
+  background-color: #eef3f8;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #d6e0eb;
+}
+
+details summary {
+  font-weight: bold;
+  color: #003366;
+  cursor: pointer;
+}
+
+details p {
+  margin-top: 10px;
+}
+
+/* ===== Interactive Buttons / Activities ===== */
+button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0055a5;
+  transform: scale(1.05);
+}
+
+/* ===== iFrames ===== */
+iframe {
+  display: block;
+  margin: 30px auto;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  width: 80%;
+  height: 400px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px 0;
+  color: #555;
+  font-size: 0.9em;
+  border-top: 1px solid #d6e0eb;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .nav-bar a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  iframe {
+    width: 95%;
+    height: 300px;
+  }
+}
