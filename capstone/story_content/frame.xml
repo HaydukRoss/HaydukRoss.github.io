@@ -35,7 +35,7 @@
           </optionlist>
           <option name="time_enabled" value="false">
             <options>
-              <option name="time_format" value="" />
+              <option name="time_format" value="none" />
             </options>
           </option>
           <option name="video_enabled" value="false">
@@ -1404,162 +1404,162 @@
   </colorschemes>
   <string_tables>
     <string_table name="pxabnsnfns00011100101">
-      <string id="acc_cc_hide">Hide captions (Ctrl+Alt+C)</string>
-      <string id="acc_cc_show">Show captions (Ctrl+Alt+C)</string>
-      <string id="acc_enter_fullscreen">Enter full-screen (Ctrl+Alt+F)</string>
-      <string id="acc_exit_fullscreen">Exit full-screen (Ctrl+Alt+F)</string>
-      <string id="acc_locked">locked</string>
-      <string id="acc_modern_video_captions">video captions</string>
-      <string id="acc_modern_video_fullscreen">full-screen video</string>
-      <string id="acc_modern_video_mute">mute video</string>
-      <string id="acc_modern_video_pause">pause video</string>
-      <string id="acc_modern_video_pip">picture-in-picture</string>
-      <string id="acc_modern_video_play">play video</string>
-      <string id="acc_modern_video_playback_speed">playback speed</string>
-      <string id="acc_modern_video_settings">video settings</string>
-      <string id="acc_modern_video_transcript">Open</string>
-      <string id="acc_modern_video_volume">video volume</string>
-      <string id="acc_mute">Mute (Ctrl+Alt+M)</string>
-      <string id="acc_next">Next (Ctrl+Alt+Period)</string>
-      <string id="acc_next_visual">Next (Ctrl+Alt+.)</string>
-      <string id="acc_ordinal_eighth">eighth</string>
-      <string id="acc_ordinal_fifth">fifth</string>
-      <string id="acc_ordinal_first">first</string>
-      <string id="acc_ordinal_fourth">fourth</string>
-      <string id="acc_ordinal_ninth">ninth</string>
-      <string id="acc_ordinal_second">second</string>
-      <string id="acc_ordinal_seventh">seventh</string>
-      <string id="acc_ordinal_sixth">sixth</string>
-      <string id="acc_ordinal_tenth">tenth</string>
-      <string id="acc_ordinal_third">third</string>
-      <string id="acc_pause">Pause (Ctrl+Alt+P)</string>
-      <string id="acc_play">Play (Ctrl+Alt+P)</string>
-      <string id="acc_playback_speed">Playback speed</string>
-      <string id="acc_played">%time% played</string>
-      <string id="acc_previous">Previous (Ctrl+Alt+Comma)</string>
-      <string id="acc_previous_visual">Previous (Ctrl+Alt+,)</string>
-      <string id="acc_replay">Replay (Ctrl+Alt+R)</string>
-      <string id="acc_search_input">search</string>
-      <string id="acc_search_result_status">%count% result found for %term%</string>
-      <string id="acc_search_results_status">%count% results found for %term%</string>
-      <string id="acc_select_an_option">Select an option</string>
-      <string id="acc_settings">Settings</string>
-      <string id="acc_skipnavigation">Back to top</string>
-      <string id="acc_slide_progress">slide progress</string>
-      <string id="acc_submit">Submit (Ctrl+Alt+S)</string>
-      <string id="acc_three_image_count_of_total_item_visited">%count% of %total% item visited</string>
-      <string id="acc_three_image_count_of_total_items_visited">%count% of %total% items visited</string>
-      <string id="acc_three_image_step_count_of_total">step %count% of %total%</string>
-      <string id="acc_unmute">Unmute (Ctrl+Alt+M)</string>
-      <string id="acc_video_transcript_list">Transcript</string>
-      <string id="acc_visited">visited</string>
-      <string id="acc_window_close">Close</string>
-      <string id="acc_window_move">Move window</string>
-      <string id="acc_window_options">Options</string>
-      <string id="acc_window_resize">Resize window</string>
-      <string id="accessible_text">Accessible text</string>
-      <string id="acctext_shortcut">Toggle accessible text</string>
-      <string id="action">Action</string>
-      <string id="alt_key">Alt</string>
-      <string id="background_audio">Background audio</string>
-      <string id="background_audio_shortcut">Toggle background audio</string>
-      <string id="clear">Clear and return to menu</string>
-      <string id="close">Close</string>
-      <string id="closed_captions">Captions</string>
-      <string id="closedcaptions_shortcut">Toggle captions</string>
-      <string id="comma_key">Comma</string>
-      <string id="continueresponsive">Continue</string>
-      <string id="ctrl_key">Ctrl</string>
-      <string id="desktop_start">Start Course</string>
-      <string id="disabled_orientation">Please rotate your device</string>
-      <string id="enable_keyboardshortcuts">Enable keyboard shortcuts</string>
-      <string id="filter">Filter</string>
-      <string id="fullscreen_shortcut">Toggle full-screen</string>
-      <string id="glossary">Glossary</string>
-      <string id="keyboardshortcuts">Keyboard Shortcuts</string>
-      <string id="keyboardshortcuts_lower">Keyboard shortcuts</string>
-      <string id="mobile_start">Start Course</string>
-      <string id="modern_video_captions_label">Captions</string>
-      <string id="modern_video_captions_off">Off</string>
-      <string id="modern_video_captions_on">On</string>
-      <string id="modern_video_normal_speed">Normal</string>
-      <string id="modern_video_playback_settings">Video Playback Settings</string>
-      <string id="modern_video_playback_speed_title">Playback Speed</string>
-      <string id="modern_video_settings_close">close video settings</string>
-      <string id="mute_shortcut">Mute / unmute</string>
-      <string id="next">NEXT</string>
-      <string id="next_shortcut">Next</string>
-      <string id="outline">Menu</string>
-      <string id="outline_container">Menu</string>
-      <string id="period_key">Period</string>
-      <string id="playback_speed_normal">Normal</string>
-      <string id="playback_speed_title">Playback Speed</string>
-      <string id="playpause_shortcut">Play / pause</string>
-      <string id="prev">PREV</string>
-      <string id="previous_shortcut">Previous</string>
-      <string id="progress_hour">hour</string>
-      <string id="progress_hours">hours</string>
-      <string id="progress_minute">minute</string>
-      <string id="progress_minutes">minutes</string>
-      <string id="progress_second">second</string>
-      <string id="progress_seconds">seconds</string>
-      <string id="question_mark_key">Question mark</string>
-      <string id="replay_shortcut">Replay</string>
-      <string id="resources">Resources</string>
-      <string id="restart">Restart</string>
-      <string id="resume">Resume</string>
-      <string id="search">Search...</string>
-      <string id="search_in">Search in:</string>
-      <string id="search_results">Search Results</string>
-      <string id="search_toggle">Search</string>
-      <string id="shift_key">Shift</string>
-      <string id="shortcut">Shortcut</string>
-      <string id="shortcuthelp">List keyboard shortcuts</string>
-      <string id="sidebar_toggle">Sidebar Toggle</string>
-      <string id="slide_text_chk">Slide Text</string>
-      <string id="streaming_video_local_playback_learn_more">Learn More</string>
-      <string id="streaming_video_local_playback_republish">To watch this video, use the preview feature in Storyline 360, upload your published output to a server, publish to Review 360, or switch to static video quality.</string>
-      <string id="streaming_video_local_playback_title">Streaming video is unavailable for local playback.</string>
-      <string id="submit">SUBMIT</string>
-      <string id="submit_shortcut">Submit</string>
-      <string id="terms">Terms</string>
+      <string id="three_image_progress_audio">progress</string>
       <string id="three_image_audio">audio</string>
       <string id="three_image_camera_down">camera moved down</string>
       <string id="three_image_camera_left">camera moved left</string>
       <string id="three_image_camera_right">camera moved right</string>
       <string id="three_image_camera_up">camera moved up</string>
-      <string id="three_image_count_of_total">%count% of %total%</string>
-      <string id="three_image_count_of_total_visited">%count% of %total% visited</string>
-      <string id="three_image_hotspot">hotspot</string>
-      <string id="three_image_instructions">Use the w, a, s, and d keys to move around the 360 degree image. Press the tab key to jump to interactive markers and hotspots.</string>
-      <string id="three_image_interaction">360 degree image interaction</string>
       <string id="three_image_interaction_free">free exploration mode</string>
       <string id="three_image_interaction_guided">guided tour mode</string>
-      <string id="three_image_interaction_next">next</string>
-      <string id="three_image_interaction_prev">previous</string>
+      <string id="three_image_hotspot">hotspot</string>
+      <string id="progress_hour">hour</string>
+      <string id="progress_hours">hours</string>
+      <string id="three_image_instructions">Use the w, a, s, and d keys to move around the 360 degree image. Press the tab key to jump to interactive markers and hotspots.</string>
+      <string id="three_image_interaction">360 degree image interaction</string>
       <string id="three_image_label">label</string>
       <string id="three_image_marker">marker</string>
+      <string id="progress_minute">minute</string>
+      <string id="progress_minutes">minutes</string>
+      <string id="three_image_interaction_next">next</string>
       <string id="three_image_pause_audio">pause audio</string>
       <string id="three_image_pause_video">pause video</string>
       <string id="three_image_play_audio">play audio</string>
       <string id="three_image_play_video">play video</string>
-      <string id="three_image_progress_audio">progress</string>
-      <string id="three_image_progress_video">progress</string>
+      <string id="three_image_interaction_prev">previous</string>
+      <string id="progress_second">second</string>
+      <string id="progress_seconds">seconds</string>
+      <string id="three_image_count_of_total">%count% of %total%</string>
+      <string id="acc_three_image_step_count_of_total">step %count% of %total%</string>
       <string id="three_image_tooltip">tooltip</string>
-      <string id="three_image_total_item">%total% item</string>
       <string id="three_image_total_items">%total% items</string>
+      <string id="three_image_total_item">%total% item</string>
+      <string id="three_image_progress_video">progress</string>
       <string id="three_image_video">video</string>
       <string id="three_image_video_volume">video volume</string>
+      <string id="acc_three_image_count_of_total_items_visited">%count% of %total% items visited</string>
+      <string id="acc_three_image_count_of_total_item_visited">%count% of %total% item visited</string>
+      <string id="three_image_count_of_total_visited">%count% of %total% visited</string>
+      <string id="accessible_text">Accessible text</string>
+      <string id="background_audio">Background audio</string>
+      <string id="keyboardshortcuts_lower">Keyboard shortcuts</string>
+      <string id="zoom_to_fit">Zoom to fit</string>
+      <string id="modern_video_settings_close">close video settings</string>
+      <string id="acc_modern_video_fullscreen">full-screen video</string>
+      <string id="modern_video_playback_settings">Video Playback Settings</string>
+      <string id="modern_video_captions_off">Off</string>
+      <string id="modern_video_captions_on">On</string>
+      <string id="modern_video_captions_label">Captions</string>
+      <string id="acc_modern_video_settings">video settings</string>
+      <string id="acc_modern_video_mute">mute video</string>
+      <string id="modern_video_normal_speed">Normal</string>
+      <string id="acc_modern_video_pause">pause video</string>
+      <string id="acc_modern_video_pip">picture-in-picture</string>
+      <string id="acc_modern_video_play">play video</string>
+      <string id="modern_video_playback_speed_title">Playback Speed</string>
+      <string id="acc_modern_video_captions">video captions</string>
+      <string id="acc_modern_video_playback_speed">playback speed</string>
+      <string id="acc_modern_video_volume">video volume</string>
+      <string id="closed_captions">Captions</string>
+      <string id="comma_key">Comma</string>
+      <string id="continueresponsive">Continue</string>
+      <string id="next">NEXT</string>
+      <string id="prev">PREV</string>
+      <string id="submit">SUBMIT</string>
+      <string id="playback_speed_title">Playback Speed</string>
+      <string id="playback_speed_normal">Normal</string>
+      <string id="continue">Continue</string>
+      <string id="glossary">Glossary</string>
+      <string id="terms">Terms</string>
+      <string id="action">Action</string>
+      <string id="alt_key">Alt</string>
+      <string id="ctrl_key">Ctrl</string>
+      <string id="keyboardshortcuts">Keyboard Shortcuts</string>
+      <string id="enable_keyboardshortcuts">Enable keyboard shortcuts</string>
+      <string id="shortcuthelp">List keyboard shortcuts</string>
+      <string id="mute_shortcut">Mute / unmute</string>
+      <string id="next_shortcut">Next</string>
+      <string id="playpause_shortcut">Play / pause</string>
+      <string id="previous_shortcut">Previous</string>
+      <string id="replay_shortcut">Replay</string>
+      <string id="shift_key">Shift</string>
+      <string id="shortcut">Shortcut</string>
+      <string id="submit_shortcut">Submit</string>
+      <string id="acctext_shortcut">Toggle accessible text</string>
+      <string id="background_audio_shortcut">Toggle background audio</string>
+      <string id="closedcaptions_shortcut">Toggle captions</string>
+      <string id="fullscreen_shortcut">Toggle full-screen</string>
       <string id="togglezoom">Toggle zoom to fit</string>
+      <string id="outline">Menu</string>
       <string id="transcript">Notes</string>
-      <string id="transcript_auto_scroll">Autoscroll</string>
+      <string id="disabled_orientation">Please rotate your device</string>
+      <string id="period_key">Period</string>
+      <string id="question_mark_key">Question mark</string>
+      <string id="resources">Resources</string>
+      <string id="restart">Restart</string>
+      <string id="resume">Resume</string>
+      <string id="close">Close</string>
+      <string id="acc_select_an_option">Select an option</string>
+      <string id="acc_ordinal_eighth">eighth</string>
+      <string id="acc_ordinal_fifth">fifth</string>
+      <string id="acc_ordinal_first">first</string>
+      <string id="acc_ordinal_fourth">fourth</string>
+      <string id="acc_locked">locked</string>
+      <string id="outline_container">Menu</string>
+      <string id="acc_next">Next (Ctrl+Alt+Period)</string>
+      <string id="acc_ordinal_ninth">ninth</string>
+      <string id="acc_previous">Previous (Ctrl+Alt+Comma)</string>
+      <string id="acc_search_input">search</string>
+      <string id="acc_search_result_status">%count% result found for %term%</string>
+      <string id="acc_search_results_status">%count% results found for %term%</string>
+      <string id="acc_ordinal_second">second</string>
+      <string id="acc_played">%time% played</string>
+      <string id="acc_ordinal_seventh">seventh</string>
+      <string id="sidebar_toggle">Sidebar Toggle</string>
+      <string id="acc_ordinal_sixth">sixth</string>
+      <string id="acc_skipnavigation">Back to top</string>
+      <string id="acc_slide_progress">slide progress</string>
+      <string id="desktop_start">Start Course</string>
+      <string id="mobile_start">Start Course</string>
+      <string id="acc_ordinal_tenth">tenth</string>
+      <string id="acc_ordinal_third">third</string>
+      <string id="acc_visited">visited</string>
+      <string id="clear">Clear and return to menu</string>
+      <string id="search_in">Search in:</string>
+      <string id="filter">Filter</string>
+      <string id="search">Search...</string>
       <string id="transcript_chk">Notes</string>
-      <string id="transcript_show_timestamp">Show timestamps</string>
+      <string id="search_results">Search Results</string>
+      <string id="slide_text_chk">Slide Text</string>
+      <string id="streaming_video_local_playback_learn_more">Learn More</string>
+      <string id="streaming_video_local_playback_republish">To watch this video, use the preview feature in Storyline 360, upload your published output to a server, publish to Review 360, or switch to static video quality.</string>
+      <string id="streaming_video_local_playback_title">Streaming video is unavailable for local playback.</string>
+      <string id="acc_cc_hide">Hide captions (Ctrl+Alt+C)</string>
+      <string id="acc_cc_show">Show captions (Ctrl+Alt+C)</string>
+      <string id="acc_enter_fullscreen">Enter full-screen (Ctrl+Alt+F)</string>
+      <string id="acc_exit_fullscreen">Exit full-screen (Ctrl+Alt+F)</string>
+      <string id="acc_mute">Mute (Ctrl+Alt+M)</string>
+      <string id="acc_next_visual">Next (Ctrl+Alt+.)</string>
+      <string id="acc_pause">Pause (Ctrl+Alt+P)</string>
+      <string id="acc_play">Play (Ctrl+Alt+P)</string>
+      <string id="acc_playback_speed">Playback speed</string>
+      <string id="acc_previous_visual">Previous (Ctrl+Alt+,)</string>
+      <string id="acc_replay">Replay (Ctrl+Alt+R)</string>
+      <string id="search_toggle">Search</string>
+      <string id="acc_settings">Settings</string>
+      <string id="acc_submit">Submit (Ctrl+Alt+S)</string>
+      <string id="acc_unmute">Unmute (Ctrl+Alt+M)</string>
+      <string id="transcript_auto_scroll">Autoscroll</string>
+      <string id="acc_window_close">Close</string>
+      <string id="acc_video_transcript_list">Transcript</string>
+      <string id="acc_window_move">Move window</string>
+      <string id="acc_modern_video_transcript">Open</string>
+      <string id="acc_window_resize">Resize window</string>
       <string id="video_transcript_resume_autoscroll">Resume autoscroll</string>
       <string id="video_transcript_select_track">Select track</string>
+      <string id="transcript_show_timestamp">Show timestamps</string>
       <string id="video_transcript_title">Transcripts</string>
-      <string id="zoom_to_fit">Zoom to fit</string>
-      <string id="continue">Continue</string>
+      <string id="acc_window_options">Options</string>
       <string id="invalid_prompt_button">OK</string>
       <string id="invalid_prompt_message">You must complete the question before submitting.</string>
       <string id="invalid_prompt_title">Invalid Answer</string>
@@ -1585,18 +1585,19 @@
       <links>
         <slidelink slideid="_player.658qEpMO4Ax" displaytext="Intro Scene" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.658qEpMO4Ax.5xw2vc16wv2" displaytext="AI Avatars in EDUCATION capstone project  Ross M. Hayduk  MS, instructional science and technology (MIST) program California State university, Monterey Bay December 2025" expand="false" type="slide" />
+            <slidelink slideid="_player.658qEpMO4Ax.5xw2vc16wv2" displaytext="&#xA;AI Avatars in EDUCATION&#xA;capstone project&#xA;&#xA;Ross M. Hayduk&#xA;&#xA;MS, instructional science and technology (MIST) program&#xA;California State university, Monterey Bay&#xA;December 2025" expand="false" type="slide" />
+            <slidelink slideid="_player.658qEpMO4Ax.5eHhDDIqk7r" displaytext="BEFORE YOU BEGIN…" expand="false" type="slide" />
             <slidelink slideid="_player.658qEpMO4Ax.5q5RcRXxcRa" displaytext="INDEX – AI AVATARS IN EDUCATION" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5aFBBNUIedt" displaytext="AI Avatars in Online Learning" expand="true" type="slide">
+        <slidelink slideid="_player.5aFBBNUIedt" displaytext="Avatars in Online Learning" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5aFBBNUIedt.60eAgguwtGZ" displaytext="Welcome to AI Avatars in Online Learning" expand="false" type="slide" />
             <slidelink slideid="_player.5aFBBNUIedt.6KB0psoLHSd" displaytext="LEARNING OBJECTIVES" expand="false" type="slide" />
             <slidelink slideid="_player.5aFBBNUIedt.6XeUAXV4MC3" displaytext="Why AI Avatars?" expand="false" type="slide" />
             <slidelink slideid="_player.5aFBBNUIedt.6ZgPC20IoLx" displaytext="What Are AI Avatars?" expand="false" type="slide" />
             <slidelink slideid="_player.5aFBBNUIedt.5jlNUaqBS8u" displaytext="AI Avatars in Action" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6pRDDWiB5RZ" displaytext="WHICH IS BETTER?" expand="false" type="slide" />
+            <slidelink slideid="_player.5aFBBNUIedt.6pRDDWiB5RZ" displaytext="WHICH IS BETTER?  COMPARE &amp;amp; CONTRAST" expand="false" type="slide" />
             <slidelink slideid="_player.5aFBBNUIedt.5efYll3HawL" displaytext="Why Use AI Avatars?" expand="false" type="slide" />
             <slidelink slideid="_player.5aFBBNUIedt.6nlXyNeGL9E" displaytext="Ethical Considerations" expand="false" type="slide" />
             <slidelink slideid="_player.5aFBBNUIedt.6mAlhZnuQrl" displaytext="EXERCISE:  Match the style of AI avatar to the best use case." expand="false" type="slide" />
@@ -1627,6 +1628,7 @@
             <slidelink slideid="_player.6lDc74YkLZo.5pMCVc00BRd" displaytext="Click &amp;quot;Generate Video&amp;quot;" expand="false" type="slide" />
             <slidelink slideid="_player.6lDc74YkLZo.5aej6lHXzot" displaytext="Select Your Video" expand="false" type="slide" />
             <slidelink slideid="_player.6lDc74YkLZo.5jR9bX2wu5j" displaytext="Click the Play Button" expand="false" type="slide" />
+            <slidelink slideid="_player.6lDc74YkLZo.6aEZxxDb4qJ" displaytext="REVIEW:  Drag and Drop to Match the HeyGen Features&#xA;" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.5g7Ujea2YQV" displaytext="Let&amp;apos;s Review" expand="true" type="slide">
@@ -1639,148 +1641,127 @@
             <slidelink slideid="_player.5g7Ujea2YQV.5darRsPu6CC" displaytext="ACKNOWLEDGEMENTS" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6FA7ZQ1nS9L" displaytext="LESSON 1 – THE NEED FOR AVATARS IN EDUCATION" expand="true" type="slide">
+        <slidelink slideid="_player.6ONH79VWScN" displaytext="QUIZ" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6FA7ZQ1nS9L.6aJFA7dzHPT" displaytext="LESSON 1 – THE NEED FOR AVATARS IN EDUCATION " expand="false" type="slide" />
-            <slidelink slideid="_player.6FA7ZQ1nS9L.6h35qDljZz4" displaytext="LESSON 1:  The Need for Avatars in Education&#xA;" expand="false" type="slide" />
-            <slidelink slideid="_player.6b7Al8zaDgN" displaytext="IST 524 Week 11 Team One Presentation" expand="false" type="slide">
+            <slidelink slideid="_player.6ONH79VWScN.5UzfudF7UNv" displaytext="QUIZ&#xA;" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5sAKGKKAjEg" displaytext="Question 2" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6Qm8GtFBeMx" displaytext="The best order of steps is:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5W4WCESGVuU" displaytext="ElevenLabs in the workflow is used to:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6qRcsQDYIXp" displaytext="The selection of HeyGen versus Synthesia should be based primarily on:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.69CabQgaDpU" displaytext="A passing score recommended for a summative quiz is:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5ZcuFkx63eS" displaytext="Pick the best trio of benefits for avatars:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5XTLKNmS4w3" displaytext="What should you always do when using an AI-generated voice or likeness?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6PbXWl8DK0i" displaytext="Which accessibility practice is essential?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6J5p0QnHjG3" displaytext="Which is a benefit of avatar-based instruction?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5Yl0vEKJagN" displaytext="Which of the following is a limitation to consider with avatars?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6WJ8chumXGJ" displaytext="Which Storyline feature validates step completion in a simulation?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6bxi0tPKrQA" displaytext="Which best describes a lifelike on-screen instructor designed for e-learning?" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6FA7ZQ1nS9L" displaytext="LESSON 1" expand="false" type="slide">
+          <links>
+            <slidelink slideid="_player.6FA7ZQ1nS9L.6h35qDljZz4" displaytext="Mayer&amp;apos;s Principles &amp;amp; AI Avatars in Education" expand="false" type="slide" />
+            <slidelink slideid="_player.5mDbpDGXmL6" displaytext="Modality Principle" expand="false" type="slide">
               <links>
-                <slidelink slideid="_player.6b7Al8zaDgN.6RXE28e1yb3" displaytext="Balancing Authentic Learning and Student Support: Insights from an Instructional Design Case Study" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.6ptECgQRDjL" displaytext="Are Authentic Learning Experiences Always the Best for Students?" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.5ZSTZXVZP39" displaytext="Introduction to Jane Rogers and Kayla Wilson Case Study" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.5YXgD65f2KQ" displaytext="Summary of the Case Study" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.6SopwBykpFQ" displaytext="What Is Authentic Learning?" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.6kDMznDZkxH" displaytext="Jane&amp;apos;s Course Design Vision" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.6K72iGZIqys" displaytext="SHIFTING THE VISION" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.6E7368Kbiz0" displaytext="IMPLICATIONS FOR ID" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.5h3r6YI4F4Q" displaytext="Conclusion" expand="false" type="slide" />
-                <slidelink slideid="_player.6b7Al8zaDgN.6cUQq1lgKek" displaytext="REFERENCES" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6j5GA2I5Dey" displaytext="Learning Theory for AI Avatars – The Modality Principle" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6JPY6WN3JXL" displaytext="Learning Theory for AI Avatars – The Personalization Principle" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6FRepd3lqdK" displaytext="Learning Theory for AI Avatars – The Multimedia Principle" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.5yXJOtN3uVu" displaytext="Enhancing Learning with AI Avatars: &#xD;The Modality Principle" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.5mng9UJMVKJ" displaytext="Learning Outcomes" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.5kbYWfWQgcN" displaytext="What is the Modality Principle?" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.61tiDrpWtda" displaytext="A Parent&amp;apos;s Perspective" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6ldJkI6Sb54" displaytext="Why It Works" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.5eqxFAVpnFR" displaytext="Case Study:  AI Avatars in Training" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6kb7A050wdv" displaytext="What does the Modality Principle suggest? " expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.5oJzeLVov2E" displaytext="Match the learning method with its effectiveness." expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6Wkh6PHckeg" displaytext="A company is designing training.  They should use…" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6gqXZ98L77J" displaytext="Wrapping Up: The Power of AI Avatars &amp;amp; The Modality Principle" expand="false" type="slide" />
+              </links>
+            </slidelink>
+            <slidelink slideid="_player.6kPkGvnKlEl" displaytext="Personalization Principle" expand="true" type="slide">
+              <links>
+                <slidelink slideid="_player.6kPkGvnKlEl.6Z4nG7wXppS" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.5sma9TY3MZ4" displaytext="Introduction and roadmap" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6aQ9Yk5AEKS" displaytext="Learning objectives" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.5sOTqODbvkq" displaytext="Recap: AI avatars and tools" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.68vleLTYcoc" displaytext="What is the personalization principle" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6jdyiBNjXyn" displaytext="Why it matters with AI avatars" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6J7wbxOZ79a" displaytext="Design guidelines: scripts" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.5sF3rObT6a9" displaytext="Example: formal vs personalized" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.5VW8Hc9YhOh" displaytext="Applying personalization in ElevenLabs" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6eRtCUVpBcS" displaytext="Applying personalization in HeyGen" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.611E8ctKtZo" displaytext="Pitfalls and ethical issues" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.5wyqmGjPnXc" displaytext="Knowledge check" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.61DuKSbCGBr" displaytext="Summary and next steps" expand="false" type="slide" />
+              </links>
+            </slidelink>
+            <slidelink slideid="_player.6KXBD4KYaUo" displaytext="Multimedia Principle" expand="true" type="slide">
+              <links>
+                <slidelink slideid="_player.6KXBD4KYaUo.63qeoMBHa6v" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.5jWWucK4vGu" displaytext="Introduction and roadmap" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.5Ys9fLmFVsL" displaytext="Learning objectives" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6AwCJcsc65d" displaytext="Recap: AI avatars and tools" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6AIECRXvT0W" displaytext="What is the multimedia principle" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6Ex3afxxi36" displaytext="Why it matters with AI avatars" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6r3fpdTZXf5" displaytext="Design guidelines: words and visuals" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.5mKZ2R36r9y" displaytext="Example: text only vs multimedia" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.5wwZKSxePvQ" displaytext="Applying multimedia in narration" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6obFNFQdqhk" displaytext="Applying multimedia in HeyGen and Storyline" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6e4Vjbm5X0L" displaytext="Pitfalls and ethical considerations" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6ApBUNDtqRR" displaytext="Knowledge check" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6hQp00qa9Ku" displaytext="Summary and next steps" expand="false" type="slide" />
               </links>
             </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.6ONH79VWScN" displaytext="QUIZ" expand="true" type="slide">
+        <slidelink slideid="_player.6Ed1S68H6pD" displaytext="LESSON 2" expand="false" type="slide">
           <links>
-            <slidelink slideid="_player.6ONH79VWScN.5sAKGKKAjEg" displaytext="A pedagogical agent primarily serves to:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6Uc3Y3GLD9u" displaytext="CONGRATULATIONS" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.695Hq4rJEpq" displaytext="Drag and Drop to Match  -  HeyGen Features" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5UzfudF7UNv" displaytext="QUIZ " expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6Qm8GtFBeMx" displaytext="Best order of steps is:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5W4WCESGVuU" displaytext="ElevenLabs in the workflow is used to:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6qRcsQDYIXp" displaytext="HeyGen vs Synthesia selection should be based primarily on:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.69CabQgaDpU" displaytext="Passing score recommended for summative quiz is:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5ZcuFkx63eS" displaytext="Pick the best trio of benefits for avatars:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5XTLKNmS4w3" displaytext="What should you always do when using an AI‑generated voice/likeness?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6PbXWl8DK0i" displaytext="Which accessibility practice is essential?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6J5p0QnHjG3" displaytext="Which is a benefit of avatar‑based instruction?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5Yl0vEKJagN" displaytext="Which is a limitation to consider with avatars?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6WJ8chumXGJ" displaytext="Which Storyline feature validates step completion in a simulation?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6bxi0tPKrQA" displaytext="Which term best describes a lifelike on‑screen instructor designed to guide learning?" expand="false" type="slide" />
+            <slidelink slideid="_player.6Ed1S68H6pD.5uyc8vPqqDO" displaytext="Learning Theories" expand="false" type="slide" />
+            <slidelink slideid="_player.6NO3vqmoF0P" displaytext="Avatars as Pedagogical Agents" expand="false" type="slide">
+              <links>
+                <slidelink slideid="_player.6NO3vqmoF0P.6C9lCYZ0RBm" displaytext="Technology Adoption Models for " expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.66AmtoFniMe" displaytext="Adoption Lifecycle of AI Audio/Video Cloning Technologies" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.5rpwOY2IoLs" displaytext="HeyGen – Personalized AI Video Avatars" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.6ATT5YqA76M" displaytext="Synthesia.io – AI Video Made Simple" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.5pgiVKJaGgP" displaytext="HourOne AI – Business-Oriented Avatars" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.6ODW8MoBLlQ" displaytext="ElevenLabs – Advanced AI Audio Technology" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.6pN79kl7Enl" displaytext="The Future of AI Avatars &amp;amp; Audio Clones" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.62DENcFWws3" displaytext="Thank You!" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.5z8WCA7EAH4" displaytext="Quick Review:" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.5iNzm1R0hlu" displaytext="How many AI technologies were utilized in this module?" expand="false" type="slide" />
+                <slidelink slideid="_player.6NO3vqmoF0P.6dlEO8kHASM" displaytext="Three technologies that produce video clones are…" expand="false" type="slide" />
+              </links>
+            </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.6NO3vqmoF0P" displaytext="AI Avatar Clones as Pedagogical Agents PPT" expand="true" type="slide">
+        <slidelink slideid="_player.6DfqjPJ4CrC" displaytext="LESSON 3" expand="false" type="slide">
           <links>
-            <slidelink slideid="_player.6NO3vqmoF0P.6C9lCYZ0RBm" displaytext="Technology Adoption Models for " expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.66AmtoFniMe" displaytext="Adoption Lifecycle of AI Audio/Video Cloning Technologies" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.5rpwOY2IoLs" displaytext="HeyGen – Personalized AI Video Avatars" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.6ATT5YqA76M" displaytext="Synthesia.io – AI Video Made Simple" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.5pgiVKJaGgP" displaytext="HourOne AI – Business-Oriented Avatars" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.6ODW8MoBLlQ" displaytext="ElevenLabs – Advanced AI Audio Technology" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.6pN79kl7Enl" displaytext="The Future of AI Avatars &amp;amp; Audio Clones" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.62DENcFWws3" displaytext="Thank You!" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.5z8WCA7EAH4" displaytext="An AI Avatar is also known as an audio/video clone." expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.5iNzm1R0hlu" displaytext="How many AI technologies were utilized in this training module?" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P.6dlEO8kHASM" displaytext="Three technologies that produce video clones are…" expand="false" type="slide" />
+            <slidelink slideid="_player.6DfqjPJ4CrC.6i54dDffVXG" displaytext="Learning Theories" expand="false" type="slide" />
+            <slidelink slideid="_player.6n3nuLlx3uh" displaytext="ElevenLabs How To" expand="false" type="slide">
+              <links>
+                <slidelink slideid="_player.6n3nuLlx3uh.6TaUHGa0A6o" displaytext="Text-to-Speech" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.5UjMDq9tm0d" displaytext="Introduction to AI Voice Cloning in ElevenLabs" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.6lZBASWuLNn" displaytext="Browse Voices" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.6G1gUnharlD" displaytext="Explore Menu" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.6QdZtLGqY1X" displaytext="Select Voice" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.64M5RLaec3o" displaytext="Enter Text" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.65rVESUCVNb" displaytext="Generate Speech" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.6dqWAiVCpYl" displaytext="Click Play" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.6TM0ODH5hdn" displaytext="Download Audio" expand="false" type="slide" />
+              </links>
+            </slidelink>
+            <slidelink slideid="_player.6a9AJIedpCE" displaytext="Still Photo versus Video Avatar" expand="true" type="slide">
+              <links>
+                <slidelink slideid="_player.6a9AJIedpCE.6P0qeKJyXrc" displaytext="Introducion" expand="false" type="slide" />
+                <slidelink slideid="_player.6a9AJIedpCE.5Y70rXKFPNf" displaytext="Introducion" expand="false" type="slide" />
+              </links>
+            </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.64u0xjaHmfd" displaytext="Module 1 - Introduction to Generative AI" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.64u0xjaHmfd.6We6u5fXgR1" displaytext="Generative AI" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6TBmrs43lho" displaytext="Module One" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6KSB6iOZnNW" displaytext="Objectives" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6j9VmP9tHGd" displaytext="What is Generative AI (GenAI)" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.5VvzCGgtXVd" displaytext="Limitations of GenAI" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.69oauUYYSPE" displaytext="Benefits of GenAI" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.5butk0xFjEs" displaytext="Module Two" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6YnQfVpB0NM" displaytext="AI Tools for Education" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6KPsEF6ChY9" displaytext="AI Tools for Education" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6Wc718Qz3aq" displaytext="AI Tools for Education" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.5YeIMq9tXKK" displaytext="AI Tools for Education" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6UtG988MqR0" displaytext="AI Tools for Education" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.5ogo04NfFun" displaytext="AI Tools for Education" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.5ZnPlXl95P6" displaytext="Challenges and Considerations" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.6LtpVfc1i1T" displaytext="Recommendations for Use" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd.5Z9PbV44Y58" displaytext="Thank You!" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.5mDbpDGXmL6" displaytext="AI Avatar Training" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.5mDbpDGXmL6.5yXJOtN3uVu" displaytext="Enhancing Learning with AI Avatars: The Modality Principle  Ross Hayduk CSU Monterey Bay MIST Program" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6j5GA2I5Dey" displaytext="Learning Theory for AI Avatars – The Modality Principle" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5mng9UJMVKJ" displaytext="Learning Outcomes" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5kbYWfWQgcN" displaytext="What is the Modality Principle?" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.61tiDrpWtda" displaytext="What is the Modality Principle?" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6ldJkI6Sb54" displaytext="Why It Works" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5eqxFAVpnFR" displaytext="Case Study:  AI Avatars in Training" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6kb7A050wdv" displaytext="What does the Modality Principle suggest?&#xA;" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5oJzeLVov2E" displaytext="Match the learning method with its effectiveness." expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6Wkh6PHckeg" displaytext="A company is designing training.  They should use…" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6gqXZ98L77J" displaytext="Wrapping Up: The Power of AI Avatars &amp;amp; The Modality Principle" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6m0nYRV47NF" displaytext="Enhancing learning with AI avatars: The Modality Principle" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5qN0jEuSDV5" displaytext="Introduction and roadmap" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6AEi6hcsBgv" displaytext="Learning objectives" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6dOmlbt3OsE" displaytext="Recap: AI avatars and tools" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6e6ZKM7ZomD" displaytext="What is the Modality Principle" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6DqxL5miguY" displaytext="Why it matters with AI avatars" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6BCgVdWaupM" displaytext="Design guidelines: audio and text" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6CRs1GW885t" displaytext="Example: text-heavy vs modality-friendly" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5VckULjw8Cr" displaytext="Applying Modality in narration" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5eauARYfStC" displaytext="Applying Modality in HeyGen and Storyline" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6G08idySPiX" displaytext="Pitfalls and ethical considerations" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.6L87wI68BRI" displaytext="Knowledge check" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5mtPLRtQHKh" displaytext="Knowledge check" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6.5Xqq0DkhGnE" displaytext="Summary and next steps" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6n3nuLlx3uh" displaytext="ElevenLabs How To" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6n3nuLlx3uh.6TaUHGa0A6o" displaytext="Text-to-Speech" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.5UjMDq9tm0d" displaytext="Introduction to AI Voice Cloning in ElevenLabs" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.6lZBASWuLNn" displaytext="Browse Voices" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.6G1gUnharlD" displaytext="Explore Menu" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.6QdZtLGqY1X" displaytext="Select Voice" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.64M5RLaec3o" displaytext="Enter Text" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.65rVESUCVNb" displaytext="Generate Speech" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.6dqWAiVCpYl" displaytext="Click Play" expand="false" type="slide" />
-            <slidelink slideid="_player.6n3nuLlx3uh.6TM0ODH5hdn" displaytext="Download Audio" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6a9AJIedpCE" displaytext="Still Photo versus Video Avatar" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6a9AJIedpCE.6P0qeKJyXrc" displaytext="Introducion" expand="false" type="slide" />
-            <slidelink slideid="_player.6a9AJIedpCE.5Y70rXKFPNf" displaytext="Introducion" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6djGTrJuvFz" displaytext="REFERENCES" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6djGTrJuvFz.6YZsGL4eXey" displaytext="RESOURCES AND REFERENCES" expand="false" type="slide" />
-            <slidelink slideid="_player.6djGTrJuvFz.5rPADWOSbeb" displaytext="CREDITS" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6Ed1S68H6pD" displaytext="LESSON 2 – WHAT ARE AI AVATARS?" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6Ed1S68H6pD.6Lx4qYpJAj0" displaytext="LESSON 2 – WHAT ARE AI AVATARS?" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6DfqjPJ4CrC" displaytext="LESSON 3 - HOW TO CREATE AN AVATAR" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6DfqjPJ4CrC.6oDcyFHPRra" displaytext="LESSON 3 HOW TO CREATE AN AVATAR" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6IUSI0TEbKP" displaytext="LESSON 4 – BEST PRACTICES AND ONGOING USE" expand="true" type="slide">
+        <slidelink slideid="_player.6IUSI0TEbKP" displaytext="LESSON 4" expand="false" type="slide">
           <links>
             <slidelink slideid="_player.6IUSI0TEbKP.5z9CcE8XbnP" displaytext="LESSON 4 – BEST PRACTICES AND ONGOING USE" expand="false" type="slide" />
-            <slidelink slideid="_player.6DnRFawRZC6" displaytext="Ethics of AI in Instructional Design and Technology" expand="false" type="slide">
+            <slidelink slideid="_player.6DnRFawRZC6" displaytext="Ethics of AI in Instructional Design and Technology" expand="true" type="slide">
               <links>
                 <slidelink slideid="_player.6DnRFawRZC6.5qv0OTY0a36" displaytext="Ethics of AI in Instructional Design and Technology" expand="false" type="slide" />
                 <slidelink slideid="_player.6DnRFawRZC6.6TKOQVFvbt3" displaytext="The ethics of ai in instructional design" expand="false" type="slide" />
@@ -1796,38 +1777,30 @@
             </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.6KXBD4KYaUo" displaytext="Multimedia_Principle_AI_Avatars_StorylineOptimized_FIXED" expand="true" type="slide">
+        <slidelink slideid="_player.6djGTrJuvFz" displaytext="RESOURCES" expand="false" type="slide">
           <links>
-            <slidelink slideid="_player.6KXBD4KYaUo.63qeoMBHa6v" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.5jWWucK4vGu" displaytext="Introduction and roadmap" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.5Ys9fLmFVsL" displaytext="Learning objectives" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6AwCJcsc65d" displaytext="Recap: AI avatars and tools" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6AIECRXvT0W" displaytext="What is the multimedia principle" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6Ex3afxxi36" displaytext="Why it matters with AI avatars" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6r3fpdTZXf5" displaytext="Design guidelines: words and visuals" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.5mKZ2R36r9y" displaytext="Example: text only vs multimedia" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.5wwZKSxePvQ" displaytext="Applying multimedia in narration" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6obFNFQdqhk" displaytext="Applying multimedia in HeyGen and Storyline" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6e4Vjbm5X0L" displaytext="Pitfalls and ethical considerations" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6ApBUNDtqRR" displaytext="Knowledge check" expand="false" type="slide" />
-            <slidelink slideid="_player.6KXBD4KYaUo.6hQp00qa9Ku" displaytext="Summary and next steps" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6kPkGvnKlEl" displaytext="Personalization_Principle_AI_Avatars_StorylineOptimized_FIXED" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6kPkGvnKlEl.6Z4nG7wXppS" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.5sma9TY3MZ4" displaytext="Introduction and roadmap" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.6aQ9Yk5AEKS" displaytext="Learning objectives" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.5sOTqODbvkq" displaytext="Recap: AI avatars and tools" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.68vleLTYcoc" displaytext="What is the personalization principle" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.6jdyiBNjXyn" displaytext="Why it matters with AI avatars" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.6J7wbxOZ79a" displaytext="Design guidelines: scripts" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.5sF3rObT6a9" displaytext="Example: formal vs personalized" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.5VW8Hc9YhOh" displaytext="Applying personalization in ElevenLabs" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.6eRtCUVpBcS" displaytext="Applying personalization in HeyGen" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.611E8ctKtZo" displaytext="Pitfalls and ethical issues" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.5wyqmGjPnXc" displaytext="Knowledge check" expand="false" type="slide" />
-            <slidelink slideid="_player.6kPkGvnKlEl.61DuKSbCGBr" displaytext="Summary and next steps" expand="false" type="slide" />
+            <slidelink slideid="_player.6djGTrJuvFz.6YZsGL4eXey" displaytext="RESOURCES AND REFERENCES" expand="false" type="slide" />
+            <slidelink slideid="_player.64u0xjaHmfd" displaytext="Introduction to Generative AI" expand="false" type="slide">
+              <links>
+                <slidelink slideid="_player.64u0xjaHmfd.6We6u5fXgR1" displaytext="Generative AI" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6TBmrs43lho" displaytext="Module One" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6KSB6iOZnNW" displaytext="Objectives" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6j9VmP9tHGd" displaytext="What is Generative AI (GenAI)" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.5VvzCGgtXVd" displaytext="Limitations of GenAI" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.69oauUYYSPE" displaytext="Benefits of GenAI" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.5butk0xFjEs" displaytext="Module Two" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6YnQfVpB0NM" displaytext="AI Tools for Education" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6KPsEF6ChY9" displaytext="AI Tools for Education" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6Wc718Qz3aq" displaytext="AI Tools for Education" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.5YeIMq9tXKK" displaytext="AI Tools for Education" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6UtG988MqR0" displaytext="AI Tools for Education" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.5ogo04NfFun" displaytext="AI Tools for Education" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.5ZnPlXl95P6" displaytext="Challenges and Considerations" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.6LtpVfc1i1T" displaytext="Recommendations for Use" expand="false" type="slide" />
+                <slidelink slideid="_player.64u0xjaHmfd.5Z9PbV44Y58" displaytext="Thank You!" expand="false" type="slide" />
+              </links>
+            </slidelink>
+            <slidelink slideid="_player.6djGTrJuvFz.5rPADWOSbeb" displaytext="CREDITS" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
