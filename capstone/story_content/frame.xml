@@ -21,7 +21,7 @@
           </option>
           <option name="sidebar_enabled" value="true">
             <options>
-              <option name="sidebarpos" value="left" />
+              <option name="sidebarpos" value="right" />
               <option name="closed" value="false" />
             </options>
           </option>
@@ -53,7 +53,7 @@
           <option name="wraplistitems" value="false" />
           <option name="tooltips" value="true" />
           <option name="autocollapse" value="true" />
-          <option name="autonumber" value="false" />
+          <option name="autonumber" value="true" />
           <option name="enableresultsicons" value="true" />
         </options>
       </optiongroup>
@@ -1583,79 +1583,11 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.658qEpMO4Ax" displaytext="Intro Scene" expand="true" type="slide">
+        <slidelink slideid="_player.658qEpMO4Ax" displaytext="Intro Scene" expand="false" type="slide">
           <links>
-            <slidelink slideid="_player.658qEpMO4Ax.5xw2vc16wv2" displaytext="&#xA;AI Avatars in EDUCATION&#xA;capstone project&#xA;&#xA;Ross M. Hayduk&#xA;&#xA;MS, instructional science and technology (MIST) program&#xA;California State university, Monterey Bay&#xA;December 2025" expand="false" type="slide" />
+            <slidelink slideid="_player.658qEpMO4Ax.5xw2vc16wv2" displaytext="AI Avatars in EDUCATION capstone project  Ross M. Hayduk  MS, instructional science and technology (MIST) program California State university, Monterey Bay December 2025" expand="false" type="slide" />
             <slidelink slideid="_player.658qEpMO4Ax.5eHhDDIqk7r" displaytext="BEFORE YOU BEGIN…" expand="false" type="slide" />
             <slidelink slideid="_player.658qEpMO4Ax.5q5RcRXxcRa" displaytext="INDEX – AI AVATARS IN EDUCATION" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.5aFBBNUIedt" displaytext="Avatars in Online Learning" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.5aFBBNUIedt.60eAgguwtGZ" displaytext="Welcome to AI Avatars in Online Learning" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6KB0psoLHSd" displaytext="LEARNING OBJECTIVES" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6XeUAXV4MC3" displaytext="Why AI Avatars?" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6ZgPC20IoLx" displaytext="What Are AI Avatars?" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.5jlNUaqBS8u" displaytext="AI Avatars in Action" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6pRDDWiB5RZ" displaytext="WHICH IS BETTER?  COMPARE &amp;amp; CONTRAST" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.5efYll3HawL" displaytext="Why Use AI Avatars?" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6nlXyNeGL9E" displaytext="Ethical Considerations" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6mAlhZnuQrl" displaytext="EXERCISE:  Match the style of AI avatar to the best use case." expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6SrttlBKSoK" displaytext="SELECTING AN AVATAR SCENARIO" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.65tN5ie33N6" displaytext="SELECTING AN AVATAR SCENARIO" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.5fuw0ZrvV4K" displaytext="QUIZ:  BENEFITS OF AI AVATARS" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6c7Jl6aFTrj" displaytext="Which of the following are valid benefits of using AI avatars in instructional design? (Select all that apply) " expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6XH2NKM7hkT" displaytext="QUIZ:  DRAG &amp;amp; DROP" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.65To5GGu6yW" displaytext="QUIZ – DRAG AND DROP TO MATCH HEYGEN FEATURES" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6FJbfBzIaAr" displaytext="QUIZ:  YOUR TURN TO REFLECT" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6WLdzFbG6xp" displaytext="Case Study – AI Avatar Use in Higher Ed" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.5iqe1pspSGR" displaytext="Ethical Considerations" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.6fgrhsA6Ewq" displaytext="Case Study – AI Avatars in Corporate Training" expand="false" type="slide" />
-            <slidelink slideid="_player.5aFBBNUIedt.61VKA6gZvM8" displaytext="Video Demo – Creating an Avatar" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6lDc74YkLZo" displaytext="HeyGen How To" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6lDc74YkLZo.6lCLiM3U6TJ" displaytext="Click &amp;quot;Create Video&amp;quot;" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.5u6t8BzvJtv" displaytext="Click &amp;quot;Try Avatar IV&amp;quot;" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.5d4Oe3darjd" displaytext="Click &amp;quot;Upload Photo&amp;quot;" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.6etjIFsCej5" displaytext="Select A Photo" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.5VR7TUMRAub" displaytext="Click the &amp;quot;Open&amp;quot; button" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.5jge3oKkrLJ" displaytext="Click &amp;quot;Fit Screen&amp;quot;" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.66Lwj9nes3l" displaytext="Enter Your Script" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.69w4Ouj6cla" displaytext="Click the Select Voice Button" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.6Ej0NE1aui2" displaytext="Select A Voice" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.5pMCVc00BRd" displaytext="Click &amp;quot;Generate Video&amp;quot;" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.5aej6lHXzot" displaytext="Select Your Video" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.5jR9bX2wu5j" displaytext="Click the Play Button" expand="false" type="slide" />
-            <slidelink slideid="_player.6lDc74YkLZo.6aEZxxDb4qJ" displaytext="REVIEW:  Drag and Drop to Match the HeyGen Features&#xA;" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.5g7Ujea2YQV" displaytext="Let&amp;apos;s Review" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.5g7Ujea2YQV.6GPMkkwpy2I" displaytext="CONSIDER – What is the best response?" expand="false" type="slide" />
-            <slidelink slideid="_player.5g7Ujea2YQV.6oW0oZRnzwm" displaytext="ANSWER – What is the best response?" expand="false" type="slide" />
-            <slidelink slideid="_player.5g7Ujea2YQV.6n53AxDaKUD" displaytext="What We Learned In This Module" expand="false" type="slide" />
-            <slidelink slideid="_player.5g7Ujea2YQV.6lOApgEekTR" displaytext="Congratulations!" expand="false" type="slide" />
-            <slidelink slideid="_player.5g7Ujea2YQV.6jDeqMBNaDL" displaytext="Capstone Connection" expand="false" type="slide" />
-            <slidelink slideid="_player.5g7Ujea2YQV.5darRsPu6CC" displaytext="ACKNOWLEDGEMENTS" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6ONH79VWScN" displaytext="QUIZ" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6ONH79VWScN.5UzfudF7UNv" displaytext="QUIZ&#xA;" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5sAKGKKAjEg" displaytext="Question 2" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6Qm8GtFBeMx" displaytext="The best order of steps is:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5W4WCESGVuU" displaytext="ElevenLabs in the workflow is used to:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6qRcsQDYIXp" displaytext="The selection of HeyGen versus Synthesia should be based primarily on:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.69CabQgaDpU" displaytext="A passing score recommended for a summative quiz is:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5ZcuFkx63eS" displaytext="Pick the best trio of benefits for avatars:" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5XTLKNmS4w3" displaytext="What should you always do when using an AI-generated voice or likeness?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6PbXWl8DK0i" displaytext="Which accessibility practice is essential?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6J5p0QnHjG3" displaytext="Which is a benefit of avatar-based instruction?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.5Yl0vEKJagN" displaytext="Which of the following is a limitation to consider with avatars?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6WJ8chumXGJ" displaytext="Which Storyline feature validates step completion in a simulation?" expand="false" type="slide" />
-            <slidelink slideid="_player.6ONH79VWScN.6bxi0tPKrQA" displaytext="Which best describes a lifelike on-screen instructor designed for e-learning?" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6FA7ZQ1nS9L" displaytext="LESSON 1" expand="false" type="slide">
@@ -1664,13 +1596,16 @@
             <slidelink slideid="_player.5mDbpDGXmL6" displaytext="Modality Principle" expand="false" type="slide">
               <links>
                 <slidelink slideid="_player.5mDbpDGXmL6.6j5GA2I5Dey" displaytext="Learning Theory for AI Avatars – The Modality Principle" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6TmedWVY4dR" displaytext="Knowledge Check – The Modality Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6JPY6WN3JXL" displaytext="Learning Theory for AI Avatars – The Personalization Principle" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6BudS50nbGY" displaytext="Knowledge Check – The Personalization Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6FRepd3lqdK" displaytext="Learning Theory for AI Avatars – The Multimedia Principle" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.62ak7CJH8gc" displaytext="Knowledge Check – The Multimedia Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5yXJOtN3uVu" displaytext="Enhancing Learning with AI Avatars: &#xD;The Modality Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5mng9UJMVKJ" displaytext="Learning Outcomes" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5kbYWfWQgcN" displaytext="What is the Modality Principle?" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.61tiDrpWtda" displaytext="A Parent&amp;apos;s Perspective" expand="false" type="slide" />
-                <slidelink slideid="_player.5mDbpDGXmL6.6ldJkI6Sb54" displaytext="Why It Works" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6ldJkI6Sb54" displaytext="Why It Works " expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5eqxFAVpnFR" displaytext="Case Study:  AI Avatars in Training" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.6kb7A050wdv" displaytext="What does the Modality Principle suggest? " expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5oJzeLVov2E" displaytext="Match the learning method with its effectiveness." expand="false" type="slide" />
@@ -1678,7 +1613,7 @@
                 <slidelink slideid="_player.5mDbpDGXmL6.6gqXZ98L77J" displaytext="Wrapping Up: The Power of AI Avatars &amp;amp; The Modality Principle" expand="false" type="slide" />
               </links>
             </slidelink>
-            <slidelink slideid="_player.6kPkGvnKlEl" displaytext="Personalization Principle" expand="true" type="slide">
+            <slidelink slideid="_player.6kPkGvnKlEl" displaytext="Personalization Principle" expand="false" type="slide">
               <links>
                 <slidelink slideid="_player.6kPkGvnKlEl.6Z4nG7wXppS" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.5sma9TY3MZ4" displaytext="Introduction and roadmap" expand="false" type="slide" />
@@ -1691,11 +1626,15 @@
                 <slidelink slideid="_player.6kPkGvnKlEl.5VW8Hc9YhOh" displaytext="Applying personalization in ElevenLabs" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6eRtCUVpBcS" displaytext="Applying personalization in HeyGen" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.611E8ctKtZo" displaytext="Pitfalls and ethical issues" expand="false" type="slide" />
-                <slidelink slideid="_player.6kPkGvnKlEl.5wyqmGjPnXc" displaytext="Knowledge check" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.61DuKSbCGBr" displaytext="Summary and next steps" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6lGa4w10Q8x" displaytext=" What is the main idea of the Personalization Principle?" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.5VA4SCCHV1j" displaytext="Give one example of a personalized script line for an avatar." expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.5YclKPDYT8K" displaytext="Name one way to apply personalization in ElevenLabs." expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6VIISIZjmGD" displaytext="Name one way to apply personalization in HeyGen." expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6QPbwwxtvFh" displaytext="Name one ethical concern when using personalization with AI avatars." expand="false" type="slide" />
               </links>
             </slidelink>
-            <slidelink slideid="_player.6KXBD4KYaUo" displaytext="Multimedia Principle" expand="true" type="slide">
+            <slidelink slideid="_player.6KXBD4KYaUo" displaytext="Multimedia Principle" expand="false" type="slide">
               <links>
                 <slidelink slideid="_player.6KXBD4KYaUo.63qeoMBHa6v" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.5jWWucK4vGu" displaytext="Introduction and roadmap" expand="false" type="slide" />
@@ -1708,8 +1647,12 @@
                 <slidelink slideid="_player.6KXBD4KYaUo.5wwZKSxePvQ" displaytext="Applying multimedia in narration" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6obFNFQdqhk" displaytext="Applying multimedia in HeyGen and Storyline" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6e4Vjbm5X0L" displaytext="Pitfalls and ethical considerations" expand="false" type="slide" />
-                <slidelink slideid="_player.6KXBD4KYaUo.6ApBUNDtqRR" displaytext="Knowledge check" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6hQp00qa9Ku" displaytext="Summary and next steps" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6AwI5DyqPhr" displaytext=" In simple terms, what is the Multimedia Principle?" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6o5dFaSJAho" displaytext="Describe one change you would make to a text-heavy slide to apply this principle." expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6FUGb6opOVZ" displaytext="How can narration support graphics in an AI avatar lesson?" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.69JQii65Ocl" displaytext="How would you balance the avatar and diagrams on a complex process slide?" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6Mb7EA8V4sR" displaytext="Name one common multimedia pitfall when using AI avatars." expand="false" type="slide" />
               </links>
             </slidelink>
           </links>
@@ -1717,7 +1660,7 @@
         <slidelink slideid="_player.6Ed1S68H6pD" displaytext="LESSON 2" expand="false" type="slide">
           <links>
             <slidelink slideid="_player.6Ed1S68H6pD.5uyc8vPqqDO" displaytext="Learning Theories" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P" displaytext="Avatars as Pedagogical Agents" expand="false" type="slide">
+            <slidelink slideid="_player.6NO3vqmoF0P" displaytext="Avatars as Pedagogical Agents" expand="true" type="slide">
               <links>
                 <slidelink slideid="_player.6NO3vqmoF0P.6C9lCYZ0RBm" displaytext="Technology Adoption Models for " expand="false" type="slide" />
                 <slidelink slideid="_player.6NO3vqmoF0P.66AmtoFniMe" displaytext="Adoption Lifecycle of AI Audio/Video Cloning Technologies" expand="false" type="slide" />
@@ -1732,11 +1675,55 @@
                 <slidelink slideid="_player.6NO3vqmoF0P.6dlEO8kHASM" displaytext="Three technologies that produce video clones are…" expand="false" type="slide" />
               </links>
             </slidelink>
+            <slidelink slideid="_player.5aFBBNUIedt" displaytext="Avatars in Online Learning" expand="false" type="slide">
+              <links>
+                <slidelink slideid="_player.5aFBBNUIedt.60eAgguwtGZ" displaytext="Welcome to AI Avatars in Online Learning" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6KB0psoLHSd" displaytext="LEARNING OBJECTIVES" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6XeUAXV4MC3" displaytext="Why AI Avatars?" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6ZgPC20IoLx" displaytext="What Are AI Avatars?" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.5jlNUaqBS8u" displaytext="AI Avatars in Action" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6pRDDWiB5RZ" displaytext="WHICH IS BETTER?  COMPARE &amp;amp; CONTRAST" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.5efYll3HawL" displaytext="Why Use AI Avatars?" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6nlXyNeGL9E" displaytext="Ethical Considerations" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6mAlhZnuQrl" displaytext="EXERCISE:  Match the style of AI avatar to the best use case." expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6SrttlBKSoK" displaytext="SELECTING AN AVATAR SCENARIO" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.65tN5ie33N6" displaytext="How Did You Do?" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.5fuw0ZrvV4K" displaytext="QUIZ:  BENEFITS OF AI AVATARS" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6c7Jl6aFTrj" displaytext="Which of the following are valid benefits of using AI avatars in instructional design? (Select all that apply) " expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6XH2NKM7hkT" displaytext="QUIZ:  DRAG &amp;amp; DROP" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.65To5GGu6yW" displaytext="QUIZ – DRAG AND DROP TO MATCH HEYGEN FEATURES" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6FJbfBzIaAr" displaytext="QUIZ:  YOUR TURN TO REFLECT" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6WLdzFbG6xp" displaytext="Case Study – AI Avatar Use in Higher Ed" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.5iqe1pspSGR" displaytext="Ethical Considerations" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.6fgrhsA6Ewq" displaytext="Case Study – AI Avatars in Corporate Training" expand="false" type="slide" />
+                <slidelink slideid="_player.5aFBBNUIedt.61VKA6gZvM8" displaytext="Video Demo – Creating an Avatar" expand="false" type="slide" />
+              </links>
+            </slidelink>
           </links>
         </slidelink>
         <slidelink slideid="_player.6DfqjPJ4CrC" displaytext="LESSON 3" expand="false" type="slide">
           <links>
-            <slidelink slideid="_player.6DfqjPJ4CrC.6i54dDffVXG" displaytext="Learning Theories" expand="false" type="slide" />
+            <slidelink slideid="_player.6DfqjPJ4CrC.6i54dDffVXG" displaytext="How to Create an Avatar" expand="false" type="slide" />
+            <slidelink slideid="_player.6lDc74YkLZo" displaytext="HeyGen How To" expand="false" type="slide">
+              <links>
+                <slidelink slideid="_player.6lDc74YkLZo.6lCLiM3U6TJ" displaytext="Click &amp;quot;Create Video&amp;quot;" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.5u6t8BzvJtv" displaytext="Click &amp;quot;Try Avatar IV&amp;quot;" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.5d4Oe3darjd" displaytext="Click &amp;quot;Upload Photo&amp;quot;" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.6etjIFsCej5" displaytext="Select A Photo" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.5VR7TUMRAub" displaytext="Click the &amp;quot;Open&amp;quot; button" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.5jge3oKkrLJ" displaytext="Click &amp;quot;Fit Screen&amp;quot;" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.66Lwj9nes3l" displaytext="Enter Your Script" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.69w4Ouj6cla" displaytext="Click the Select Voice Button" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.6Ej0NE1aui2" displaytext="Select A Voice" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.5pMCVc00BRd" displaytext="Click &amp;quot;Generate Video&amp;quot;" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.5aej6lHXzot" displaytext="Select Your Video" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.5jR9bX2wu5j" displaytext="Click the Play Button" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.6GPMkkwpy2I" displaytext="CONSIDER – What is the best response?" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.6oW0oZRnzwm" displaytext="ANSWER – What is the best response?" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.6n53AxDaKUD" displaytext="What We Learned In This Module" expand="false" type="slide" />
+                <slidelink slideid="_player.6lDc74YkLZo.6jDeqMBNaDL" displaytext="Capstone Connection" expand="false" type="slide" />
+              </links>
+            </slidelink>
             <slidelink slideid="_player.6n3nuLlx3uh" displaytext="ElevenLabs How To" expand="false" type="slide">
               <links>
                 <slidelink slideid="_player.6n3nuLlx3uh.6TaUHGa0A6o" displaytext="Text-to-Speech" expand="false" type="slide" />
@@ -1758,28 +1745,29 @@
             </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.6IUSI0TEbKP" displaytext="LESSON 4" expand="false" type="slide">
+        <slidelink slideid="_player.6ONH79VWScN" displaytext="QUIZ" expand="false" type="slide">
           <links>
-            <slidelink slideid="_player.6IUSI0TEbKP.5z9CcE8XbnP" displaytext="LESSON 4 – BEST PRACTICES AND ONGOING USE" expand="false" type="slide" />
-            <slidelink slideid="_player.6DnRFawRZC6" displaytext="Ethics of AI in Instructional Design and Technology" expand="true" type="slide">
-              <links>
-                <slidelink slideid="_player.6DnRFawRZC6.5qv0OTY0a36" displaytext="Ethics of AI in Instructional Design and Technology" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.6TKOQVFvbt3" displaytext="The ethics of ai in instructional design" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.6CfKYQ297a4" displaytext="-  Introduction" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.6FqLF0KdoBH" displaytext="-  Discussion" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.69IM3iREUcd" displaytext="-  Discussion" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.6brClYjLcBY" displaytext="-  mini-lecture on ethical principles in ai" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.6WkohT7hA0n" displaytext="-  mini-lecture on ethical principles in ai" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.6Asdgen3CcM" displaytext="-  ethical problem solving" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.5v36L8siT65" displaytext="-  reflection" expand="false" type="slide" />
-                <slidelink slideid="_player.6DnRFawRZC6.6VLwMzjiNbw" displaytext="Assessment" expand="false" type="slide" />
-              </links>
-            </slidelink>
+            <slidelink slideid="_player.6ONH79VWScN.5UzfudF7UNv" displaytext="QUIZ " expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5sAKGKKAjEg" displaytext="Question 2" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6Qm8GtFBeMx" displaytext="The best order of steps is:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5W4WCESGVuU" displaytext="ElevenLabs in the workflow is used to:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6qRcsQDYIXp" displaytext="The selection of HeyGen versus Synthesia should be based primarily on:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.69CabQgaDpU" displaytext="A passing score recommended for a summative quiz is:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5ZcuFkx63eS" displaytext="Pick the best trio of benefits for avatars:" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5XTLKNmS4w3" displaytext="What should you always do when using an AI-generated voice or likeness?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6PbXWl8DK0i" displaytext="Which accessibility practice is essential?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6J5p0QnHjG3" displaytext="Which is a benefit of avatar-based instruction?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.5Yl0vEKJagN" displaytext="Which of the following is a limitation to consider with avatars?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6WJ8chumXGJ" displaytext="Which Storyline feature validates step completion in a simulation?" expand="false" type="slide" />
+            <slidelink slideid="_player.6ONH79VWScN.6bxi0tPKrQA" displaytext="Which best describes a lifelike on-screen instructor designed for e-learning?" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6djGTrJuvFz" displaytext="RESOURCES" expand="false" type="slide">
           <links>
-            <slidelink slideid="_player.6djGTrJuvFz.6YZsGL4eXey" displaytext="RESOURCES AND REFERENCES" expand="false" type="slide" />
+            <slidelink slideid="_player.6djGTrJuvFz.6YZsGL4eXey" displaytext="REFERENCES" expand="false" type="slide" />
+            <slidelink slideid="_player.6djGTrJuvFz.6moVK8LxMsP" displaytext="REFERENCES" expand="false" type="slide" />
+            <slidelink slideid="_player.6djGTrJuvFz.6l2dpZQb6ru" displaytext="RESOURCE" expand="false" type="slide" />
+            <slidelink slideid="_player.6djGTrJuvFz.6QgwrnQBPIb" displaytext="REFERENCES" expand="false" type="slide" />
             <slidelink slideid="_player.64u0xjaHmfd" displaytext="Introduction to Generative AI" expand="false" type="slide">
               <links>
                 <slidelink slideid="_player.64u0xjaHmfd.6We6u5fXgR1" displaytext="Generative AI" expand="false" type="slide" />

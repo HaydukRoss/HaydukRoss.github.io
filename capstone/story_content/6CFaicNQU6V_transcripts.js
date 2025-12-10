@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":96,"text":"Before you begin to explore the world of A.I. avatars"},{"start":4128,"text":"let's go \"Behind the Scenes\" and understand the "},{"start":7488,"text":" underpinnings of A.I."},{"start":9568,"text":"Avatars...  Generative AI."},{"start":12608,"text":"The link above will take you to a CSU Monterey Bay presentation"},{"start":17600,"text":"created by me, Ross Hayduk"},{"start":20064,"text":"and my teammates Jesse Vickers and Andrew\r\nSuarez "},{"start":23840,"text":"on the topic of Generative A.I."},{"start":27392,"text":"If you already feel like you have an understanding of the topic,"},{"start":30464,"text":"please feel free to advance to the Main Index "},{"start":33440,"text":"by clicking the link below."}]}]};
+    window.globalLoadJsAsset('story_content/6CFaicNQU6V_transcripts.js', JSON.stringify(data));
+})();

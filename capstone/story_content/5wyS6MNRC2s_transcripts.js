@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":9,"text":"Option one,"},{"start":1008,"text":"send a take down notice or DMCA complaint."},{"start":3740,"text":"This protects your legal rights and sets a clear"},{"start":6320,"text":"boundary around unauthorized use of your likeness or content."},{"start":10449,"text":"A bonus tip for avoiding this in the future,"},{"start":12850,"text":"always include explicit usage terms and licensing restrictions"},{"start":16459,"text":"when you share or distribute your avatar-based content."},{"start":19729,"text":"Use watermarks,"},{"start":20809,"text":"metadata,"},{"start":21500,"text":"or embedded license information when possible."},{"start":24329,"text":"Work with platforms that offer digital rights protection or usage controls."}]}]};
+    window.globalLoadJsAsset('story_content/5wyS6MNRC2s_transcripts.js', JSON.stringify(data));
+})();
