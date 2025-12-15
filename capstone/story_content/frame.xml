@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="pxabnsnfns00011100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" preventUpscale="true" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
+<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="pxabnsnfns00011000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" preventUpscale="true" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
   <layouts>
-    <layout name="npnxnanbsnfns00011100101" font="Lato" controllayout="npnxnanbsnfns00011100101" colorscheme="pxabnsnfns00011100101" string_table="pxabnsnfns00011100101" />
-    <layout name="pxabnsnfns00011100101" font="Lato" controllayout="pxabnsnfns00011100101" colorscheme="pxabnsnfns00011100101" string_table="pxabnsnfns00011100101" />
-    <layout name="npxnabnsnfns00011100101" font="Lato" controllayout="npxnabnsnfns00011100101" colorscheme="pxabnsnfns00011100101" string_table="pxabnsnfns00011100101" />
-    <layout name="npnxnanbnsnfns00011100101" font="Lato" controllayout="npnxnanbnsnfns00011100101" colorscheme="pxabnsnfns00011100101" string_table="pxabnsnfns00011100101" />
-    <layout name="pxabnsnfns00011100100" font="Lato" controllayout="pxabnsnfns00011100100" colorscheme="pxabnsnfns00011100101" string_table="pxabnsnfns00011100101" />
+    <layout name="npnxnanbsnfns00011000101" font="Lato" controllayout="npnxnanbsnfns00011000101" colorscheme="pxabnsnfns00011000101" string_table="pxabnsnfns00011000101" />
+    <layout name="pxabnsnfns00011000101" font="Lato" controllayout="pxabnsnfns00011000101" colorscheme="pxabnsnfns00011000101" string_table="pxabnsnfns00011000101" />
+    <layout name="npxnabnsnfns00011000101" font="Lato" controllayout="npxnabnsnfns00011000101" colorscheme="pxabnsnfns00011000101" string_table="pxabnsnfns00011000101" />
+    <layout name="npnxnanbnsnfns00011000101" font="Lato" controllayout="npnxnanbnsnfns00011000101" colorscheme="pxabnsnfns00011000101" string_table="pxabnsnfns00011000101" />
+    <layout name="pxabnsnfns00011000100" font="Lato" controllayout="pxabnsnfns00011000100" colorscheme="pxabnsnfns00011000101" string_table="pxabnsnfns00011000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -27,7 +27,7 @@
           </option>
           <optionlist name="tabs">
             <listitems>
-              <listitem name="resources" value="true" group="linkright" />
+              <listitem name="resources" value="false" group="linkright" />
               <listitem name="outline" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
@@ -99,7 +99,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns00011100101">
+    <control_layout name="npnxnanbsnfns00011000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -114,7 +114,7 @@
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -124,7 +124,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00011100101">
+    <control_layout name="pxabnsnfns00011000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -139,7 +139,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -149,7 +149,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns00011100101">
+    <control_layout name="npxnabnsnfns00011000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -164,7 +164,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -174,7 +174,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns00011100101">
+    <control_layout name="npnxnanbnsnfns00011000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -189,7 +189,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -199,7 +199,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns00011100100">
+    <control_layout name="pxabnsnfns00011000100">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -214,7 +214,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -226,7 +226,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabnsnfns00011100101">
+    <colorscheme name="pxabnsnfns00011000101">
       <color_group name="accessibility">
         <group_colors>
           <color name="focus_rect">
@@ -1403,7 +1403,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabnsnfns00011100101">
+    <string_table name="pxabnsnfns00011000101">
       <string id="three_image_progress_audio">progress</string>
       <string id="three_image_audio">audio</string>
       <string id="three_image_camera_down">camera moved down</string>
@@ -1583,38 +1583,34 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.658qEpMO4Ax" displaytext="Intro Scene" expand="false" type="slide">
+        <slidelink slideid="_player.658qEpMO4Ax" displaytext="Intro Scene" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.658qEpMO4Ax.5xw2vc16wv2" displaytext="AI Avatars in EDUCATION capstone project  Ross M. Hayduk  MS, instructional science and technology (MIST) program California State university, Monterey Bay December 2025" expand="false" type="slide" />
             <slidelink slideid="_player.658qEpMO4Ax.5eHhDDIqk7r" displaytext="BEFORE YOU BEGIN…" expand="false" type="slide" />
             <slidelink slideid="_player.658qEpMO4Ax.5q5RcRXxcRa" displaytext="INDEX – AI AVATARS IN EDUCATION" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6FA7ZQ1nS9L" displaytext="LESSON 1" expand="false" type="slide">
+        <slidelink slideid="_player.6FA7ZQ1nS9L" displaytext="LESSON 1 - The Multimedia Principles" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6FA7ZQ1nS9L.6h35qDljZz4" displaytext="Mayer&amp;apos;s Principles &amp;amp; AI Avatars in Education" expand="false" type="slide" />
-            <slidelink slideid="_player.5mDbpDGXmL6" displaytext="Modality Principle" expand="false" type="slide">
+            <slidelink slideid="_player.5mDbpDGXmL6" displaytext="Modality Principle" expand="true" type="slide">
               <links>
                 <slidelink slideid="_player.5mDbpDGXmL6.6j5GA2I5Dey" displaytext="Learning Theory for AI Avatars – The Modality Principle" expand="false" type="slide" />
-                <slidelink slideid="_player.5mDbpDGXmL6.6TmedWVY4dR" displaytext="Knowledge Check – The Modality Principle" expand="false" type="slide" />
-                <slidelink slideid="_player.6kPkGvnKlEl.6JPY6WN3JXL" displaytext="Learning Theory for AI Avatars – The Personalization Principle" expand="false" type="slide" />
-                <slidelink slideid="_player.6kPkGvnKlEl.6BudS50nbGY" displaytext="Knowledge Check – The Personalization Principle" expand="false" type="slide" />
-                <slidelink slideid="_player.6KXBD4KYaUo.6FRepd3lqdK" displaytext="Learning Theory for AI Avatars – The Multimedia Principle" expand="false" type="slide" />
-                <slidelink slideid="_player.6KXBD4KYaUo.62ak7CJH8gc" displaytext="Knowledge Check – The Multimedia Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5yXJOtN3uVu" displaytext="Enhancing Learning with AI Avatars: &#xD;The Modality Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5mng9UJMVKJ" displaytext="Learning Outcomes" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5kbYWfWQgcN" displaytext="What is the Modality Principle?" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.61tiDrpWtda" displaytext="A Parent&amp;apos;s Perspective" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.6ldJkI6Sb54" displaytext="Why It Works " expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5eqxFAVpnFR" displaytext="Case Study:  AI Avatars in Training" expand="false" type="slide" />
+                <slidelink slideid="_player.5mDbpDGXmL6.6TmedWVY4dR" displaytext="Knowledge Check – The Modality Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.6kb7A050wdv" displaytext="What does the Modality Principle suggest? " expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.5oJzeLVov2E" displaytext="Match the learning method with its effectiveness." expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.6Wkh6PHckeg" displaytext="A company is designing training.  They should use…" expand="false" type="slide" />
                 <slidelink slideid="_player.5mDbpDGXmL6.6gqXZ98L77J" displaytext="Wrapping Up: The Power of AI Avatars &amp;amp; The Modality Principle" expand="false" type="slide" />
               </links>
             </slidelink>
-            <slidelink slideid="_player.6kPkGvnKlEl" displaytext="Personalization Principle" expand="false" type="slide">
+            <slidelink slideid="_player.6kPkGvnKlEl" displaytext="Personalization Principle" expand="true" type="slide">
               <links>
+                <slidelink slideid="_player.6kPkGvnKlEl.6JPY6WN3JXL" displaytext="Learning Theory for AI Avatars – The Personalization Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6Z4nG7wXppS" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.5sma9TY3MZ4" displaytext="Introduction and roadmap" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6aQ9Yk5AEKS" displaytext="Learning objectives" expand="false" type="slide" />
@@ -1626,16 +1622,18 @@
                 <slidelink slideid="_player.6kPkGvnKlEl.5VW8Hc9YhOh" displaytext="Applying personalization in ElevenLabs" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6eRtCUVpBcS" displaytext="Applying personalization in HeyGen" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.611E8ctKtZo" displaytext="Pitfalls and ethical issues" expand="false" type="slide" />
-                <slidelink slideid="_player.6kPkGvnKlEl.61DuKSbCGBr" displaytext="Summary and next steps" expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.6BudS50nbGY" displaytext="Knowledge Check – The Personalization Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6lGa4w10Q8x" displaytext=" What is the main idea of the Personalization Principle?" expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.5VA4SCCHV1j" displaytext="Give one example of a personalized script line for an avatar." expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.5YclKPDYT8K" displaytext="Name one way to apply personalization in ElevenLabs." expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6VIISIZjmGD" displaytext="Name one way to apply personalization in HeyGen." expand="false" type="slide" />
                 <slidelink slideid="_player.6kPkGvnKlEl.6QPbwwxtvFh" displaytext="Name one ethical concern when using personalization with AI avatars." expand="false" type="slide" />
+                <slidelink slideid="_player.6kPkGvnKlEl.61DuKSbCGBr" displaytext="Summary and next steps" expand="false" type="slide" />
               </links>
             </slidelink>
-            <slidelink slideid="_player.6KXBD4KYaUo" displaytext="Multimedia Principle" expand="false" type="slide">
+            <slidelink slideid="_player.6KXBD4KYaUo" displaytext="Multimedia Principle" expand="true" type="slide">
               <links>
+                <slidelink slideid="_player.6KXBD4KYaUo.6FRepd3lqdK" displaytext="Learning Theory for AI Avatars – The Multimedia Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.63qeoMBHa6v" displaytext="Enhancing learning with AI avatars:" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.5jWWucK4vGu" displaytext="Introduction and roadmap" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.5Ys9fLmFVsL" displaytext="Learning objectives" expand="false" type="slide" />
@@ -1647,20 +1645,21 @@
                 <slidelink slideid="_player.6KXBD4KYaUo.5wwZKSxePvQ" displaytext="Applying multimedia in narration" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6obFNFQdqhk" displaytext="Applying multimedia in HeyGen and Storyline" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6e4Vjbm5X0L" displaytext="Pitfalls and ethical considerations" expand="false" type="slide" />
-                <slidelink slideid="_player.6KXBD4KYaUo.6hQp00qa9Ku" displaytext="Summary and next steps" expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.62ak7CJH8gc" displaytext="Knowledge Check – The Multimedia Principle" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6AwI5DyqPhr" displaytext=" In simple terms, what is the Multimedia Principle?" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6o5dFaSJAho" displaytext="Describe one change you would make to a text-heavy slide to apply this principle." expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6FUGb6opOVZ" displaytext="How can narration support graphics in an AI avatar lesson?" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.69JQii65Ocl" displaytext="How would you balance the avatar and diagrams on a complex process slide?" expand="false" type="slide" />
                 <slidelink slideid="_player.6KXBD4KYaUo.6Mb7EA8V4sR" displaytext="Name one common multimedia pitfall when using AI avatars." expand="false" type="slide" />
+                <slidelink slideid="_player.6KXBD4KYaUo.6hQp00qa9Ku" displaytext="Summary and next steps" expand="false" type="slide" />
               </links>
             </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.6Ed1S68H6pD" displaytext="LESSON 2" expand="true" type="slide">
+        <slidelink slideid="_player.6Ed1S68H6pD" displaytext="LESSON 2 - Using AI Avatars in Education" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6Ed1S68H6pD.5uyc8vPqqDO" displaytext="Learning Theories" expand="false" type="slide" />
-            <slidelink slideid="_player.6NO3vqmoF0P" displaytext="Avatars as Pedagogical Agents" expand="false" type="slide">
+            <slidelink slideid="_player.6NO3vqmoF0P" displaytext="Avatars as Pedagogical Agents" expand="true" type="slide">
               <links>
                 <slidelink slideid="_player.6NO3vqmoF0P.6C9lCYZ0RBm" displaytext="Technology Adoption Models for " expand="false" type="slide" />
                 <slidelink slideid="_player.6NO3vqmoF0P.66AmtoFniMe" displaytext="Adoption Lifecycle of AI Audio/Video Cloning Technologies" expand="false" type="slide" />
@@ -1683,13 +1682,13 @@
                 <slidelink slideid="_player.5aFBBNUIedt.6ZgPC20IoLx" displaytext="What Are AI Avatars?" expand="false" type="slide" />
                 <slidelink slideid="_player.5aFBBNUIedt.5jlNUaqBS8u" displaytext="AI Avatars in Action" expand="false" type="slide" />
                 <slidelink slideid="_player.5aFBBNUIedt.6pRDDWiB5RZ" displaytext="WHICH IS BETTER?  COMPARE &amp;amp; CONTRAST" expand="false" type="slide" />
-                <slidelink slideid="_player.5aFBBNUIedt.6oAxEHGuLqU" displaytext="WHICH IS BETTER?  COMPARE &amp;amp; CONTRAST" expand="false" type="slide" />
-                <slidelink slideid="_player.6a9AJIedpCE" displaytext="Compare: Still Photo versus Video Avatar" expand="false" type="slide">
+                <slidelink slideid="_player.6a9AJIedpCE" displaytext="Compare: Still Photo versus Video Avatar" expand="true" type="slide">
                   <links>
                     <slidelink slideid="_player.6a9AJIedpCE.6fVFHhD0cIn" displaytext="Narration with Photo" expand="false" type="slide" />
                     <slidelink slideid="_player.6a9AJIedpCE.5bFvYKtO0ta" displaytext="Narration with Video" expand="false" type="slide" />
                   </links>
                 </slidelink>
+                <slidelink slideid="_player.5aFBBNUIedt.6oAxEHGuLqU" displaytext="WHICH IS BETTER?  COMPARE &amp;amp; CONTRAST" expand="false" type="slide" />
                 <slidelink slideid="_player.5aFBBNUIedt.5efYll3HawL" displaytext="Why Use AI Avatars?" expand="false" type="slide" />
                 <slidelink slideid="_player.5aFBBNUIedt.6nlXyNeGL9E" displaytext="Ethical Considerations" expand="false" type="slide" />
                 <slidelink slideid="_player.5aFBBNUIedt.6mAlhZnuQrl" displaytext="EXERCISE:  Match the style of AI avatar to the best use case." expand="false" type="slide" />
@@ -1707,7 +1706,7 @@
             </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.6DfqjPJ4CrC" displaytext="LESSON 3" expand="true" type="slide">
+        <slidelink slideid="_player.6DfqjPJ4CrC" displaytext="LESSON 3 - How to Create An Avatar" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6DfqjPJ4CrC.6i54dDffVXG" displaytext="How to Create an Avatar" expand="false" type="slide" />
             <slidelink slideid="_player.6lDc74YkLZo" displaytext="HeyGen How To" expand="true" type="slide">
@@ -1732,8 +1731,8 @@
             </slidelink>
             <slidelink slideid="_player.6n3nuLlx3uh" displaytext="ElevenLabs How To" expand="true" type="slide">
               <links>
-                <slidelink slideid="_player.6n3nuLlx3uh.6TaUHGa0A6o" displaytext="Text-to-Speech" expand="false" type="slide" />
                 <slidelink slideid="_player.6n3nuLlx3uh.5UjMDq9tm0d" displaytext="Introduction to AI Voice Cloning in ElevenLabs" expand="false" type="slide" />
+                <slidelink slideid="_player.6n3nuLlx3uh.6TaUHGa0A6o" displaytext="Text-to-Speech" expand="false" type="slide" />
                 <slidelink slideid="_player.6n3nuLlx3uh.6lZBASWuLNn" displaytext="Browse Voices" expand="false" type="slide" />
                 <slidelink slideid="_player.6n3nuLlx3uh.6G1gUnharlD" displaytext="Explore Menu" expand="false" type="slide" />
                 <slidelink slideid="_player.6n3nuLlx3uh.6QdZtLGqY1X" displaytext="Select Voice" expand="false" type="slide" />
@@ -1745,9 +1744,8 @@
             </slidelink>
           </links>
         </slidelink>
-        <slidelink slideid="_player.6ONH79VWScN" displaytext="QUIZ" expand="false" type="slide">
+        <slidelink slideid="_player.6ONH79VWScN" displaytext="QUIZ" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6ONH79VWScN.5UzfudF7UNv" displaytext="QUIZ " expand="false" type="slide" />
             <slidelink slideid="_player.6ONH79VWScN.5sAKGKKAjEg" displaytext="Question 2" expand="false" type="slide" />
             <slidelink slideid="_player.6ONH79VWScN.6Qm8GtFBeMx" displaytext="The best order of steps is:" expand="false" type="slide" />
             <slidelink slideid="_player.6ONH79VWScN.5W4WCESGVuU" displaytext="ElevenLabs in the workflow is used to:" expand="false" type="slide" />
@@ -1762,13 +1760,14 @@
             <slidelink slideid="_player.6ONH79VWScN.6bxi0tPKrQA" displaytext="Which best describes a lifelike on-screen instructor designed for e-learning?" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.6djGTrJuvFz" displaytext="RESOURCES" expand="false" type="slide">
+        <slidelink slideid="_player.6djGTrJuvFz" displaytext="RESOURCES" expand="true" type="slide">
           <links>
+            <slidelink slideid="_player.6djGTrJuvFz.6l2dpZQb6ru" displaytext="RESOURCE" expand="false" type="slide" />
+            <slidelink slideid="_player.6djGTrJuvFz.5rPADWOSbeb" displaytext="CREDITS" expand="false" type="slide" />
+            <slidelink slideid="_player.6djGTrJuvFz.6QgwrnQBPIb" displaytext="REFERENCES" expand="false" type="slide" />
             <slidelink slideid="_player.6djGTrJuvFz.6YZsGL4eXey" displaytext="REFERENCES" expand="false" type="slide" />
             <slidelink slideid="_player.6djGTrJuvFz.6moVK8LxMsP" displaytext="REFERENCES" expand="false" type="slide" />
-            <slidelink slideid="_player.6djGTrJuvFz.6l2dpZQb6ru" displaytext="RESOURCE" expand="false" type="slide" />
-            <slidelink slideid="_player.6djGTrJuvFz.6QgwrnQBPIb" displaytext="REFERENCES" expand="false" type="slide" />
-            <slidelink slideid="_player.64u0xjaHmfd" displaytext="Introduction to Generative AI" expand="false" type="slide">
+            <slidelink slideid="_player.64u0xjaHmfd" displaytext="Introduction to Generative AI" expand="true" type="slide">
               <links>
                 <slidelink slideid="_player.64u0xjaHmfd.6We6u5fXgR1" displaytext="Generative AI" expand="false" type="slide" />
                 <slidelink slideid="_player.64u0xjaHmfd.6TBmrs43lho" displaytext="Module One" expand="false" type="slide" />
@@ -1788,13 +1787,12 @@
                 <slidelink slideid="_player.64u0xjaHmfd.5Z9PbV44Y58" displaytext="Thank You!" expand="false" type="slide" />
               </links>
             </slidelink>
-            <slidelink slideid="_player.6djGTrJuvFz.5rPADWOSbeb" displaytext="CREDITS" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
     </outline>
   </nav_data>
-  <resource_data description="&lt;p align='left'&gt;&lt;font face='Lato' style='font-size: 11px;' size='11' color='#BABBBA'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;" />
+  <resource_data description="" />
   <transcript_data />
   <glossary_data />
 </bwFrame>
