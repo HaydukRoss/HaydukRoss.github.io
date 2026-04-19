@@ -21,7 +21,7 @@
           </option>
           <option name="sidebar_enabled" value="true">
             <options>
-              <option name="sidebarpos" value="left" />
+              <option name="sidebarpos" value="right" />
               <option name="closed" value="false" />
             </options>
           </option>
@@ -1590,26 +1590,35 @@
             <slidelink slideid="_player.5een4AkkJgO.6ec3pS1gmzx" displaytext="AHF Policy" expand="false" type="slide" />
             <slidelink slideid="_player.5een4AkkJgO.5ybBv4RDoxA" displaytext="What AI Actually Does" expand="false" type="slide" />
             <slidelink slideid="_player.5een4AkkJgO.5vngrtwT9V9" displaytext="A Simple Test" expand="false" type="slide" />
-            <slidelink slideid="_player.5een4AkkJgO.6DH1Qzerkgj" displaytext="Consider This..." expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5xumGV8lHQE" displaytext="Which of these is safe to paste into a public AI tool?" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.5r1PLczwxop" displaytext="The Rules at AHF" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5r1PLczwxop.6BKAiQXlP1D" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.5r1PLczwxop.6colFZxo8BC" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.5r1PLczwxop.5nJXVf9jyMI" displaytext="Not All AI Tools Are Equal" expand="false" type="slide" />
+            <slidelink slideid="_player.5r1PLczwxop.6BHKY4up7QU" displaytext="What Never Goes Into ANY AI Tool – Approved or Not!" expand="false" type="slide" />
+            <slidelink slideid="_player.5r1PLczwxop.5XnOAuqetII" displaytext="Disclosure" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.5xhO2Gutq3F" displaytext="Real Situations - Watch &amp;amp; Reflect" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5xhO2Gutq3F.61hj3tQgTp9" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6ADtQY84D7f" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.5r36gO5gi8p" displaytext="Scenario A - Setup" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6HUHgpo9b3Z" displaytext="Scenario A - Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6BypoUHxMWb" displaytext="Scenario A - Reflect" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6YZq96JUKTh" displaytext="Scenario B - Setup" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.5bbQPZivZyt" displaytext="Scenario B - Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.63Tv7e2rdYJ" displaytext="Scenario B - Reflect" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6ZNEHxzV3Xd" displaytext="Scenario C - Setup" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6KbV2Skkmvo" displaytext="Scenario C - Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6C2onmH43Dv" displaytext="Scenario C - Reflect" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6WvwlU8TvP0" displaytext="Staying Current" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6WvwlU8TvP0.5tem7yfKUpR" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.6WvwlU8TvP0.5iBgt6B6AxV" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.6WvwlU8TvP0.5q8CgyL68Ix" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.6WvwlU8TvP0.6YkV8B2BKZW" displaytext="See Something That Doesn’t Seem Right?" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6CEZr4TGnuH" displaytext="Knowledge Check" expand="true" type="slide">
