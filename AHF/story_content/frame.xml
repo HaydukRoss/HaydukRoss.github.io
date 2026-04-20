@@ -1604,15 +1604,15 @@
         <slidelink slideid="_player.5xhO2Gutq3F" displaytext="Real Situations - Watch &amp;amp; Reflect" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5xhO2Gutq3F.61hj3tQgTp9" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.5r36gO5gi8p" displaytext="Scenario A - Setup" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6HUHgpo9b3Z" displaytext="Scenario A - Decision" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6BypoUHxMWb" displaytext="Scenario A - Reflect" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6YZq96JUKTh" displaytext="Scenario B - Setup" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.5bbQPZivZyt" displaytext="Scenario B - Decision" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.63Tv7e2rdYJ" displaytext="Scenario B - Reflect" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6ZNEHxzV3Xd" displaytext="Scenario C - Setup" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6KbV2Skkmvo" displaytext="Scenario C - Decision" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6C2onmH43Dv" displaytext="Scenario C - Reflect" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.5r36gO5gi8p" displaytext="Scenario A - Carmen -Setup" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6HUHgpo9b3Z" displaytext="Scenario A - Carmen - Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6BypoUHxMWb" displaytext="Scenario A - Carmen - Reflect" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6YZq96JUKTh" displaytext="Scenario B - David - Setup" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.5bbQPZivZyt" displaytext="Scenario B - David - Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.63Tv7e2rdYJ" displaytext="Scenario B - David - Reflect" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6ZNEHxzV3Xd" displaytext="Scenario C - Priya - Setup" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6KbV2Skkmvo" displaytext="Scenario C - Priya - Decision" expand="false" type="slide" />
+            <slidelink slideid="_player.5xhO2Gutq3F.6C2onmH43Dv" displaytext="Scenario C - Priya - Reflect" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6WvwlU8TvP0" displaytext="Staying Current" expand="true" type="slide">
@@ -1635,6 +1635,7 @@
           <links>
             <slidelink slideid="_player.6H8mm7AGeWP.5ielnuGUae8" displaytext="Congratulations!" expand="false" type="slide" />
             <slidelink slideid="_player.6H8mm7AGeWP.5iOVWS9NF3H" displaytext="Course Complete!" expand="false" type="slide" />
+            <slidelink slideid="_player.6H8mm7AGeWP.5VIs2MBpqiK" displaytext="Welcome" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
