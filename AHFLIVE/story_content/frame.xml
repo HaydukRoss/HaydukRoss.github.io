@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="pxabnsnfns10111000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" preventUpscale="true" outputtype="undefined" theme="unified" themeAccentColor="0x3891A7">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" preventUpscale="true" outputtype="undefined" theme="unified" themeAccentColor="0x3891A7">
   <layouts>
     <layout name="npnxnanbsnfns10111000101" font="Lato" controllayout="npnxnanbsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
     <layout name="pxabnsnfns10111000101" font="Lato" controllayout="pxabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="AHF Storyline Project" />
+              <option name="title_text" value="AHF AVATAR Storyline Project" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -94,6 +94,7 @@
           <option name="placement" value="100" />
           <option name="backgroundColor" value="#000000FF" />
           <option name="color" value="#FFFFFFFF" />
+          <option name="textShadow" value="1" />
         </options>
       </optiongroup>
     </optiongroups>
@@ -1509,6 +1510,7 @@
       <string id="acc_next">Next (Ctrl+Alt+Period)</string>
       <string id="acc_ordinal_ninth">ninth</string>
       <string id="acc_previous">Previous (Ctrl+Alt+Comma)</string>
+      <string id="acc_correct_choice">%answer% (correct choice)</string>
       <string id="acc_search_input">search</string>
       <string id="acc_search_result_status">%count% result found for %term%</string>
       <string id="acc_search_results_status">%count% results found for %term%</string>
@@ -1552,6 +1554,7 @@
       <string id="transcript_auto_scroll">Autoscroll</string>
       <string id="acc_window_close">Close</string>
       <string id="acc_video_transcript_list">Transcript</string>
+      <string id="video_transcript_mobile_label">Transcript</string>
       <string id="acc_window_move">Move window</string>
       <string id="acc_modern_video_transcript">Open</string>
       <string id="acc_window_resize">Resize window</string>
@@ -1583,58 +1586,33 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.5een4AkkJgO" displaytext="What AI Actually Does" expand="true" type="slide">
+        <slidelink slideid="_player.5een4AkkJgO" displaytext="Training That Works Everywhere" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5een4AkkJgO.5XM6qZTtaAV" displaytext="Welcome" expand="false" type="slide" />
             <slidelink slideid="_player.5een4AkkJgO.5sscMHBo87g" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.5een4AkkJgO.6ec3pS1gmzx" displaytext="AHF Policy" expand="false" type="slide" />
-            <slidelink slideid="_player.5een4AkkJgO.5ybBv4RDoxA" displaytext="What AI Actually Does" expand="false" type="slide" />
-            <slidelink slideid="_player.5een4AkkJgO.5vngrtwT9V9" displaytext="A Simple Test" expand="false" type="slide" />
-            <slidelink slideid="_player.5een4AkkJgO.5xumGV8lHQE" displaytext="Consider This..." expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.5r1PLczwxop" displaytext="The Rules at AHF" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.5r1PLczwxop.6BKAiQXlP1D" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.5r1PLczwxop.5nJXVf9jyMI" displaytext="Not All AI Tools Are Equal" expand="false" type="slide" />
-            <slidelink slideid="_player.5r1PLczwxop.6BHKY4up7QU" displaytext="What Never Goes Into ANY AI Tool." expand="false" type="slide" />
-            <slidelink slideid="_player.5r1PLczwxop.5XnOAuqetII" displaytext="Disclosure" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.5xhO2Gutq3F" displaytext="Real Situations - Watch &amp;amp; Reflect" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.5xhO2Gutq3F.61hj3tQgTp9" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.5r36gO5gi8p" displaytext="Scenario A - Carmen -Setup" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6HUHgpo9b3Z" displaytext="Scenario A - Carmen - Decision" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6BypoUHxMWb" displaytext="Scenario A - Carmen - Reflect" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6YZq96JUKTh" displaytext="Scenario B - David - Setup" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.5bbQPZivZyt" displaytext="Scenario B - David - Decision" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.63Tv7e2rdYJ" displaytext="Scenario B - David - Reflect" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6ZNEHxzV3Xd" displaytext="Scenario C - Priya - Setup" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6KbV2Skkmvo" displaytext="Scenario C - Priya - Decision" expand="false" type="slide" />
-            <slidelink slideid="_player.5xhO2Gutq3F.6C2onmH43Dv" displaytext="Scenario C - Priya - Reflect" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6WvwlU8TvP0" displaytext="Staying Current" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6WvwlU8TvP0.5tem7yfKUpR" displaytext="Introduction" expand="false" type="slide" />
-            <slidelink slideid="_player.6WvwlU8TvP0.6YkV8B2BKZW" displaytext="See Something? Say Something!" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.6CEZr4TGnuH" displaytext="Knowledge Check" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.6CEZr4TGnuH.6gNAN8RQ3mn" displaytext="Knowledge Check" expand="false" type="slide" />
-            <slidelink slideid="_player.6CEZr4TGnuH.5tNPEPYCVtK" displaytext="Question 1" expand="false" type="slide" />
-            <slidelink slideid="_player.6CEZr4TGnuH.6nQlnwngS17" displaytext="Question 2" expand="false" type="slide" />
-            <slidelink slideid="_player.6CEZr4TGnuH.6kUWWOhPMDz" displaytext="Question 3" expand="false" type="slide" />
-            <slidelink slideid="_player.6CEZr4TGnuH.6FD1GkTwKO4" displaytext="Question 4" expand="false" type="slide" />
-            <slidelink slideid="_player.6CEZr4TGnuH.5aCmCAVoYkt" displaytext="Question 5" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5kvQ4ts0qkd" displaytext="Evergreen" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5X6eM0W6hb2" displaytext="Updates and Continuity" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6m7YoIZFObH" displaytext="Solution" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6hL9pzFpsOc" displaytext="HeyGen &amp;amp; ElevenLabs" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5awYggFXj0W" displaytext="Creating A Great Avatar" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6DSzVnHWloH" displaytext="Scalable" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6nDRTsE4niA" displaytext="Appropriate Avatar Selection" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5bzAHwUjRlW" displaytext="Choose Your Avatar" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.62skNMkcxZI" displaytext="Avatar Selection" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6FUUhKQqP4f" displaytext="Select A Voice" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5ZpUnSWGy7h" displaytext="Voice Selection" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6I2d5QJS6CO" displaytext="Globalization" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6QrayfjASoC" displaytext="Global Avatars" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5r8gj2Qgi5o" displaytext="AHF Andy" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6Oxau2QYRQg" displaytext="AHF Amy" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.5cdVO8F3FcS" displaytext="AHF Armando" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6CdM4te2bfN" displaytext="In Conclusion" expand="false" type="slide" />
+            <slidelink slideid="_player.5een4AkkJgO.6A9WR9qfTEA" displaytext="Real or Avatar" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6H8mm7AGeWP" displaytext="Conclusion" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6H8mm7AGeWP.5ielnuGUae8" displaytext="Congratulations!" expand="false" type="slide" />
-            <slidelink slideid="_player.6H8mm7AGeWP.5iOVWS9NF3H" displaytext="Course Complete" expand="false" type="slide" />
+            <slidelink slideid="_player.6H8mm7AGeWP.5kzYOufFXwH" displaytext="In Conclusion" expand="false" type="slide" />
             <slidelink slideid="_player.6H8mm7AGeWP.5VIs2MBpqiK" displaytext="Credits" expand="false" type="slide" />
           </links>
         </slidelink>
